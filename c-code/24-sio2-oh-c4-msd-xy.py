@@ -1,22 +1,34 @@
 import MDAnalysis
 import MDAnalysis.analysis.align
-import sys
-import re
-import itertools
-import os
 from MDAnalysis.tests.datafiles import GRO, XTC
 import numpy as np
 
 import json
 import scipy.integrate as integrate
-
+import path_config
+current_env="md_dev"
+env_info=path_config.md_paths.get(current_env,None)
+if env_info:
+    gro_path=env_info.get('gro','')
+    xtc_path=env_info.get('xtc','')
+    
+if gro_path:
+    gro_file=gro_path+"/mixed_solv_prod.gro"
+    try:
+            # 打开文件并读取内容
+        with open(gro_file, 'r') as file:
+            content = file.read()
+            print(content)  # 输出文件内容（这里仅作示例）
+    except FileNotFoundError:
+            print("gro文件未找到！")
+xtc_file=xtc_path+"/mixed_solv_prod_first_20_ns_centered_with_10ns.xtc"
+#xtc异常处理不想写了 跳
 
 #read the xtc and gro files
-XTC='sio2-oh-c4-finalpbc.xtc'
-GRO='sio2-oh-c4-finalpbc.gro'
+XTC=xtc_file
+GRO=gro_file
 u = MDAnalysis.Universe(GRO, XTC)
-
-
+# mdanalysis的u对象在此创建
 
 ##########################################################
 #calculate the non zero mean
