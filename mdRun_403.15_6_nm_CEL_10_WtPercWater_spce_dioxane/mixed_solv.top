@@ -1,0 +1,36 @@
+; mixed_solv_cosolvent.top -- used in conjunction with prep_cosolvent.sh
+
+#include "charmm36-nov2016.ff/forcefield.itp"
+
+#include "cellobiose.prm"
+; additional params for the dioxane solvent/solute
+#include "dioxane.prm"
+
+; include params for dioxane
+#include "dioxane.itp"
+
+; include params for spce water
+#include "charmm36-nov2016.ff/spce.itp"
+
+#ifdef POSRES_WATER
+; Position restraint for each water oxygen
+[ position_restraints ]
+;  i funct		 fcx		fcy		   fcz
+   1	1		1000	   1000		  1000
+#endif
+
+; Include topology for ions
+#include "charmm36-nov2016.ff/ions.itp"
+; Include topology for solute, cellobiose
+
+#include "cellobiose.itp"
+ 
+[ system ]
+; Name
+Mixed spce/dioxane system with water
+
+[ molecules ]
+; Compound		  #mols
+DIO    748
+SOL    403
+CEL    1
