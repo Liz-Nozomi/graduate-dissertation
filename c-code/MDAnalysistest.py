@@ -26,7 +26,7 @@ GRO = gro_file
 u = mda.Universe(GRO, XTC)
 
 
-def getparam(GRO,XTC,u):
+def getparam(u):
     
 
     BMI = np.trunc(u.select_atoms("resname BMI").positions)
@@ -51,31 +51,33 @@ def getparam(GRO,XTC,u):
 
 # numpy 数组，用来存储所有的该分子（残基）的坐标信息
 # 这里是低精度的像素点信息
+def readnp(start,end,delta):
+    sum=np.array([[0,0,0,0,0,0]])
+    for ts in u.trajectory[start:end:delta]:#这里得改，但是不知道怎么取帧来平均，都得试试
+        sum=np.concatenate([getparam(u),sum],axis=0) 
+    param=sum
 
-sum=np.array([[0,0,0,0,0,0]])
-for ts in u.trajectory[1:100:2]:#这里得改，但是不知道怎么取帧来平均，都得试试
-    sum=np.concatenate([getparam(GRO,XTC,u),sum],axis=0) 
-param=sum
 
+    # 归一化，查重处理矩阵，这些玩意不能动
+    unique_rows, indices = np.unique(param[:, :3], axis=0, return_inverse=True)
+    summed_rows = np.zeros((unique_rows.shape[0], 3 + 3))
+    for i in range(unique_rows.shape[0]):
+        summed_rows[i, :3] = unique_rows[i]
+        summed_rows[i, 3:] = np.sum(param[indices == i, 3:], axis=0)
+    column4=summed_rows[:,3]
+    column5=summed_rows[:,4]
+    column6=summed_rows[:,5]
+    max_4=np.max(column4)
+    max_5=np.max(column5)
+    max_6=np.max(column6)
+    normalization=max(max_4,max_5,max_6)
+    divide=np.divide(summed_rows[:,3:6],normalization)
+    summed_rows[:,3:6]=divide
+    # 到这里都别动 我也看不懂了现在
 
-# 归一化，查重处理矩阵，这些玩意不能动
-unique_rows, indices = np.unique(param[:, :3], axis=0, return_inverse=True)
-summed_rows = np.zeros((unique_rows.shape[0], 3 + 3))
-for i in range(unique_rows.shape[0]):
-    summed_rows[i, :3] = unique_rows[i]
-    summed_rows[i, 3:] = np.sum(param[indices == i, 3:], axis=0)
-column4=summed_rows[:,3]
-column5=summed_rows[:,4]
-column6=summed_rows[:,5]
-max_4=np.max(column4)
-max_5=np.max(column5)
-max_6=np.max(column6)
-normalization=max(max_4,max_5,max_6)
-divide=np.divide(summed_rows[:,3:6],normalization)
-summed_rows[:,3:6]=divide
-# 到这里都别动 我也看不懂了现在
-
-np.savetxt("param.txt",summed_rows)
-print(summed_rows)
-plot3dtest.paint3d(summed_rows)
+    np.savetxt(str(start)+"-"+str(end)+"-"+"param.txt",summed_rows)
+    #plot3dtest.paint3d(summed_rows)
+    return summed_rows
+    
+    
 
