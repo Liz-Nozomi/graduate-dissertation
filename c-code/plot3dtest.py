@@ -18,7 +18,7 @@ def paint3d(points):#一个六维的xyzrgb数组
     ax = fig.add_subplot(111, projection='3d')
 
 # 绘制散点图
-    scatter = ax.scatter(x.flatten(), y.flatten(), z.flatten(), c=np.column_stack((r, g, b)), marker='o')
+    scatter = ax.scatter(x.flatten(), y.flatten(), z.flatten(), c=np.column_stack((r, g, b,(r+g+b)/2)), marker='o')
 
 # 设置坐标轴标签
     ax.set_xlabel('X Label')
