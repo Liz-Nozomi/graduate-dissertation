@@ -64,6 +64,8 @@ def readnp(start,end,delta):
     for i in range(unique_rows.shape[0]):
         summed_rows[i, :3] = unique_rows[i]
         summed_rows[i, 3:] = np.sum(param[indices == i, 3:], axis=0)
+    
+     # 到这里都别动 我也看不懂了现在
     column4=summed_rows[:,3]
     column5=summed_rows[:,4]
     column6=summed_rows[:,5]
@@ -73,7 +75,7 @@ def readnp(start,end,delta):
     normalization=max(max_4,max_5,max_6)
     divide=np.divide(summed_rows[:,3:6],normalization)
     summed_rows[:,3:6]=divide
-    # 到这里都别动 我也看不懂了现在
+   
 
     np.savetxt(str(start)+"-"+str(end)+"-"+"param.txt",summed_rows)
     #plot3dtest.paint3d(summed_rows)
