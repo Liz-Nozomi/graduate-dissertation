@@ -32,7 +32,7 @@ def getparam(u):
     BMI = np.trunc(u.select_atoms("resname BMI").positions)
     zeros_array = np.zeros((BMI.shape[0], 3), dtype=BMI.dtype)
     BMI=np.hstack((BMI,zeros_array))
-    BMI[:, 3:] = np.array([[0, 0, 0]])
+    BMI[:, 3:] = np.array([[1, 0, 0]])
 
     BUS = np.trunc(u.select_atoms("resname BUS").positions)
     zeros_array = np.zeros((BUS.shape[0], 3), dtype=BUS.dtype)
