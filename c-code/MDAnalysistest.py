@@ -2,23 +2,34 @@ import MDAnalysis as mda
 import path_config
 import numpy as np
 import plot3dtest
+import csv
 
+csv_file='../f-file/datamark.csv'
+def findsol(csv_file,currentrow):
+    # 打开 CSV 文件
+    with open(csv_file, 'r') as file:
+        # 创建 CSV 读取器
+        csv_reader = csv.reader(file)
+        
+        for row_num, row in enumerate(csv_reader, 1):
+            if row_num == currentrow:
+                return [row[0],row[1],row[2],row[3]]
+sol=findsol(csv_file,6)
+path="/Volumes/Liz2T/RateNet/dataset/"+sol[0]+"-"+sol[1]+'-'+sol[2]
+
+   
+'''
 current_env="md_dev"
 env_info=path_config.md_paths.get(current_env,None)
 if env_info:
     gro_path=env_info.get('gro','')
     xtc_path=env_info.get('xtc','')
-    
-if gro_path:
-    gro_file=gro_path+"/200-10bmibuscn-mdnvt-6ns-300-ml.gro"
-    try:
-            # 打开文件并读取内容
-        with open(gro_file, 'r') as file:
-            content = file.read()
-            print(content)  # 输出文件内容（这里仅作示例）
-    except FileNotFoundError:
-            print("gro文件未找到！")
-xtc_file=xtc_path+"/200-10bmibuscn-mdnvt-6ns-300-ml.xtc"
+'''
+
+gro_file=path+"/200-10"+sol[0].lower()+sol[1].lower()+"-mdnvt-6ns-"+sol[2]+"-ml.gro"
+
+xtc_file=path+"/200-10"+sol[0].lower()+sol[1].lower()+"-mdnvt-6ns-"+sol[2]+"-ml.xtc"
+
 #xtc异常处理不想写了 跳
 
 XTC = xtc_file
@@ -29,22 +40,22 @@ u = mda.Universe(GRO, XTC)
 def getparam(u):
     
 
-    BMI = np.trunc(u.select_atoms("resname BMI").positions)
-    zeros_array = np.zeros((BMI.shape[0], 3), dtype=BMI.dtype)
-    BMI=np.hstack((BMI,zeros_array))
-    BMI[:, 3:] = np.array([[1, 0, 0]])
+    MIM = np.trunc(u.select_atoms("resname MIM").positions)
+    zeros_array = np.zeros((MIM.shape[0], 3), dtype=MIM.dtype)
+    MIM=np.hstack((MIM,zeros_array))
+    MIM[:, 3:] = np.array([[1, 0, 0]])
 
-    BUS = np.trunc(u.select_atoms("resname BUS").positions)
-    zeros_array = np.zeros((BUS.shape[0], 3), dtype=BUS.dtype)
-    BUS=np.hstack((BUS,zeros_array))
-    BUS[:, 3:] = np.array([[0, 1, 0]])
+    MES = np.trunc(u.select_atoms("resname MES").positions)
+    zeros_array = np.zeros((MES.shape[0], 3), dtype=MES.dtype)
+    MES=np.hstack((MES,zeros_array))
+    MES[:, 3:] = np.array([[0, 1, 0]])
 
     EMP = np.trunc(u.select_atoms("resname EMP").positions)
     zeros_array = np.zeros((EMP.shape[0], 3), dtype=EMP.dtype)
     EMP=np.hstack((EMP,zeros_array))
     EMP[:, 3:] = np.array([[0, 0, 0]])
 
-    param=np.r_[BMI,BUS,EMP]
+    param=np.r_[MIM,MES,EMP]
     return param
 #param是一个六位数组，包含了所有的点xyz和相对应的RGB，这里直接屏蔽了第三通道因为一共俩分子
 
@@ -77,9 +88,10 @@ def readnp(start,end,delta):
     summed_rows[:,3:6]=divide
    
 
-    np.savetxt(str(start)+"-"+str(end)+"-"+"param.txt",summed_rows)
+    np.savetxt(path+"/"+str(start)+"-"+str(end)+"-"+sol[0]+sol[1]+sol[2]+".txt",summed_rows)
     #plot3dtest.paint3d(summed_rows)
     return summed_rows
     
-    
 
+for i in range(1,18000,3000):
+    readnp(i,i+2999,1)

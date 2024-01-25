@@ -14,9 +14,10 @@ def findsol(csv_file,currentrow):
         for row_num, row in enumerate(csv_reader, 1):
             if row_num == currentrow:
                 return [row[0],row[1],row[2],row[3]]
-    
+
 print(findsol(csv_file,4))
 
+'''
 #把数据点变成高密度的
 def dense(start,end,step):
     point=MDAnalysistest.readnp(start,end,step)
@@ -32,6 +33,6 @@ def dense(start,end,step):
     dense_rgb = dense_rgb.reshape(20, 20, 20, 3)
     return dense_rgb
 
-
+'''
 
 
