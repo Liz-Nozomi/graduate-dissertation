@@ -14,7 +14,7 @@ def findsol(csv_file,currentrow):
         for row_num, row in enumerate(csv_reader, 1):
             if row_num == currentrow:
                 return [row[0],row[1],row[2],row[3]]
-sol=findsol(csv_file,6)
+sol=findsol(csv_file,2)
 path="/Volumes/Liz2T/RateNet/dataset/"+sol[0]+"-"+sol[1]+'-'+sol[2]
 
    
