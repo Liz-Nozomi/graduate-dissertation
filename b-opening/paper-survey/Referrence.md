@@ -1,7 +1,32 @@
 Referrence
 
-- **[1]** LIU X L, ZHANG J X, PEI Z R. Machine learning for high-entropy alloys:Progress, challenges and opportunities[J]. Progress in Materials Science, 2023,131:101018.
-- **[2]** WARBURTON R E, SOUDACKOV A V, HAMMESSCHIFFER S. Theoretical Modeling of Electrochemical Proton-Coupled Electron Transfer[J]. Chemical Reviews, 2022, 122(12):10599-10650.
-- **[3]** GROSS A, SAKONG S. Ab Initio Simulations of Water/Metal Interfaces[J]. Chemical Reviews, 2022,122(12):10746-10776.
-- **[4]** YAO N, CHEN X, FU Z H, et al. Applying Classical,Ab Initio, and Machine-Learning Molecular Dynamics Simulations to the Liquid Electrolyte for Rechargeable Batteries[J]. Chemical Reviews, 2022,122(12):10970-11021.
 - 
+- [1-1]Yin, Ping, et al. "Biodiesel production from esterification of oleic acid over aminophosphonic acid resin D418." *Fuel* 102 (2012): 499-505.
+- [1-2]Whalen, Joann, et al. "Sustainable biofuel production from forestry, agricultural and waste biomass feedstocks." *Applied Energy* 198 (2017): 281-283.
+- [1-3]Ghandi, Khashayar. "A review of ionic liquids, their limits and applications." *Green and sustainable chemistry* 2014 (2014).
+- [1-4]Marsh, Kenneth N., John A. Boxall, and Ruediger Lichtenthaler. "Room temperature ionic liquids and their mixtures—a review." *Fluid phase equilibria* 219.1 (2004): 93-98.
+- [1-5]Wasserscheid, Peter, and Thomas Welton, eds. *Ionic liquids in synthesis*. Vol. 1. Weinheim: Wiley-Vch, 2008.
+- **[1-6]** LIU X L, ZHANG J X, PEI Z R. Machine learning for high-entropy alloys:Progress, challenges and opportunities[J]. Progress in Materials Science, 2023,131:101018.
+- **[1-7]** WARBURTON R E, SOUDACKOV A V, HAMMESSCHIFFER S. Theoretical Modeling of Electrochemical Proton-Coupled Electron Transfer[J]. Chemical Reviews, 2022, 122(12):10599-10650.
+- **[1-8]** GROSS A, SAKONG S. Ab Initio Simulations of Water/Metal Interfaces[J]. Chemical Reviews, 2022,122(12):10746-10776.
+- **[1-9]** YAO N, CHEN X, FU Z H, et al. Applying Classical,Ab Initio, and Machine-Learning Molecular Dynamics Simulations to the Liquid Electrolyte for Rechargeable Batteries[J]. Chemical Reviews, 2022,122(12):10970-11021.
+- [2.1-1]Zhang, Fan, et al. "Understanding the Reaction Kinetics and Microdynamics between Methylimidazole and Alkyl Thiocyanate for Ionic Liquid Synthesis through Experiments and Theoretical Calculation." *Industrial & Engineering Chemistry Research* 62.9 (2023): 3889-3897.
+- [2.2.2-1]Gidopoulos, Nikitas. "Kohn-Sham equations for multicomponent systems: The exchange and correlation energy functional." Physical Review B 57.4 (1998): 2146.
+- [2.2.2-2]蓝建慧,卢贵武,黄乔松等.从头计算分子动力学方法及其应用[J].石油大学学报(自然科学版),2005(04):149-152.
+- [2.2.2-3]Car, Richard, and Mark Parrinello. "Unified approach for molecular dynamics and density-functional theory." Physical review letters 55.22 (1985): 2471.
+- [2.2.2-4]赵宇军,姜明,曹培林.从头计算分子动力学[J].物理学进展,1998(01):49-77.
+- [2.4-1]LeCun, Yann, et al. "Backpropagation applied to handwritten zip code recognition." *Neural computation* 1.4 (1989): 541-551.
+- [2.4-2]Rao, Chengping, and Yang Liu. "Three-dimensional convolutional neural network (3D-CNN) for heterogeneous material homogenization." *Computational Materials Science* 184 (2020): 109850.
+- [2.4-3]Ji, Shuiwang, et al. "3D convolutional neural networks for human action recognition." *IEEE transactions on pattern analysis and machine intelligence* 35.1 (2012): 221-231.
+- [2.5-1] Walker, Theodore W., et al. "Universal kinetic solvent effects in acid-catalyzed reactions of biomass-derived oxygenates." *Energy & Environmental Science* 11.3 (2018): 617-628.
+- [2.5-2] Kang, Myungshim, and Paul E. Smith. "Preferential interaction parameters in biological systems by Kirkwood–Buff theory and computer simulation." *Fluid Phase Equilibria* 256.1-2 (2007): 14-19.
+- [2.5-3]Schneider, Curtiss P., and Bernhardt L. Trout. "Investigation of cosolute− protein preferential interaction coefficients: New insight into the mechanism by which arginine inhibits aggregation." *The Journal of Physical Chemistry B* 113.7 (2009): 2050-2058.
+- [2.5-4] Shukla, Diwakar, and Bernhardt L. Trout. "Preferential interaction coefficients of proteins in aqueous arginine solutions and their molecular origins." *The Journal of Physical Chemistry B* 115.5 (2011): 1243-1253.
+- [2.5-5] Shulgin, Ivan L., and Eli Ruckenstein. "Local composition in the vicinity of a protein molecule in an aqueous mixed solvent." *The Journal of Physical Chemistry B* 111.15 (2007): 3990-3998.
+- [2.5-6]Sutton, Jonathan E., and Dionisios G. Vlachos. "A theoretical and computational analysis of linear free energy relations for the estimation of activation energies." *ACS Catalysis* 2.8 (2012): 1624-1634.
+- [2.5-7]Wang, Shengguang, et al. "Universal transition state scaling relations for (de) hydrogenation over transition metals." *Physical Chemistry Chemical Physics* 13.46 (2011): 20760-20765.
+- [2.5-8]Chew, Alex K., et al. "Fast predictions of liquid-phase acid-catalyzed reaction rates using molecular dynamics simulations and convolutional neural networks." *Chemical science* 11.46 (2020): 12464-12476.
+- [2.6-1]Noda, Kota, and Yasushi Shibuta. "Prediction of potential energy profiles of molecular dynamic simulation by graph convolutional networks." *Computational Materials Science* 229 (2023): 112448.
+- [2.6-2]Walker, Theodore W., et al. "Rational design of mixed solvent systems for acid-catalyzed biomass conversion processes using a combined experimental, molecular dynamics and machine learning approach." *Topics in Catalysis* 63 (2020): 649-663.
+- [2.6-3]Computational prediction of ω-transaminase selectivity by deep learning analysis of molecular dynamics trajectories
+
