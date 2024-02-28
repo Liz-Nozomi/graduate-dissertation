@@ -29,4 +29,9 @@ Referrence
 - [2.6-1]Noda, Kota, and Yasushi Shibuta. "Prediction of potential energy profiles of molecular dynamic simulation by graph convolutional networks." *Computational Materials Science* 229 (2023): 112448.
 - [2.6-2]Walker, Theodore W., et al. "Rational design of mixed solvent systems for acid-catalyzed biomass conversion processes using a combined experimental, molecular dynamics and machine learning approach." *Topics in Catalysis* 63 (2020): 649-663.
 - [2.6-3]Computational prediction of ω-transaminase selectivity by deep learning analysis of molecular dynamics trajectories
+- [3.1-1]Parrinello, Michele, and Aneesur Rahman. "Polymorphic transitions in single crystals: A new molecular dynamics method." *Journal of Applied physics* 52.12 (1981): 7182-7190.
+- [3.1-2]Nosé, Shuichi, and M. L. Klein. "Constant pressure molecular dynamics for molecular systems." *Molecular Physics* 50.5 (1983): 1055-1076.
+- [3.1-3]Van Der Spoel, David, et al. "GROMACS: fast, flexible, and free." *Journal of computational chemistry* 26.16 (2005): 1701-1718.
+- [3.1-4]Hess, B.; Kutzner, C.; Van Der Spoel, D.; Lindahl, E. GROMACS 4: algorithms for highly efficient, load-balanced, and scalable molecular simulation. *J. Chem. Theory Comput.* 2008, *4* (3), 435−447.
+- 
 

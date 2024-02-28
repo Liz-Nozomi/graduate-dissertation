@@ -50,12 +50,8 @@ def getparam(u):
     MES=np.hstack((MES,zeros_array))
     MES[:, 3:] = np.array([[0, 1, 0]])
 
-    EMP = np.trunc(u.select_atoms("resname EMP").positions)
-    zeros_array = np.zeros((EMP.shape[0], 3), dtype=EMP.dtype)
-    EMP=np.hstack((EMP,zeros_array))
-    EMP[:, 3:] = np.array([[0, 0, 0]])
 
-    param=np.r_[MIM,MES,EMP]
+    param=np.r_[MIM,MES,0]
     return param
 #param是一个六位数组，包含了所有的点xyz和相对应的RGB，这里直接屏蔽了第三通道因为一共俩分子
 
@@ -94,4 +90,4 @@ def readnp(start,end,delta):
     
 
 for i in range(1,18000,3000):
-    readnp(i,i+2999,1)
+    readnp(i,i+2999,1000)
