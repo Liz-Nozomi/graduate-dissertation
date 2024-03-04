@@ -3,7 +3,7 @@ import path_config
 import numpy as np
 import plot3dtest
 import csv
-
+'''
 csv_file='../f-file/datamark.csv'
 def findsol(csv_file,currentrow):
     # 打开 CSV 文件
@@ -31,6 +31,9 @@ gro_file=path+"/200-10"+sol[0].lower()+sol[1].lower()+"-mdnvt-6ns-"+sol[2]+"-ml.
 xtc_file=path+"/200-10"+sol[0].lower()+sol[1].lower()+"-mdnvt-6ns-"+sol[2]+"-ml.xtc"
 
 #xtc异常处理不想写了 跳
+'''
+gro_file="/Volumes/Liz2T/RateNet/dataset/BIm-EtSCN-360/200-10bimetscn-mdnvt-6ns-360-ml.gro"
+xtc_file="/Volumes/Liz2T/RateNet/dataset/BIm-EtSCN-360/200-10bimetscn-mdnvt-6ns-360-ml.xtc"
 
 XTC = xtc_file
 GRO = gro_file
@@ -40,18 +43,22 @@ u = mda.Universe(GRO, XTC)
 def getparam(u):
     
 
-    MIM = np.trunc(u.select_atoms("resname MIM").positions)
-    zeros_array = np.zeros((MIM.shape[0], 3), dtype=MIM.dtype)
-    MIM=np.hstack((MIM,zeros_array))
-    MIM[:, 3:] = np.array([[1, 0, 0]])
+    ETS = np.trunc(u.select_atoms("resname ETS").positions)
+    zeros_array = np.zeros((ETS.shape[0], 3), dtype=ETS.dtype)
+    ETS=np.hstack((ETS,zeros_array))
+    ETS[:, 3:] = np.array([[1, 0, 0]])
+
+    BMI = np.trunc(u.select_atoms("resname BMI").positions)
+    zeros_array = np.zeros((BMI.shape[0], 3), dtype=BMI.dtype)
+    BMI=np.hstack((BMI,zeros_array))
+    BMI[:, 3:] = np.array([[0, 1, 0]])
 
     MES = np.trunc(u.select_atoms("resname MES").positions)
     zeros_array = np.zeros((MES.shape[0], 3), dtype=MES.dtype)
     MES=np.hstack((MES,zeros_array))
-    MES[:, 3:] = np.array([[0, 1, 0]])
-
-
-    param=np.r_[MIM,MES,0]
+    MES[:, 3:] = np.array([[0, 0, 0]])
+    
+    param=np.r_[ETS,BMI,MES]
     return param
 #param是一个六位数组，包含了所有的点xyz和相对应的RGB，这里直接屏蔽了第三通道因为一共俩分子
 
@@ -84,10 +91,10 @@ def readnp(start,end,delta):
     summed_rows[:,3:6]=divide
    
 
-    np.savetxt(path+"/"+str(start)+"-"+str(end)+"-"+sol[0]+sol[1]+sol[2]+".txt",summed_rows)
-    #plot3dtest.paint3d(summed_rows)
+    #np.savetxt(path+"/"+str(start)+"-"+str(end)+"-"+sol[0]+sol[1]+sol[2]+".txt",summed_rows)
+    plot3dtest.paint3d(summed_rows)
     return summed_rows
     
 
-for i in range(1,18000,3000):
-    readnp(i,i+2999,1000)
+
+readnp(1,1999,200)

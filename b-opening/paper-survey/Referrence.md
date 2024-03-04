@@ -11,6 +11,7 @@ Referrence
 - **[1-8]** GROSS A, SAKONG S. Ab Initio Simulations of Water/Metal Interfaces[J]. Chemical Reviews, 2022,122(12):10746-10776.
 - **[1-9]** YAO N, CHEN X, FU Z H, et al. Applying Classical,Ab Initio, and Machine-Learning Molecular Dynamics Simulations to the Liquid Electrolyte for Rechargeable Batteries[J]. Chemical Reviews, 2022,122(12):10970-11021.
 - [2.1-1]Zhang, Fan, et al. "Understanding the Reaction Kinetics and Microdynamics between Methylimidazole and Alkyl Thiocyanate for Ionic Liquid Synthesis through Experiments and Theoretical Calculation." *Industrial & Engineering Chemistry Research* 62.9 (2023): 3889-3897.
+- [2.2.1-1][1]文玉华,朱如曾,周富信等.分子动力学模拟的主要技术[J].力学进展,2003(01):65-73.
 - [2.2.2-1]Gidopoulos, Nikitas. "Kohn-Sham equations for multicomponent systems: The exchange and correlation energy functional." Physical Review B 57.4 (1998): 2146.
 - [2.2.2-2]蓝建慧,卢贵武,黄乔松等.从头计算分子动力学方法及其应用[J].石油大学学报(自然科学版),2005(04):149-152.
 - [2.2.2-3]Car, Richard, and Mark Parrinello. "Unified approach for molecular dynamics and density-functional theory." Physical review letters 55.22 (1985): 2471.
@@ -27,8 +28,12 @@ Referrence
 - [2.5-7]Wang, Shengguang, et al. "Universal transition state scaling relations for (de) hydrogenation over transition metals." *Physical Chemistry Chemical Physics* 13.46 (2011): 20760-20765.
 - [2.5-8]Chew, Alex K., et al. "Fast predictions of liquid-phase acid-catalyzed reaction rates using molecular dynamics simulations and convolutional neural networks." *Chemical science* 11.46 (2020): 12464-12476.
 - [2.6-1]Noda, Kota, and Yasushi Shibuta. "Prediction of potential energy profiles of molecular dynamic simulation by graph convolutional networks." *Computational Materials Science* 229 (2023): 112448.
+- [2.6-1-1]Kipf, Thomas N., and Max Welling. "Semi-supervised classification with graph convolutional networks." arXiv preprint arXiv:1609.02907 (2016).
+- 
 - [2.6-2]Walker, Theodore W., et al. "Rational design of mixed solvent systems for acid-catalyzed biomass conversion processes using a combined experimental, molecular dynamics and machine learning approach." *Topics in Catalysis* 63 (2020): 649-663.
-- [2.6-3]Computational prediction of ω-transaminase selectivity by deep learning analysis of molecular dynamics trajectories
+- [2.6-3]Ai, Liqiang, Yusi Zhou, and Min Chen. "A reactive force field molecular dynamics simulation of the dynamic properties of hydrogen bonding in supercritical water." *Journal of Molecular Liquids* 276 (2019): 83-92.
+- [2.6-4]Kadupitiya, J. C. S., et al. "Machine learning surrogates for molecular dynamics simulations of soft materials." *Journal of Computational Science* 42 (2020): 101107.
+- [2.6-5]Fukuya, Teppei, and Yasushi Shibuta. "Machine learning approach to automated analysis of atomic configuration of molecular dynamics simulation." *Computational Materials Science* 184 (2020): 109880.
 - [3.1-1]Parrinello, Michele, and Aneesur Rahman. "Polymorphic transitions in single crystals: A new molecular dynamics method." *Journal of Applied physics* 52.12 (1981): 7182-7190.
 - [3.1-2]Nosé, Shuichi, and M. L. Klein. "Constant pressure molecular dynamics for molecular systems." *Molecular Physics* 50.5 (1983): 1055-1076.
 - [3.1-3]Van Der Spoel, David, et al. "GROMACS: fast, flexible, and free." *Journal of computational chemistry* 26.16 (2005): 1701-1718.
