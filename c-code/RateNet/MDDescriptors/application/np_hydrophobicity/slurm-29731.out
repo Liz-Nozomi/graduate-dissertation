@@ -1,0 +1,605 @@
+                      :-) GROMACS - gmx make_ndx, 2016 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul   Magnus Lundborg   Pieter Meulenhoff    Erik Marklund   
+   Teemu Murtola       Szilard Pall       Sander Pronk      Roland Schulz   
+  Alexey Shvetsov     Michael Shirts     Alfons Sijbers     Peter Tieleman  
+  Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2015, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx make_ndx, version 2016
+Executable:   /app/gromacs_2016/bin/gmx
+Data prefix:  /app/gromacs_2016
+Working dir:  /home/akchew/scratch/nanoparticle_project/simulations/NP_HYDRO_SI_GNP_DEBUGGING_SPRING/MostlikelynpNVTspr_500-EAM_300.00_K_2_nmDIAM_C11OH_CHARMM36jul2017_Trial_1_likelyindex_1
+Command line:
+  gmx make_ndx -f sam_prod.tpr -o sam_prod-center_pbc_mol.ndx
+
+
+Reading structure file
+Reading file sam_prod.tpr, VERSION 2016 (single precision)
+Reading file sam_prod.tpr, VERSION 2016 (single precision)
+
+Back Off! I just backed up sam_prod-center_pbc_mol.ndx to ./#sam_prod-center_pbc_mol.ndx.2#
+
+GROMACS reminds you: "There's a limit to how many times you can read how great you are and what an inspiration you are, but I'm not there yet." (Randy Pausch)
+
+Starting trajectory in 2000.000 ps
+Ending trajectory in 12000.000 ps
+                      :-) GROMACS - gmx trjconv, 2016 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul   Magnus Lundborg   Pieter Meulenhoff    Erik Marklund   
+   Teemu Murtola       Szilard Pall       Sander Pronk      Roland Schulz   
+  Alexey Shvetsov     Michael Shirts     Alfons Sijbers     Peter Tieleman  
+  Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2015, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx trjconv, version 2016
+Executable:   /app/gromacs_2016/bin/gmx
+Data prefix:  /app/gromacs_2016
+Working dir:  /home/akchew/scratch/nanoparticle_project/simulations/NP_HYDRO_SI_GNP_DEBUGGING_SPRING/MostlikelynpNVTspr_500-EAM_300.00_K_2_nmDIAM_C11OH_CHARMM36jul2017_Trial_1_likelyindex_1
+Command line:
+  gmx trjconv -center -pbc mol -skip 1 -b 2000 -e 12000 -s sam_prod.tpr -f sam_prod.xtc -n sam_prod-center_pbc_mol.ndx -o sam_prod-center_pbc_mol.xtc
+
+Will write xtc: Compressed trajectory (portable xdr format): xtc
+Reading file sam_prod.tpr, VERSION 2016 (single precision)
+Reading file sam_prod.tpr, VERSION 2016 (single precision)
+Group     0 (         System) has 36406 elements
+Group     1 (           AUNP) has   226 elements
+Group     2 (      non-Water) has  3214 elements
+Select a group: Group     0 (         System) has 36406 elements
+Group     1 (           AUNP) has   226 elements
+Group     2 (      non-Water) has  3214 elements
+Select a group: Reading frame       0 time    0.000   Reading frame       0 time 2000.000   
+Precision of sam_prod.xtc is 0.001 (nm)
+Using output precision of 0.001 (nm)
+
+Back Off! I just backed up sam_prod-center_pbc_mol.xtc to ./#sam_prod-center_pbc_mol.xtc.2#
+ ->  frame      0 time 2000.000      Reading frame       1 time 2001.000    ->  frame      1 time 2001.000      Reading frame       2 time 2002.000    ->  frame      2 time 2002.000      Reading frame       3 time 2003.000    ->  frame      3 time 2003.000      Reading frame       4 time 2004.000    ->  frame      4 time 2004.000      Reading frame       5 time 2005.000    ->  frame      5 time 2005.000      Reading frame       6 time 2006.000    ->  frame      6 time 2006.000      Reading frame       7 time 2007.000    ->  frame      7 time 2007.000      Reading frame       8 time 2008.000    ->  frame      8 time 2008.000      Reading frame       9 time 2009.000    ->  frame      9 time 2009.000      Reading frame      10 time 2010.000    ->  frame     10 time 2010.000      Reading frame      11 time 2011.000   Reading frame      12 time 2012.000   Reading frame      13 time 2013.000   Reading frame      14 time 2014.000   Reading frame      15 time 2015.000   Reading frame      16 time 2016.000   Reading frame      17 time 2017.000   Reading frame      18 time 2018.000   Reading frame      19 time 2019.000   Reading frame      20 time 2020.000    ->  frame     20 time 2020.000      Reading frame      30 time 2030.000    ->  frame     30 time 2030.000      Reading frame      40 time 2040.000    ->  frame     40 time 2040.000      Reading frame      50 time 2050.000    ->  frame     50 time 2050.000      Reading frame      60 time 2060.000    ->  frame     60 time 2060.000      Reading frame      70 time 2070.000    ->  frame     70 time 2070.000      Reading frame      80 time 2080.000    ->  frame     80 time 2080.000      Reading frame      90 time 2090.000    ->  frame     90 time 2090.000      Reading frame     100 time 2100.000    ->  frame    100 time 2100.000      Reading frame     110 time 2110.000    ->  frame    110 time 2110.000      Reading frame     120 time 2120.000    ->  frame    120 time 2120.000      Reading frame     130 time 2130.000    ->  frame    130 time 2130.000      Reading frame     140 time 2140.000    ->  frame    140 time 2140.000      Reading frame     150 time 2150.000    ->  frame    150 time 2150.000      Reading frame     160 time 2160.000    ->  frame    160 time 2160.000      Reading frame     170 time 2170.000    ->  frame    170 time 2170.000      Reading frame     180 time 2180.000    ->  frame    180 time 2180.000      Reading frame     190 time 2190.000    ->  frame    190 time 2190.000      Reading frame     200 time 2200.000    ->  frame    200 time 2200.000       ->  frame    210 time 2210.000       ->  frame    220 time 2220.000       ->  frame    230 time 2230.000       ->  frame    240 time 2240.000       ->  frame    250 time 2250.000       ->  frame    260 time 2260.000       ->  frame    270 time 2270.000       ->  frame    280 time 2280.000       ->  frame    290 time 2290.000      Reading frame     300 time 2300.000    ->  frame    300 time 2300.000       ->  frame    310 time 2310.000       ->  frame    320 time 2320.000       ->  frame    330 time 2330.000       ->  frame    340 time 2340.000       ->  frame    350 time 2350.000       ->  frame    360 time 2360.000       ->  frame    370 time 2370.000       ->  frame    380 time 2380.000       ->  frame    390 time 2390.000      Reading frame     400 time 2400.000    ->  frame    400 time 2400.000       ->  frame    410 time 2410.000       ->  frame    420 time 2420.000       ->  frame    430 time 2430.000       ->  frame    440 time 2440.000       ->  frame    450 time 2450.000       ->  frame    460 time 2460.000       ->  frame    470 time 2470.000       ->  frame    480 time 2480.000       ->  frame    490 time 2490.000      Reading frame     500 time 2500.000    ->  frame    500 time 2500.000       ->  frame    510 time 2510.000       ->  frame    520 time 2520.000       ->  frame    530 time 2530.000       ->  frame    540 time 2540.000       ->  frame    550 time 2550.000       ->  frame    560 time 2560.000       ->  frame    570 time 2570.000       ->  frame    580 time 2580.000       ->  frame    590 time 2590.000      Reading frame     600 time 2600.000    ->  frame    600 time 2600.000       ->  frame    610 time 2610.000       ->  frame    620 time 2620.000       ->  frame    630 time 2630.000       ->  frame    640 time 2640.000       ->  frame    650 time 2650.000       ->  frame    660 time 2660.000       ->  frame    670 time 2670.000       ->  frame    680 time 2680.000       ->  frame    690 time 2690.000      Reading frame     700 time 2700.000    ->  frame    700 time 2700.000       ->  frame    710 time 2710.000       ->  frame    720 time 2720.000       ->  frame    730 time 2730.000       ->  frame    740 time 2740.000       ->  frame    750 time 2750.000       ->  frame    760 time 2760.000       ->  frame    770 time 2770.000       ->  frame    780 time 2780.000       ->  frame    790 time 2790.000      Reading frame     800 time 2800.000    ->  frame    800 time 2800.000       ->  frame    810 time 2810.000       ->  frame    820 time 2820.000       ->  frame    830 time 2830.000       ->  frame    840 time 2840.000       ->  frame    850 time 2850.000       ->  frame    860 time 2860.000       ->  frame    870 time 2870.000       ->  frame    880 time 2880.000       ->  frame    890 time 2890.000      Reading frame     900 time 2900.000    ->  frame    900 time 2900.000       ->  frame    910 time 2910.000       ->  frame    920 time 2920.000       ->  frame    930 time 2930.000       ->  frame    940 time 2940.000       ->  frame    950 time 2950.000       ->  frame    960 time 2960.000       ->  frame    970 time 2970.000       ->  frame    980 time 2980.000       ->  frame    990 time 2990.000      Reading frame    1000 time 3000.000    ->  frame   1000 time 3000.000       ->  frame   1010 time 3010.000       ->  frame   1020 time 3020.000       ->  frame   1030 time 3030.000       ->  frame   1040 time 3040.000       ->  frame   1050 time 3050.000       ->  frame   1060 time 3060.000       ->  frame   1070 time 3070.000       ->  frame   1080 time 3080.000       ->  frame   1090 time 3090.000      Reading frame    1100 time 3100.000    ->  frame   1100 time 3100.000       ->  frame   1110 time 3110.000       ->  frame   1120 time 3120.000       ->  frame   1130 time 3130.000       ->  frame   1140 time 3140.000       ->  frame   1150 time 3150.000       ->  frame   1160 time 3160.000       ->  frame   1170 time 3170.000       ->  frame   1180 time 3180.000       ->  frame   1190 time 3190.000      Reading frame    1200 time 3200.000    ->  frame   1200 time 3200.000       ->  frame   1210 time 3210.000       ->  frame   1220 time 3220.000       ->  frame   1230 time 3230.000       ->  frame   1240 time 3240.000       ->  frame   1250 time 3250.000       ->  frame   1260 time 3260.000       ->  frame   1270 time 3270.000       ->  frame   1280 time 3280.000       ->  frame   1290 time 3290.000      Reading frame    1300 time 3300.000    ->  frame   1300 time 3300.000       ->  frame   1310 time 3310.000       ->  frame   1320 time 3320.000       ->  frame   1330 time 3330.000       ->  frame   1340 time 3340.000       ->  frame   1350 time 3350.000       ->  frame   1360 time 3360.000       ->  frame   1370 time 3370.000       ->  frame   1380 time 3380.000       ->  frame   1390 time 3390.000      Reading frame    1400 time 3400.000    ->  frame   1400 time 3400.000       ->  frame   1410 time 3410.000       ->  frame   1420 time 3420.000       ->  frame   1430 time 3430.000       ->  frame   1440 time 3440.000       ->  frame   1450 time 3450.000       ->  frame   1460 time 3460.000       ->  frame   1470 time 3470.000       ->  frame   1480 time 3480.000       ->  frame   1490 time 3490.000      Reading frame    1500 time 3500.000    ->  frame   1500 time 3500.000       ->  frame   1510 time 3510.000       ->  frame   1520 time 3520.000       ->  frame   1530 time 3530.000       ->  frame   1540 time 3540.000       ->  frame   1550 time 3550.000       ->  frame   1560 time 3560.000       ->  frame   1570 time 3570.000       ->  frame   1580 time 3580.000       ->  frame   1590 time 3590.000      Reading frame    1600 time 3600.000    ->  frame   1600 time 3600.000       ->  frame   1610 time 3610.000       ->  frame   1620 time 3620.000       ->  frame   1630 time 3630.000       ->  frame   1640 time 3640.000       ->  frame   1650 time 3650.000       ->  frame   1660 time 3660.000       ->  frame   1670 time 3670.000       ->  frame   1680 time 3680.000       ->  frame   1690 time 3690.000      Reading frame    1700 time 3700.000    ->  frame   1700 time 3700.000       ->  frame   1710 time 3710.000       ->  frame   1720 time 3720.000       ->  frame   1730 time 3730.000       ->  frame   1740 time 3740.000       ->  frame   1750 time 3750.000       ->  frame   1760 time 3760.000       ->  frame   1770 time 3770.000       ->  frame   1780 time 3780.000       ->  frame   1790 time 3790.000      Reading frame    1800 time 3800.000    ->  frame   1800 time 3800.000       ->  frame   1810 time 3810.000       ->  frame   1820 time 3820.000       ->  frame   1830 time 3830.000       ->  frame   1840 time 3840.000       ->  frame   1850 time 3850.000       ->  frame   1860 time 3860.000       ->  frame   1870 time 3870.000       ->  frame   1880 time 3880.000       ->  frame   1890 time 3890.000      Reading frame    1900 time 3900.000    ->  frame   1900 time 3900.000       ->  frame   1910 time 3910.000       ->  frame   1920 time 3920.000       ->  frame   1930 time 3930.000       ->  frame   1940 time 3940.000       ->  frame   1950 time 3950.000       ->  frame   1960 time 3960.000       ->  frame   1970 time 3970.000       ->  frame   1980 time 3980.000       ->  frame   1990 time 3990.000      Reading frame    2000 time 4000.000    ->  frame   2000 time 4000.000       ->  frame   2010 time 4010.000       ->  frame   2020 time 4020.000       ->  frame   2030 time 4030.000       ->  frame   2040 time 4040.000       ->  frame   2050 time 4050.000       ->  frame   2060 time 4060.000       ->  frame   2070 time 4070.000       ->  frame   2080 time 4080.000       ->  frame   2090 time 4090.000       ->  frame   2100 time 4100.000       ->  frame   2110 time 4110.000       ->  frame   2120 time 4120.000       ->  frame   2130 time 4130.000       ->  frame   2140 time 4140.000       ->  frame   2150 time 4150.000       ->  frame   2160 time 4160.000       ->  frame   2170 time 4170.000       ->  frame   2180 time 4180.000       ->  frame   2190 time 4190.000       ->  frame   2200 time 4200.000       ->  frame   2210 time 4210.000       ->  frame   2220 time 4220.000       ->  frame   2230 time 4230.000       ->  frame   2240 time 4240.000       ->  frame   2250 time 4250.000       ->  frame   2260 time 4260.000       ->  frame   2270 time 4270.000       ->  frame   2280 time 4280.000       ->  frame   2290 time 4290.000       ->  frame   2300 time 4300.000       ->  frame   2310 time 4310.000       ->  frame   2320 time 4320.000       ->  frame   2330 time 4330.000       ->  frame   2340 time 4340.000       ->  frame   2350 time 4350.000       ->  frame   2360 time 4360.000       ->  frame   2370 time 4370.000       ->  frame   2380 time 4380.000       ->  frame   2390 time 4390.000       ->  frame   2400 time 4400.000       ->  frame   2410 time 4410.000       ->  frame   2420 time 4420.000       ->  frame   2430 time 4430.000       ->  frame   2440 time 4440.000       ->  frame   2450 time 4450.000       ->  frame   2460 time 4460.000       ->  frame   2470 time 4470.000       ->  frame   2480 time 4480.000       ->  frame   2490 time 4490.000       ->  frame   2500 time 4500.000       ->  frame   2510 time 4510.000       ->  frame   2520 time 4520.000       ->  frame   2530 time 4530.000       ->  frame   2540 time 4540.000       ->  frame   2550 time 4550.000       ->  frame   2560 time 4560.000       ->  frame   2570 time 4570.000       ->  frame   2580 time 4580.000       ->  frame   2590 time 4590.000       ->  frame   2600 time 4600.000       ->  frame   2610 time 4610.000       ->  frame   2620 time 4620.000       ->  frame   2630 time 4630.000       ->  frame   2640 time 4640.000       ->  frame   2650 time 4650.000       ->  frame   2660 time 4660.000       ->  frame   2670 time 4670.000       ->  frame   2680 time 4680.000       ->  frame   2690 time 4690.000       ->  frame   2700 time 4700.000       ->  frame   2710 time 4710.000       ->  frame   2720 time 4720.000       ->  frame   2730 time 4730.000       ->  frame   2740 time 4740.000       ->  frame   2750 time 4750.000       ->  frame   2760 time 4760.000       ->  frame   2770 time 4770.000       ->  frame   2780 time 4780.000       ->  frame   2790 time 4790.000       ->  frame   2800 time 4800.000       ->  frame   2810 time 4810.000       ->  frame   2820 time 4820.000       ->  frame   2830 time 4830.000       ->  frame   2840 time 4840.000       ->  frame   2850 time 4850.000       ->  frame   2860 time 4860.000       ->  frame   2870 time 4870.000       ->  frame   2880 time 4880.000       ->  frame   2890 time 4890.000       ->  frame   2900 time 4900.000       ->  frame   2910 time 4910.000       ->  frame   2920 time 4920.000       ->  frame   2930 time 4930.000       ->  frame   2940 time 4940.000       ->  frame   2950 time 4950.000       ->  frame   2960 time 4960.000       ->  frame   2970 time 4970.000       ->  frame   2980 time 4980.000       ->  frame   2990 time 4990.000      Reading frame    3000 time 5000.000    ->  frame   3000 time 5000.000       ->  frame   3010 time 5010.000       ->  frame   3020 time 5020.000       ->  frame   3030 time 5030.000       ->  frame   3040 time 5040.000       ->  frame   3050 time 5050.000       ->  frame   3060 time 5060.000       ->  frame   3070 time 5070.000       ->  frame   3080 time 5080.000       ->  frame   3090 time 5090.000       ->  frame   3100 time 5100.000       ->  frame   3110 time 5110.000       ->  frame   3120 time 5120.000       ->  frame   3130 time 5130.000       ->  frame   3140 time 5140.000       ->  frame   3150 time 5150.000       ->  frame   3160 time 5160.000       ->  frame   3170 time 5170.000       ->  frame   3180 time 5180.000       ->  frame   3190 time 5190.000       ->  frame   3200 time 5200.000       ->  frame   3210 time 5210.000       ->  frame   3220 time 5220.000       ->  frame   3230 time 5230.000       ->  frame   3240 time 5240.000       ->  frame   3250 time 5250.000       ->  frame   3260 time 5260.000       ->  frame   3270 time 5270.000       ->  frame   3280 time 5280.000       ->  frame   3290 time 5290.000       ->  frame   3300 time 5300.000       ->  frame   3310 time 5310.000       ->  frame   3320 time 5320.000       ->  frame   3330 time 5330.000       ->  frame   3340 time 5340.000       ->  frame   3350 time 5350.000       ->  frame   3360 time 5360.000       ->  frame   3370 time 5370.000       ->  frame   3380 time 5380.000       ->  frame   3390 time 5390.000       ->  frame   3400 time 5400.000       ->  frame   3410 time 5410.000       ->  frame   3420 time 5420.000       ->  frame   3430 time 5430.000       ->  frame   3440 time 5440.000       ->  frame   3450 time 5450.000       ->  frame   3460 time 5460.000       ->  frame   3470 time 5470.000       ->  frame   3480 time 5480.000       ->  frame   3490 time 5490.000       ->  frame   3500 time 5500.000       ->  frame   3510 time 5510.000       ->  frame   3520 time 5520.000       ->  frame   3530 time 5530.000       ->  frame   3540 time 5540.000       ->  frame   3550 time 5550.000       ->  frame   3560 time 5560.000       ->  frame   3570 time 5570.000       ->  frame   3580 time 5580.000       ->  frame   3590 time 5590.000       ->  frame   3600 time 5600.000       ->  frame   3610 time 5610.000       ->  frame   3620 time 5620.000       ->  frame   3630 time 5630.000       ->  frame   3640 time 5640.000       ->  frame   3650 time 5650.000       ->  frame   3660 time 5660.000       ->  frame   3670 time 5670.000       ->  frame   3680 time 5680.000       ->  frame   3690 time 5690.000       ->  frame   3700 time 5700.000       ->  frame   3710 time 5710.000       ->  frame   3720 time 5720.000       ->  frame   3730 time 5730.000       ->  frame   3740 time 5740.000       ->  frame   3750 time 5750.000       ->  frame   3760 time 5760.000       ->  frame   3770 time 5770.000       ->  frame   3780 time 5780.000       ->  frame   3790 time 5790.000       ->  frame   3800 time 5800.000       ->  frame   3810 time 5810.000       ->  frame   3820 time 5820.000       ->  frame   3830 time 5830.000       ->  frame   3840 time 5840.000       ->  frame   3850 time 5850.000       ->  frame   3860 time 5860.000       ->  frame   3870 time 5870.000       ->  frame   3880 time 5880.000       ->  frame   3890 time 5890.000       ->  frame   3900 time 5900.000       ->  frame   3910 time 5910.000       ->  frame   3920 time 5920.000       ->  frame   3930 time 5930.000       ->  frame   3940 time 5940.000       ->  frame   3950 time 5950.000       ->  frame   3960 time 5960.000       ->  frame   3970 time 5970.000       ->  frame   3980 time 5980.000       ->  frame   3990 time 5990.000      Reading frame    4000 time 6000.000    ->  frame   4000 time 6000.000       ->  frame   4010 time 6010.000       ->  frame   4020 time 6020.000       ->  frame   4030 time 6030.000       ->  frame   4040 time 6040.000       ->  frame   4050 time 6050.000       ->  frame   4060 time 6060.000       ->  frame   4070 time 6070.000       ->  frame   4080 time 6080.000       ->  frame   4090 time 6090.000       ->  frame   4100 time 6100.000       ->  frame   4110 time 6110.000       ->  frame   4120 time 6120.000       ->  frame   4130 time 6130.000       ->  frame   4140 time 6140.000       ->  frame   4150 time 6150.000       ->  frame   4160 time 6160.000       ->  frame   4170 time 6170.000       ->  frame   4180 time 6180.000       ->  frame   4190 time 6190.000       ->  frame   4200 time 6200.000       ->  frame   4210 time 6210.000       ->  frame   4220 time 6220.000       ->  frame   4230 time 6230.000       ->  frame   4240 time 6240.000       ->  frame   4250 time 6250.000       ->  frame   4260 time 6260.000       ->  frame   4270 time 6270.000       ->  frame   4280 time 6280.000       ->  frame   4290 time 6290.000       ->  frame   4300 time 6300.000       ->  frame   4310 time 6310.000       ->  frame   4320 time 6320.000       ->  frame   4330 time 6330.000       ->  frame   4340 time 6340.000       ->  frame   4350 time 6350.000       ->  frame   4360 time 6360.000       ->  frame   4370 time 6370.000       ->  frame   4380 time 6380.000       ->  frame   4390 time 6390.000       ->  frame   4400 time 6400.000       ->  frame   4410 time 6410.000       ->  frame   4420 time 6420.000       ->  frame   4430 time 6430.000       ->  frame   4440 time 6440.000       ->  frame   4450 time 6450.000       ->  frame   4460 time 6460.000       ->  frame   4470 time 6470.000       ->  frame   4480 time 6480.000       ->  frame   4490 time 6490.000       ->  frame   4500 time 6500.000       ->  frame   4510 time 6510.000       ->  frame   4520 time 6520.000       ->  frame   4530 time 6530.000       ->  frame   4540 time 6540.000       ->  frame   4550 time 6550.000       ->  frame   4560 time 6560.000       ->  frame   4570 time 6570.000       ->  frame   4580 time 6580.000       ->  frame   4590 time 6590.000       ->  frame   4600 time 6600.000       ->  frame   4610 time 6610.000       ->  frame   4620 time 6620.000       ->  frame   4630 time 6630.000       ->  frame   4640 time 6640.000       ->  frame   4650 time 6650.000       ->  frame   4660 time 6660.000       ->  frame   4670 time 6670.000       ->  frame   4680 time 6680.000       ->  frame   4690 time 6690.000       ->  frame   4700 time 6700.000       ->  frame   4710 time 6710.000       ->  frame   4720 time 6720.000       ->  frame   4730 time 6730.000       ->  frame   4740 time 6740.000       ->  frame   4750 time 6750.000       ->  frame   4760 time 6760.000       ->  frame   4770 time 6770.000       ->  frame   4780 time 6780.000       ->  frame   4790 time 6790.000       ->  frame   4800 time 6800.000       ->  frame   4810 time 6810.000       ->  frame   4820 time 6820.000       ->  frame   4830 time 6830.000       ->  frame   4840 time 6840.000       ->  frame   4850 time 6850.000       ->  frame   4860 time 6860.000       ->  frame   4870 time 6870.000       ->  frame   4880 time 6880.000       ->  frame   4890 time 6890.000       ->  frame   4900 time 6900.000       ->  frame   4910 time 6910.000       ->  frame   4920 time 6920.000       ->  frame   4930 time 6930.000       ->  frame   4940 time 6940.000       ->  frame   4950 time 6950.000       ->  frame   4960 time 6960.000       ->  frame   4970 time 6970.000       ->  frame   4980 time 6980.000       ->  frame   4990 time 6990.000      Reading frame    5000 time 7000.000    ->  frame   5000 time 7000.000       ->  frame   5010 time 7010.000       ->  frame   5020 time 7020.000       ->  frame   5030 time 7030.000       ->  frame   5040 time 7040.000       ->  frame   5050 time 7050.000       ->  frame   5060 time 7060.000       ->  frame   5070 time 7070.000       ->  frame   5080 time 7080.000       ->  frame   5090 time 7090.000       ->  frame   5100 time 7100.000       ->  frame   5110 time 7110.000       ->  frame   5120 time 7120.000       ->  frame   5130 time 7130.000       ->  frame   5140 time 7140.000       ->  frame   5150 time 7150.000       ->  frame   5160 time 7160.000       ->  frame   5170 time 7170.000       ->  frame   5180 time 7180.000       ->  frame   5190 time 7190.000       ->  frame   5200 time 7200.000       ->  frame   5210 time 7210.000       ->  frame   5220 time 7220.000       ->  frame   5230 time 7230.000       ->  frame   5240 time 7240.000       ->  frame   5250 time 7250.000       ->  frame   5260 time 7260.000       ->  frame   5270 time 7270.000       ->  frame   5280 time 7280.000       ->  frame   5290 time 7290.000       ->  frame   5300 time 7300.000       ->  frame   5310 time 7310.000       ->  frame   5320 time 7320.000       ->  frame   5330 time 7330.000       ->  frame   5340 time 7340.000       ->  frame   5350 time 7350.000       ->  frame   5360 time 7360.000       ->  frame   5370 time 7370.000       ->  frame   5380 time 7380.000       ->  frame   5390 time 7390.000       ->  frame   5400 time 7400.000       ->  frame   5410 time 7410.000       ->  frame   5420 time 7420.000       ->  frame   5430 time 7430.000       ->  frame   5440 time 7440.000       ->  frame   5450 time 7450.000       ->  frame   5460 time 7460.000       ->  frame   5470 time 7470.000       ->  frame   5480 time 7480.000       ->  frame   5490 time 7490.000       ->  frame   5500 time 7500.000       ->  frame   5510 time 7510.000       ->  frame   5520 time 7520.000       ->  frame   5530 time 7530.000       ->  frame   5540 time 7540.000       ->  frame   5550 time 7550.000       ->  frame   5560 time 7560.000       ->  frame   5570 time 7570.000       ->  frame   5580 time 7580.000       ->  frame   5590 time 7590.000       ->  frame   5600 time 7600.000       ->  frame   5610 time 7610.000       ->  frame   5620 time 7620.000       ->  frame   5630 time 7630.000       ->  frame   5640 time 7640.000       ->  frame   5650 time 7650.000       ->  frame   5660 time 7660.000       ->  frame   5670 time 7670.000       ->  frame   5680 time 7680.000       ->  frame   5690 time 7690.000       ->  frame   5700 time 7700.000       ->  frame   5710 time 7710.000       ->  frame   5720 time 7720.000       ->  frame   5730 time 7730.000       ->  frame   5740 time 7740.000       ->  frame   5750 time 7750.000       ->  frame   5760 time 7760.000       ->  frame   5770 time 7770.000       ->  frame   5780 time 7780.000       ->  frame   5790 time 7790.000       ->  frame   5800 time 7800.000       ->  frame   5810 time 7810.000       ->  frame   5820 time 7820.000       ->  frame   5830 time 7830.000       ->  frame   5840 time 7840.000       ->  frame   5850 time 7850.000       ->  frame   5860 time 7860.000       ->  frame   5870 time 7870.000       ->  frame   5880 time 7880.000       ->  frame   5890 time 7890.000       ->  frame   5900 time 7900.000       ->  frame   5910 time 7910.000       ->  frame   5920 time 7920.000       ->  frame   5930 time 7930.000       ->  frame   5940 time 7940.000       ->  frame   5950 time 7950.000       ->  frame   5960 time 7960.000       ->  frame   5970 time 7970.000       ->  frame   5980 time 7980.000       ->  frame   5990 time 7990.000      Reading frame    6000 time 8000.000    ->  frame   6000 time 8000.000       ->  frame   6010 time 8010.000       ->  frame   6020 time 8020.000       ->  frame   6030 time 8030.000       ->  frame   6040 time 8040.000       ->  frame   6050 time 8050.000       ->  frame   6060 time 8060.000       ->  frame   6070 time 8070.000       ->  frame   6080 time 8080.000       ->  frame   6090 time 8090.000       ->  frame   6100 time 8100.000       ->  frame   6110 time 8110.000       ->  frame   6120 time 8120.000       ->  frame   6130 time 8130.000       ->  frame   6140 time 8140.000       ->  frame   6150 time 8150.000       ->  frame   6160 time 8160.000       ->  frame   6170 time 8170.000       ->  frame   6180 time 8180.000       ->  frame   6190 time 8190.000       ->  frame   6200 time 8200.000       ->  frame   6210 time 8210.000       ->  frame   6220 time 8220.000       ->  frame   6230 time 8230.000       ->  frame   6240 time 8240.000       ->  frame   6250 time 8250.000       ->  frame   6260 time 8260.000       ->  frame   6270 time 8270.000       ->  frame   6280 time 8280.000       ->  frame   6290 time 8290.000       ->  frame   6300 time 8300.000       ->  frame   6310 time 8310.000       ->  frame   6320 time 8320.000       ->  frame   6330 time 8330.000       ->  frame   6340 time 8340.000       ->  frame   6350 time 8350.000       ->  frame   6360 time 8360.000       ->  frame   6370 time 8370.000       ->  frame   6380 time 8380.000       ->  frame   6390 time 8390.000       ->  frame   6400 time 8400.000       ->  frame   6410 time 8410.000       ->  frame   6420 time 8420.000       ->  frame   6430 time 8430.000       ->  frame   6440 time 8440.000       ->  frame   6450 time 8450.000       ->  frame   6460 time 8460.000       ->  frame   6470 time 8470.000       ->  frame   6480 time 8480.000       ->  frame   6490 time 8490.000       ->  frame   6500 time 8500.000       ->  frame   6510 time 8510.000       ->  frame   6520 time 8520.000       ->  frame   6530 time 8530.000       ->  frame   6540 time 8540.000       ->  frame   6550 time 8550.000       ->  frame   6560 time 8560.000       ->  frame   6570 time 8570.000       ->  frame   6580 time 8580.000       ->  frame   6590 time 8590.000       ->  frame   6600 time 8600.000       ->  frame   6610 time 8610.000       ->  frame   6620 time 8620.000       ->  frame   6630 time 8630.000       ->  frame   6640 time 8640.000       ->  frame   6650 time 8650.000       ->  frame   6660 time 8660.000       ->  frame   6670 time 8670.000       ->  frame   6680 time 8680.000       ->  frame   6690 time 8690.000       ->  frame   6700 time 8700.000       ->  frame   6710 time 8710.000       ->  frame   6720 time 8720.000       ->  frame   6730 time 8730.000       ->  frame   6740 time 8740.000       ->  frame   6750 time 8750.000       ->  frame   6760 time 8760.000       ->  frame   6770 time 8770.000       ->  frame   6780 time 8780.000       ->  frame   6790 time 8790.000       ->  frame   6800 time 8800.000       ->  frame   6810 time 8810.000       ->  frame   6820 time 8820.000       ->  frame   6830 time 8830.000       ->  frame   6840 time 8840.000       ->  frame   6850 time 8850.000       ->  frame   6860 time 8860.000       ->  frame   6870 time 8870.000       ->  frame   6880 time 8880.000       ->  frame   6890 time 8890.000       ->  frame   6900 time 8900.000       ->  frame   6910 time 8910.000       ->  frame   6920 time 8920.000       ->  frame   6930 time 8930.000       ->  frame   6940 time 8940.000       ->  frame   6950 time 8950.000       ->  frame   6960 time 8960.000       ->  frame   6970 time 8970.000       ->  frame   6980 time 8980.000       ->  frame   6990 time 8990.000      Reading frame    7000 time 9000.000    ->  frame   7000 time 9000.000       ->  frame   7010 time 9010.000       ->  frame   7020 time 9020.000       ->  frame   7030 time 9030.000       ->  frame   7040 time 9040.000       ->  frame   7050 time 9050.000       ->  frame   7060 time 9060.000       ->  frame   7070 time 9070.000       ->  frame   7080 time 9080.000       ->  frame   7090 time 9090.000       ->  frame   7100 time 9100.000       ->  frame   7110 time 9110.000       ->  frame   7120 time 9120.000       ->  frame   7130 time 9130.000       ->  frame   7140 time 9140.000       ->  frame   7150 time 9150.000       ->  frame   7160 time 9160.000       ->  frame   7170 time 9170.000       ->  frame   7180 time 9180.000       ->  frame   7190 time 9190.000       ->  frame   7200 time 9200.000       ->  frame   7210 time 9210.000       ->  frame   7220 time 9220.000       ->  frame   7230 time 9230.000       ->  frame   7240 time 9240.000       ->  frame   7250 time 9250.000       ->  frame   7260 time 9260.000       ->  frame   7270 time 9270.000       ->  frame   7280 time 9280.000       ->  frame   7290 time 9290.000       ->  frame   7300 time 9300.000       ->  frame   7310 time 9310.000       ->  frame   7320 time 9320.000       ->  frame   7330 time 9330.000       ->  frame   7340 time 9340.000       ->  frame   7350 time 9350.000       ->  frame   7360 time 9360.000       ->  frame   7370 time 9370.000       ->  frame   7380 time 9380.000       ->  frame   7390 time 9390.000       ->  frame   7400 time 9400.000       ->  frame   7410 time 9410.000       ->  frame   7420 time 9420.000       ->  frame   7430 time 9430.000       ->  frame   7440 time 9440.000       ->  frame   7450 time 9450.000       ->  frame   7460 time 9460.000       ->  frame   7470 time 9470.000       ->  frame   7480 time 9480.000       ->  frame   7490 time 9490.000       ->  frame   7500 time 9500.000       ->  frame   7510 time 9510.000       ->  frame   7520 time 9520.000       ->  frame   7530 time 9530.000       ->  frame   7540 time 9540.000       ->  frame   7550 time 9550.000       ->  frame   7560 time 9560.000       ->  frame   7570 time 9570.000       ->  frame   7580 time 9580.000       ->  frame   7590 time 9590.000       ->  frame   7600 time 9600.000       ->  frame   7610 time 9610.000       ->  frame   7620 time 9620.000       ->  frame   7630 time 9630.000       ->  frame   7640 time 9640.000       ->  frame   7650 time 9650.000       ->  frame   7660 time 9660.000       ->  frame   7670 time 9670.000       ->  frame   7680 time 9680.000       ->  frame   7690 time 9690.000       ->  frame   7700 time 9700.000       ->  frame   7710 time 9710.000       ->  frame   7720 time 9720.000       ->  frame   7730 time 9730.000       ->  frame   7740 time 9740.000       ->  frame   7750 time 9750.000       ->  frame   7760 time 9760.000       ->  frame   7770 time 9770.000       ->  frame   7780 time 9780.000       ->  frame   7790 time 9790.000       ->  frame   7800 time 9800.000       ->  frame   7810 time 9810.000       ->  frame   7820 time 9820.000       ->  frame   7830 time 9830.000       ->  frame   7840 time 9840.000       ->  frame   7850 time 9850.000       ->  frame   7860 time 9860.000       ->  frame   7870 time 9870.000       ->  frame   7880 time 9880.000       ->  frame   7890 time 9890.000       ->  frame   7900 time 9900.000       ->  frame   7910 time 9910.000       ->  frame   7920 time 9920.000       ->  frame   7930 time 9930.000       ->  frame   7940 time 9940.000       ->  frame   7950 time 9950.000       ->  frame   7960 time 9960.000       ->  frame   7970 time 9970.000       ->  frame   7980 time 9980.000       ->  frame   7990 time 9990.000      Reading frame    8000 time 10000.000    ->  frame   8000 time 10000.000       ->  frame   8010 time 10010.000       ->  frame   8020 time 10020.000       ->  frame   8030 time 10030.000       ->  frame   8040 time 10040.000       ->  frame   8050 time 10050.000       ->  frame   8060 time 10060.000       ->  frame   8070 time 10070.000       ->  frame   8080 time 10080.000       ->  frame   8090 time 10090.000       ->  frame   8100 time 10100.000       ->  frame   8110 time 10110.000       ->  frame   8120 time 10120.000       ->  frame   8130 time 10130.000       ->  frame   8140 time 10140.000       ->  frame   8150 time 10150.000       ->  frame   8160 time 10160.000       ->  frame   8170 time 10170.000       ->  frame   8180 time 10180.000       ->  frame   8190 time 10190.000       ->  frame   8200 time 10200.000       ->  frame   8210 time 10210.000       ->  frame   8220 time 10220.000       ->  frame   8230 time 10230.000       ->  frame   8240 time 10240.000       ->  frame   8250 time 10250.000       ->  frame   8260 time 10260.000       ->  frame   8270 time 10270.000       ->  frame   8280 time 10280.000       ->  frame   8290 time 10290.000       ->  frame   8300 time 10300.000       ->  frame   8310 time 10310.000       ->  frame   8320 time 10320.000       ->  frame   8330 time 10330.000       ->  frame   8340 time 10340.000       ->  frame   8350 time 10350.000       ->  frame   8360 time 10360.000       ->  frame   8370 time 10370.000       ->  frame   8380 time 10380.000       ->  frame   8390 time 10390.000       ->  frame   8400 time 10400.000       ->  frame   8410 time 10410.000       ->  frame   8420 time 10420.000       ->  frame   8430 time 10430.000       ->  frame   8440 time 10440.000       ->  frame   8450 time 10450.000       ->  frame   8460 time 10460.000       ->  frame   8470 time 10470.000       ->  frame   8480 time 10480.000       ->  frame   8490 time 10490.000       ->  frame   8500 time 10500.000       ->  frame   8510 time 10510.000       ->  frame   8520 time 10520.000       ->  frame   8530 time 10530.000       ->  frame   8540 time 10540.000       ->  frame   8550 time 10550.000       ->  frame   8560 time 10560.000       ->  frame   8570 time 10570.000       ->  frame   8580 time 10580.000       ->  frame   8590 time 10590.000       ->  frame   8600 time 10600.000       ->  frame   8610 time 10610.000       ->  frame   8620 time 10620.000       ->  frame   8630 time 10630.000       ->  frame   8640 time 10640.000       ->  frame   8650 time 10650.000       ->  frame   8660 time 10660.000       ->  frame   8670 time 10670.000       ->  frame   8680 time 10680.000       ->  frame   8690 time 10690.000       ->  frame   8700 time 10700.000       ->  frame   8710 time 10710.000       ->  frame   8720 time 10720.000       ->  frame   8730 time 10730.000       ->  frame   8740 time 10740.000       ->  frame   8750 time 10750.000       ->  frame   8760 time 10760.000       ->  frame   8770 time 10770.000       ->  frame   8780 time 10780.000       ->  frame   8790 time 10790.000       ->  frame   8800 time 10800.000       ->  frame   8810 time 10810.000       ->  frame   8820 time 10820.000       ->  frame   8830 time 10830.000       ->  frame   8840 time 10840.000       ->  frame   8850 time 10850.000       ->  frame   8860 time 10860.000       ->  frame   8870 time 10870.000       ->  frame   8880 time 10880.000       ->  frame   8890 time 10890.000       ->  frame   8900 time 10900.000       ->  frame   8910 time 10910.000       ->  frame   8920 time 10920.000       ->  frame   8930 time 10930.000       ->  frame   8940 time 10940.000       ->  frame   8950 time 10950.000       ->  frame   8960 time 10960.000       ->  frame   8970 time 10970.000       ->  frame   8980 time 10980.000       ->  frame   8990 time 10990.000      Reading frame    9000 time 11000.000    ->  frame   9000 time 11000.000       ->  frame   9010 time 11010.000       ->  frame   9020 time 11020.000       ->  frame   9030 time 11030.000       ->  frame   9040 time 11040.000       ->  frame   9050 time 11050.000       ->  frame   9060 time 11060.000       ->  frame   9070 time 11070.000       ->  frame   9080 time 11080.000       ->  frame   9090 time 11090.000       ->  frame   9100 time 11100.000       ->  frame   9110 time 11110.000       ->  frame   9120 time 11120.000       ->  frame   9130 time 11130.000       ->  frame   9140 time 11140.000       ->  frame   9150 time 11150.000       ->  frame   9160 time 11160.000       ->  frame   9170 time 11170.000       ->  frame   9180 time 11180.000       ->  frame   9190 time 11190.000       ->  frame   9200 time 11200.000       ->  frame   9210 time 11210.000       ->  frame   9220 time 11220.000       ->  frame   9230 time 11230.000       ->  frame   9240 time 11240.000       ->  frame   9250 time 11250.000       ->  frame   9260 time 11260.000       ->  frame   9270 time 11270.000       ->  frame   9280 time 11280.000       ->  frame   9290 time 11290.000       ->  frame   9300 time 11300.000       ->  frame   9310 time 11310.000       ->  frame   9320 time 11320.000       ->  frame   9330 time 11330.000       ->  frame   9340 time 11340.000       ->  frame   9350 time 11350.000       ->  frame   9360 time 11360.000       ->  frame   9370 time 11370.000       ->  frame   9380 time 11380.000       ->  frame   9390 time 11390.000       ->  frame   9400 time 11400.000       ->  frame   9410 time 11410.000       ->  frame   9420 time 11420.000       ->  frame   9430 time 11430.000       ->  frame   9440 time 11440.000       ->  frame   9450 time 11450.000       ->  frame   9460 time 11460.000       ->  frame   9470 time 11470.000       ->  frame   9480 time 11480.000       ->  frame   9490 time 11490.000       ->  frame   9500 time 11500.000       ->  frame   9510 time 11510.000       ->  frame   9520 time 11520.000       ->  frame   9530 time 11530.000       ->  frame   9540 time 11540.000       ->  frame   9550 time 11550.000       ->  frame   9560 time 11560.000       ->  frame   9570 time 11570.000       ->  frame   9580 time 11580.000       ->  frame   9590 time 11590.000       ->  frame   9600 time 11600.000       ->  frame   9610 time 11610.000       ->  frame   9620 time 11620.000       ->  frame   9630 time 11630.000       ->  frame   9640 time 11640.000       ->  frame   9650 time 11650.000       ->  frame   9660 time 11660.000       ->  frame   9670 time 11670.000       ->  frame   9680 time 11680.000       ->  frame   9690 time 11690.000       ->  frame   9700 time 11700.000       ->  frame   9710 time 11710.000       ->  frame   9720 time 11720.000       ->  frame   9730 time 11730.000       ->  frame   9740 time 11740.000       ->  frame   9750 time 11750.000       ->  frame   9760 time 11760.000       ->  frame   9770 time 11770.000       ->  frame   9780 time 11780.000       ->  frame   9790 time 11790.000       ->  frame   9800 time 11800.000       ->  frame   9810 time 11810.000       ->  frame   9820 time 11820.000       ->  frame   9830 time 11830.000       ->  frame   9840 time 11840.000       ->  frame   9850 time 11850.000       ->  frame   9860 time 11860.000       ->  frame   9870 time 11870.000       ->  frame   9880 time 11880.000       ->  frame   9890 time 11890.000       ->  frame   9900 time 11900.000       ->  frame   9910 time 11910.000       ->  frame   9920 time 11920.000       ->  frame   9930 time 11930.000       ->  frame   9940 time 11940.000       ->  frame   9950 time 11950.000       ->  frame   9960 time 11960.000       ->  frame   9970 time 11970.000       ->  frame   9980 time 11980.000       ->  frame   9990 time 11990.000      Reading frame   10000 time 12000.000    ->  frame  10000 time 12000.000      Last frame      10000 time 12000.000   
+
+
+GROMACS reminds you: "I'm no model lady. A model's just an imitation of the real thing." (Mae West)
+
+                      :-) GROMACS - gmx trjconv, 2016 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul   Magnus Lundborg   Pieter Meulenhoff    Erik Marklund   
+   Teemu Murtola       Szilard Pall       Sander Pronk      Roland Schulz   
+  Alexey Shvetsov     Michael Shirts     Alfons Sijbers     Peter Tieleman  
+  Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2015, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx trjconv, version 2016
+Executable:   /app/gromacs_2016/bin/gmx
+Data prefix:  /app/gromacs_2016
+Working dir:  /home/akchew/scratch/nanoparticle_project/simulations/NP_HYDRO_SI_GNP_DEBUGGING_SPRING/MostlikelynpNVTspr_500-EAM_300.00_K_2_nmDIAM_C11OH_CHARMM36jul2017_Trial_1_likelyindex_1
+Command line:
+  gmx trjconv -dump 0 -pbc mol -center -s sam_prod.tpr -f sam_prod.xtc -n sam_prod-center_pbc_mol.ndx -o sam_prod-center_pbc_mol.gro
+
+Will write gro: Coordinate file in Gromos-87 format
+Reading file sam_prod.tpr, VERSION 2016 (single precision)
+Reading file sam_prod.tpr, VERSION 2016 (single precision)
+Group     0 (         System) has 36406 elements
+Group     1 (           AUNP) has   226 elements
+Group     2 (      non-Water) has  3214 elements
+Select a group: Group     0 (         System) has 36406 elements
+Group     1 (           AUNP) has   226 elements
+Group     2 (      non-Water) has  3214 elements
+Select a group: Reading frame       0 time    0.000   
+Precision of sam_prod.xtc is 0.001 (nm)
+Using output precision of 0.001 (nm)
+
+Back Off! I just backed up sam_prod-center_pbc_mol.gro to ./#sam_prod-center_pbc_mol.gro.2#
+
+Dumping frame at t= 0 ps
+ ->  frame      0 time    0.000      Reading frame       1 time    1.000   
+
+GROMACS reminds you: "I never see what has been done; I only see what remains to be done." (Marie Curie)
+
+                    :-) GROMACS - gmx convert-tpr, 2016 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul   Magnus Lundborg   Pieter Meulenhoff    Erik Marklund   
+   Teemu Murtola       Szilard Pall       Sander Pronk      Roland Schulz   
+  Alexey Shvetsov     Michael Shirts     Alfons Sijbers     Peter Tieleman  
+  Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2015, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx convert-tpr, version 2016
+Executable:   /app/gromacs_2016/bin/gmx
+Data prefix:  /app/gromacs_2016
+Working dir:  /home/akchew/scratch/nanoparticle_project/simulations/NP_HYDRO_SI_GNP_DEBUGGING_SPRING/MostlikelynpNVTspr_500-EAM_300.00_K_2_nmDIAM_C11OH_CHARMM36jul2017_Trial_1_likelyindex_1
+Command line:
+  gmx convert-tpr -s sam_prod.tpr -n sam_prod-center_pbc_mol.ndx -o sam_prod-center_pbc_mol.tpr
+
+Reading toplogy and stuff from sam_prod.tpr
+Reading file sam_prod.tpr, VERSION 2016 (single precision)
+Group     0 (         System) has 36406 elements
+Group     1 (           AUNP) has   226 elements
+Group     2 (      non-Water) has  3214 elements
+Select a group: Will write subset non-Water of original tpx containing 3214 atoms
+Reduced block      cgs from  36406 to   3214 index-,  36406 to   3214 a-entries
+Reduced block     mols from  11065 to      1 index-,  36406 to   3214 a-entries
+Reduced block    excls from  36406 to   3214 index-, 135160 to  35584 a-entries
+Reduced ilist HARMONIC from   1206 to   1206 entries
+Reduced ilist UREY_BRADLEY from   5561 to   5561 entries
+Reduced ilist    PDIHS from   9877 to   9877 entries
+Reduced ilist     LJ14 from   7719 to   7719 entries
+Reduced ilist   POSRES from   1305 to   1305 entries
+Reduced ilist   CONSTR from   2905 to   2905 entries
+Reduced ilist   SETTLE from  11064 to      0 entries
+Writing statusfile with starting step          0 and length    6000000 steps...
+                                 time      0.000 and length  12000.000 ps
+
+Back Off! I just backed up sam_prod-center_pbc_mol.tpr to ./#sam_prod-center_pbc_mol.tpr.2#
+
+GROMACS reminds you: "Nurture Another Mind, Before Yours Expires" (Arrested Development)
+
+                       :-) GROMACS - gmx grompp, 2016 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul   Magnus Lundborg   Pieter Meulenhoff    Erik Marklund   
+   Teemu Murtola       Szilard Pall       Sander Pronk      Roland Schulz   
+  Alexey Shvetsov     Michael Shirts     Alfons Sijbers     Peter Tieleman  
+  Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2015, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx grompp, version 2016
+Executable:   /app/gromacs_2016/bin/gmx
+Data prefix:  /app/gromacs_2016
+Working dir:  /home/akchew/scratch/nanoparticle_project/simulations/NP_HYDRO_SI_GNP_DEBUGGING_SPRING/MostlikelynpNVTspr_500-EAM_300.00_K_2_nmDIAM_C11OH_CHARMM36jul2017_Trial_1_likelyindex_1
+Command line:
+  gmx grompp -f nvt_double_prod_gmx5_charmm36_frozen_gold.mdp -n sam_prod-center_pbc_mol.ndx -c sam_prod.gro -p rmsf.top -o rmsf.tpr
+
+Ignoring obsolete mdp entry 'title'
+Replacing old mdp entry 'nstxtcout' by 'nstxout-compressed'
+
+Back Off! I just backed up mdout.mdp to ./#mdout.mdp.5#
+Setting the LD random seed to -1858243173
+Generated 98761 of the 98790 non-bonded parameter combinations
+Generating 1-4 interactions: fudge = 1
+Generated 65379 of the 98790 1-4 parameter combinations
+Excluding 3 bonded neighbours molecule type 'sam'
+Excluding 2 bonded neighbours molecule type 'SOL'
+Removing all charge groups because cutoff-scheme=Verlet
+Number of degrees of freedom in T-Coupling group System is 73118.00
+Estimate for the relative computational load of the PME mesh part: 0.17
+
+Back Off! I just backed up rmsf.tpr to ./#rmsf.tpr.2#
+
+GROMACS reminds you: "Encountered Subspace Anomaly" (Star Trek)
+
+                      :-) GROMACS - gmx make_ndx, 2016 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul   Magnus Lundborg   Pieter Meulenhoff    Erik Marklund   
+   Teemu Murtola       Szilard Pall       Sander Pronk      Roland Schulz   
+  Alexey Shvetsov     Michael Shirts     Alfons Sijbers     Peter Tieleman  
+  Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2015, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx make_ndx, version 2016
+Executable:   /app/gromacs_2016/bin/gmx
+Data prefix:  /app/gromacs_2016
+Working dir:  /home/akchew/scratch/nanoparticle_project/simulations/NP_HYDRO_SI_GNP_DEBUGGING_SPRING/MostlikelynpNVTspr_500-EAM_300.00_K_2_nmDIAM_C11OH_CHARMM36jul2017_Trial_1_likelyindex_1
+Command line:
+  gmx make_ndx -f rmsf.tpr -o rmsf.ndx
+
+
+Reading structure file
+Reading file rmsf.tpr, VERSION 2016 (single precision)
+Reading file rmsf.tpr, VERSION 2016 (single precision)
+
+Back Off! I just backed up rmsf.ndx to ./#rmsf.ndx.2#
+
+GROMACS reminds you: "Carbohydrates is all they groove" (Frank Zappa)
+
+                        :-) GROMACS - gmx rmsf, 2016 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul   Magnus Lundborg   Pieter Meulenhoff    Erik Marklund   
+   Teemu Murtola       Szilard Pall       Sander Pronk      Roland Schulz   
+  Alexey Shvetsov     Michael Shirts     Alfons Sijbers     Peter Tieleman  
+  Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2015, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx rmsf, version 2016
+Executable:   /app/gromacs_2016/bin/gmx
+Data prefix:  /app/gromacs_2016
+Working dir:  /home/akchew/scratch/nanoparticle_project/simulations/NP_HYDRO_SI_GNP_DEBUGGING_SPRING/MostlikelynpNVTspr_500-EAM_300.00_K_2_nmDIAM_C11OH_CHARMM36jul2017_Trial_1_likelyindex_1
+Command line:
+  gmx rmsf -s rmsf.tpr -f sam_prod-center_pbc_mol.xtc -n rmsf.ndx -ox rmsf.pdb -o rmsf_per_atom.xvg
+
+Reading file rmsf.tpr, VERSION 2016 (single precision)
+Reading file rmsf.tpr, VERSION 2016 (single precision)
+Select group(s) for root mean square calculation
+Group     0 (         LIGAND) has  2988 elements
+There is one group in the index
+Reading frame       0 time 2000.000   Reading frame       1 time 2001.000   Reading frame       2 time 2002.000   Reading frame       3 time 2003.000   Reading frame       4 time 2004.000   Reading frame       5 time 2005.000   Reading frame       6 time 2006.000   Reading frame       7 time 2007.000   Reading frame       8 time 2008.000   Reading frame       9 time 2009.000   Reading frame      10 time 2010.000   Reading frame      11 time 2011.000   Reading frame      12 time 2012.000   Reading frame      13 time 2013.000   Reading frame      14 time 2014.000   Reading frame      15 time 2015.000   Reading frame      16 time 2016.000   Reading frame      17 time 2017.000   Reading frame      18 time 2018.000   Reading frame      19 time 2019.000   Reading frame      20 time 2020.000   Reading frame      30 time 2030.000   Reading frame      40 time 2040.000   Reading frame      50 time 2050.000   Reading frame      60 time 2060.000   Reading frame      70 time 2070.000   Reading frame      80 time 2080.000   Reading frame      90 time 2090.000   Reading frame     100 time 2100.000   Reading frame     110 time 2110.000   Reading frame     120 time 2120.000   Reading frame     130 time 2130.000   Reading frame     140 time 2140.000   Reading frame     150 time 2150.000   Reading frame     160 time 2160.000   Reading frame     170 time 2170.000   Reading frame     180 time 2180.000   Reading frame     190 time 2190.000   Reading frame     200 time 2200.000   Reading frame     300 time 2300.000   Reading frame     400 time 2400.000   Reading frame     500 time 2500.000   Reading frame     600 time 2600.000   Reading frame     700 time 2700.000   Reading frame     800 time 2800.000   Reading frame     900 time 2900.000   Reading frame    1000 time 3000.000   Reading frame    1100 time 3100.000   Reading frame    1200 time 3200.000   Reading frame    1300 time 3300.000   Reading frame    1400 time 3400.000   Reading frame    1500 time 3500.000   Reading frame    1600 time 3600.000   Reading frame    1700 time 3700.000   Reading frame    1800 time 3800.000   Reading frame    1900 time 3900.000   Reading frame    2000 time 4000.000   Reading frame    3000 time 5000.000   Reading frame    4000 time 6000.000   Reading frame    5000 time 7000.000   Reading frame    6000 time 8000.000   Reading frame    7000 time 9000.000   Reading frame    8000 time 10000.000   Reading frame    9000 time 11000.000   Reading frame   10000 time 12000.000   Last frame      10000 time 12000.000   
+
+Back Off! I just backed up rmsf_per_atom.xvg to ./#rmsf_per_atom.xvg.2#
+
+Back Off! I just backed up rmsf.pdb to ./#rmsf.pdb.2#
+
+GROMACS reminds you: "I Could Take You Home and Abuse You" (Magnapop)
+
+                        :-) GROMACS - gmx rms, 2016 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul   Magnus Lundborg   Pieter Meulenhoff    Erik Marklund   
+   Teemu Murtola       Szilard Pall       Sander Pronk      Roland Schulz   
+  Alexey Shvetsov     Michael Shirts     Alfons Sijbers     Peter Tieleman  
+  Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2015, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx rms, version 2016
+Executable:   /app/gromacs_2016/bin/gmx
+Data prefix:  /app/gromacs_2016
+Working dir:  /home/akchew/scratch/nanoparticle_project/simulations/NP_HYDRO_SI_GNP_DEBUGGING_SPRING/MostlikelynpNVTspr_500-EAM_300.00_K_2_nmDIAM_C11OH_CHARMM36jul2017_Trial_1_likelyindex_1
+Command line:
+  gmx rms -s rmsf.pdb -f sam_prod-center_pbc_mol.xtc -n rmsf.ndx -o rmsf_per_time.xvg
+
+Select group for least squares fit
+Group     0 (         LIGAND) has  2988 elements
+There is one group in the index
+Select group for RMSD calculation
+Group     0 (         LIGAND) has  2988 elements
+There is one group in the index
+
+WARNING: If there are molecules in the input trajectory file
+         that are broken across periodic boundaries, they
+         cannot be made whole (or treated as whole) without
+         you providing a run input file.
+
+Reading frame       0 time 2000.000   
+WARNING: topology has 2988 atoms, whereas trajectory has 3214
+Reading frame       1 time 2001.000   Reading frame       2 time 2002.000   Reading frame       3 time 2003.000   Reading frame       4 time 2004.000   Reading frame       5 time 2005.000   Reading frame       6 time 2006.000   Reading frame       7 time 2007.000   Reading frame       8 time 2008.000   Reading frame       9 time 2009.000   Reading frame      10 time 2010.000   Reading frame      11 time 2011.000   Reading frame      12 time 2012.000   Reading frame      13 time 2013.000   Reading frame      14 time 2014.000   Reading frame      15 time 2015.000   Reading frame      16 time 2016.000   Reading frame      17 time 2017.000   Reading frame      18 time 2018.000   Reading frame      19 time 2019.000   Reading frame      20 time 2020.000   Reading frame      30 time 2030.000   Reading frame      40 time 2040.000   Reading frame      50 time 2050.000   Reading frame      60 time 2060.000   Reading frame      70 time 2070.000   Reading frame      80 time 2080.000   Reading frame      90 time 2090.000   Reading frame     100 time 2100.000   Reading frame     110 time 2110.000   Reading frame     120 time 2120.000   Reading frame     130 time 2130.000   Reading frame     140 time 2140.000   Reading frame     150 time 2150.000   Reading frame     160 time 2160.000   Reading frame     170 time 2170.000   Reading frame     180 time 2180.000   Reading frame     190 time 2190.000   Reading frame     200 time 2200.000   Reading frame     300 time 2300.000   Reading frame     400 time 2400.000   Reading frame     500 time 2500.000   Reading frame     600 time 2600.000   Reading frame     700 time 2700.000   Reading frame     800 time 2800.000   Reading frame     900 time 2900.000   Reading frame    1000 time 3000.000   Reading frame    1100 time 3100.000   Reading frame    1200 time 3200.000   Reading frame    1300 time 3300.000   Reading frame    1400 time 3400.000   Reading frame    1500 time 3500.000   Reading frame    1600 time 3600.000   Reading frame    1700 time 3700.000   Reading frame    1800 time 3800.000   Reading frame    1900 time 3900.000   Reading frame    2000 time 4000.000   Reading frame    3000 time 5000.000   Reading frame    4000 time 6000.000   Reading frame    5000 time 7000.000   Reading frame    6000 time 8000.000   Reading frame    7000 time 9000.000   Reading frame    8000 time 10000.000   Reading frame    9000 time 11000.000   Reading frame   10000 time 12000.000   Last frame      10000 time 12000.000   
+
+Back Off! I just backed up rmsf_per_time.xvg to ./#rmsf_per_time.xvg.2#
+
+GROMACS reminds you: "Encountered Subspace Anomaly" (Star Trek)
+
+READING FILE FROM: /home/akchew/scratch/nanoparticle_project/simulations/NP_HYDRO_SI_GNP_DEBUGGING_SPRING/MostlikelynpNVTspr_500-EAM_300.00_K_2_nmDIAM_C11OH_CHARMM36jul2017_Trial_1_likelyindex_1/rmsf_per_atom.xvg
+Storing pickle at: /home/akchew/scratch/nanoparticle_project/simulations/NP_HYDRO_SI_GNP_DEBUGGING_SPRING/MostlikelynpNVTspr_500-EAM_300.00_K_2_nmDIAM_C11OH_CHARMM36jul2017_Trial_1_likelyindex_1/analysis/main_compute_gmx_rmsf/results.pickle
+                      :-) GROMACS - gmx make_ndx, 2016 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul   Magnus Lundborg   Pieter Meulenhoff    Erik Marklund   
+   Teemu Murtola       Szilard Pall       Sander Pronk      Roland Schulz   
+  Alexey Shvetsov     Michael Shirts     Alfons Sijbers     Peter Tieleman  
+  Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2015, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx make_ndx, version 2016
+Executable:   /app/gromacs_2016/bin/gmx
+Data prefix:  /app/gromacs_2016
+Working dir:  /home/akchew/scratch/nanoparticle_project/simulations/NP_HYDRO_SI_GNP_DEBUGGING_SPRING/MostlikelynpNVTspr_500-EAM_300.00_K_2_nmDIAM_C11OH_CHARMM36jul2017_Trial_1_likelyindex_1
+Command line:
+  gmx make_ndx -f sam_prod.tpr -o sam_prod-water_only_heavy_atoms.ndx
+
+
+Reading structure file
+Reading file sam_prod.tpr, VERSION 2016 (single precision)
+Reading file sam_prod.tpr, VERSION 2016 (single precision)
+
+Back Off! I just backed up sam_prod-water_only_heavy_atoms.ndx to ./#sam_prod-water_only_heavy_atoms.ndx.1#
+
+GROMACS reminds you: "The Universe is Somewhere In Here" (J.G.E.M. Fraaije)
+
+Starting trajectory in 2000.000 ps
+Ending trajectory in 12000.000 ps
+                      :-) GROMACS - gmx trjconv, 2016 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul   Magnus Lundborg   Pieter Meulenhoff    Erik Marklund   
+   Teemu Murtola       Szilard Pall       Sander Pronk      Roland Schulz   
+  Alexey Shvetsov     Michael Shirts     Alfons Sijbers     Peter Tieleman  
+  Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2015, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx trjconv, version 2016
+Executable:   /app/gromacs_2016/bin/gmx
+Data prefix:  /app/gromacs_2016
+Working dir:  /home/akchew/scratch/nanoparticle_project/simulations/NP_HYDRO_SI_GNP_DEBUGGING_SPRING/MostlikelynpNVTspr_500-EAM_300.00_K_2_nmDIAM_C11OH_CHARMM36jul2017_Trial_1_likelyindex_1
+Command line:
+  gmx trjconv -pbc mol -center -b 2000 -e 12000 -s sam_prod.tpr -f sam_prod.xtc -n sam_prod-water_only_heavy_atoms.ndx -o sam_prod-water_only_heavy_atoms.xtc
+
+Will write xtc: Compressed trajectory (portable xdr format): xtc
+Reading file sam_prod.tpr, VERSION 2016 (single precision)
+Reading file sam_prod.tpr, VERSION 2016 (single precision)
+Group     0 (water_heavy_atoms) has 11064 elements
+Group     1 (           AUNP) has   226 elements
+Select a group: Group     0 (water_heavy_atoms) has 11064 elements
+Group     1 (           AUNP) has   226 elements
+Select a group: Reading frame       0 time    0.000   Reading frame       0 time 2000.000   
+Precision of sam_prod.xtc is 0.001 (nm)
+Using output precision of 0.001 (nm)
+
+Back Off! I just backed up sam_prod-water_only_heavy_atoms.xtc to ./#sam_prod-water_only_heavy_atoms.xtc.1#
+ ->  frame      0 time 2000.000      Reading frame       1 time 2001.000    ->  frame      1 time 2001.000      Reading frame       2 time 2002.000    ->  frame      2 time 2002.000      Reading frame       3 time 2003.000    ->  frame      3 time 2003.000      Reading frame       4 time 2004.000    ->  frame      4 time 2004.000      Reading frame       5 time 2005.000    ->  frame      5 time 2005.000      Reading frame       6 time 2006.000    ->  frame      6 time 2006.000      Reading frame       7 time 2007.000    ->  frame      7 time 2007.000      Reading frame       8 time 2008.000    ->  frame      8 time 2008.000      Reading frame       9 time 2009.000    ->  frame      9 time 2009.000      Reading frame      10 time 2010.000    ->  frame     10 time 2010.000      Reading frame      11 time 2011.000   Reading frame      12 time 2012.000   Reading frame      13 time 2013.000   Reading frame      14 time 2014.000   Reading frame      15 time 2015.000   Reading frame      16 time 2016.000   Reading frame      17 time 2017.000   Reading frame      18 time 2018.000   Reading frame      19 time 2019.000   Reading frame      20 time 2020.000    ->  frame     20 time 2020.000      Reading frame      30 time 2030.000    ->  frame     30 time 2030.000      Reading frame      40 time 2040.000    ->  frame     40 time 2040.000      Reading frame      50 time 2050.000    ->  frame     50 time 2050.000      Reading frame      60 time 2060.000    ->  frame     60 time 2060.000      Reading frame      70 time 2070.000    ->  frame     70 time 2070.000      Reading frame      80 time 2080.000    ->  frame     80 time 2080.000      Reading frame      90 time 2090.000    ->  frame     90 time 2090.000      Reading frame     100 time 2100.000    ->  frame    100 time 2100.000      Reading frame     110 time 2110.000    ->  frame    110 time 2110.000      Reading frame     120 time 2120.000    ->  frame    120 time 2120.000      Reading frame     130 time 2130.000    ->  frame    130 time 2130.000      Reading frame     140 time 2140.000    ->  frame    140 time 2140.000      Reading frame     150 time 2150.000    ->  frame    150 time 2150.000      Reading frame     160 time 2160.000    ->  frame    160 time 2160.000      Reading frame     170 time 2170.000    ->  frame    170 time 2170.000      Reading frame     180 time 2180.000    ->  frame    180 time 2180.000      Reading frame     190 time 2190.000    ->  frame    190 time 2190.000      Reading frame     200 time 2200.000    ->  frame    200 time 2200.000       ->  frame    210 time 2210.000       ->  frame    220 time 2220.000       ->  frame    230 time 2230.000       ->  frame    240 time 2240.000       ->  frame    250 time 2250.000       ->  frame    260 time 2260.000       ->  frame    270 time 2270.000       ->  frame    280 time 2280.000       ->  frame    290 time 2290.000      Reading frame     300 time 2300.000    ->  frame    300 time 2300.000       ->  frame    310 time 2310.000       ->  frame    320 time 2320.000       ->  frame    330 time 2330.000       ->  frame    340 time 2340.000       ->  frame    350 time 2350.000       ->  frame    360 time 2360.000       ->  frame    370 time 2370.000       ->  frame    380 time 2380.000       ->  frame    390 time 2390.000      Reading frame     400 time 2400.000    ->  frame    400 time 2400.000       ->  frame    410 time 2410.000       ->  frame    420 time 2420.000       ->  frame    430 time 2430.000       ->  frame    440 time 2440.000       ->  frame    450 time 2450.000       ->  frame    460 time 2460.000       ->  frame    470 time 2470.000       ->  frame    480 time 2480.000       ->  frame    490 time 2490.000      Reading frame     500 time 2500.000    ->  frame    500 time 2500.000       ->  frame    510 time 2510.000       ->  frame    520 time 2520.000       ->  frame    530 time 2530.000       ->  frame    540 time 2540.000       ->  frame    550 time 2550.000       ->  frame    560 time 2560.000       ->  frame    570 time 2570.000       ->  frame    580 time 2580.000       ->  frame    590 time 2590.000      Reading frame     600 time 2600.000    ->  frame    600 time 2600.000       ->  frame    610 time 2610.000       ->  frame    620 time 2620.000       ->  frame    630 time 2630.000       ->  frame    640 time 2640.000       ->  frame    650 time 2650.000       ->  frame    660 time 2660.000       ->  frame    670 time 2670.000       ->  frame    680 time 2680.000       ->  frame    690 time 2690.000      Reading frame     700 time 2700.000    ->  frame    700 time 2700.000       ->  frame    710 time 2710.000       ->  frame    720 time 2720.000       ->  frame    730 time 2730.000       ->  frame    740 time 2740.000       ->  frame    750 time 2750.000       ->  frame    760 time 2760.000       ->  frame    770 time 2770.000       ->  frame    780 time 2780.000       ->  frame    790 time 2790.000      Reading frame     800 time 2800.000    ->  frame    800 time 2800.000       ->  frame    810 time 2810.000       ->  frame    820 time 2820.000       ->  frame    830 time 2830.000       ->  frame    840 time 2840.000       ->  frame    850 time 2850.000       ->  frame    860 time 2860.000       ->  frame    870 time 2870.000       ->  frame    880 time 2880.000       ->  frame    890 time 2890.000      Reading frame     900 time 2900.000    ->  frame    900 time 2900.000       ->  frame    910 time 2910.000       ->  frame    920 time 2920.000       ->  frame    930 time 2930.000       ->  frame    940 time 2940.000       ->  frame    950 time 2950.000       ->  frame    960 time 2960.000       ->  frame    970 time 2970.000       ->  frame    980 time 2980.000       ->  frame    990 time 2990.000      Reading frame    1000 time 3000.000    ->  frame   1000 time 3000.000       ->  frame   1010 time 3010.000       ->  frame   1020 time 3020.000       ->  frame   1030 time 3030.000       ->  frame   1040 time 3040.000       ->  frame   1050 time 3050.000       ->  frame   1060 time 3060.000       ->  frame   1070 time 3070.000       ->  frame   1080 time 3080.000       ->  frame   1090 time 3090.000      Reading frame    1100 time 3100.000    ->  frame   1100 time 3100.000       ->  frame   1110 time 3110.000       ->  frame   1120 time 3120.000       ->  frame   1130 time 3130.000       ->  frame   1140 time 3140.000       ->  frame   1150 time 3150.000       ->  frame   1160 time 3160.000       ->  frame   1170 time 3170.000       ->  frame   1180 time 3180.000       ->  frame   1190 time 3190.000      Reading frame    1200 time 3200.000    ->  frame   1200 time 3200.000       ->  frame   1210 time 3210.000       ->  frame   1220 time 3220.000       ->  frame   1230 time 3230.000       ->  frame   1240 time 3240.000       ->  frame   1250 time 3250.000       ->  frame   1260 time 3260.000       ->  frame   1270 time 3270.000       ->  frame   1280 time 3280.000       ->  frame   1290 time 3290.000      Reading frame    1300 time 3300.000    ->  frame   1300 time 3300.000       ->  frame   1310 time 3310.000       ->  frame   1320 time 3320.000       ->  frame   1330 time 3330.000       ->  frame   1340 time 3340.000       ->  frame   1350 time 3350.000       ->  frame   1360 time 3360.000       ->  frame   1370 time 3370.000       ->  frame   1380 time 3380.000       ->  frame   1390 time 3390.000      Reading frame    1400 time 3400.000    ->  frame   1400 time 3400.000       ->  frame   1410 time 3410.000       ->  frame   1420 time 3420.000       ->  frame   1430 time 3430.000       ->  frame   1440 time 3440.000       ->  frame   1450 time 3450.000       ->  frame   1460 time 3460.000       ->  frame   1470 time 3470.000       ->  frame   1480 time 3480.000       ->  frame   1490 time 3490.000      Reading frame    1500 time 3500.000    ->  frame   1500 time 3500.000       ->  frame   1510 time 3510.000       ->  frame   1520 time 3520.000       ->  frame   1530 time 3530.000       ->  frame   1540 time 3540.000       ->  frame   1550 time 3550.000       ->  frame   1560 time 3560.000       ->  frame   1570 time 3570.000       ->  frame   1580 time 3580.000       ->  frame   1590 time 3590.000      Reading frame    1600 time 3600.000    ->  frame   1600 time 3600.000       ->  frame   1610 time 3610.000       ->  frame   1620 time 3620.000       ->  frame   1630 time 3630.000       ->  frame   1640 time 3640.000       ->  frame   1650 time 3650.000       ->  frame   1660 time 3660.000       ->  frame   1670 time 3670.000       ->  frame   1680 time 3680.000       ->  frame   1690 time 3690.000      Reading frame    1700 time 3700.000    ->  frame   1700 time 3700.000       ->  frame   1710 time 3710.000       ->  frame   1720 time 3720.000       ->  frame   1730 time 3730.000       ->  frame   1740 time 3740.000       ->  frame   1750 time 3750.000       ->  frame   1760 time 3760.000       ->  frame   1770 time 3770.000       ->  frame   1780 time 3780.000       ->  frame   1790 time 3790.000      Reading frame    1800 time 3800.000    ->  frame   1800 time 3800.000       ->  frame   1810 time 3810.000       ->  frame   1820 time 3820.000       ->  frame   1830 time 3830.000       ->  frame   1840 time 3840.000       ->  frame   1850 time 3850.000       ->  frame   1860 time 3860.000       ->  frame   1870 time 3870.000       ->  frame   1880 time 3880.000       ->  frame   1890 time 3890.000      Reading frame    1900 time 3900.000    ->  frame   1900 time 3900.000       ->  frame   1910 time 3910.000       ->  frame   1920 time 3920.000       ->  frame   1930 time 3930.000       ->  frame   1940 time 3940.000       ->  frame   1950 time 3950.000       ->  frame   1960 time 3960.000       ->  frame   1970 time 3970.000       ->  frame   1980 time 3980.000       ->  frame   1990 time 3990.000      Reading frame    2000 time 4000.000    ->  frame   2000 time 4000.000       ->  frame   2010 time 4010.000       ->  frame   2020 time 4020.000       ->  frame   2030 time 4030.000       ->  frame   2040 time 4040.000       ->  frame   2050 time 4050.000       ->  frame   2060 time 4060.000       ->  frame   2070 time 4070.000       ->  frame   2080 time 4080.000       ->  frame   2090 time 4090.000       ->  frame   2100 time 4100.000       ->  frame   2110 time 4110.000       ->  frame   2120 time 4120.000       ->  frame   2130 time 4130.000       ->  frame   2140 time 4140.000       ->  frame   2150 time 4150.000       ->  frame   2160 time 4160.000       ->  frame   2170 time 4170.000       ->  frame   2180 time 4180.000       ->  frame   2190 time 4190.000       ->  frame   2200 time 4200.000       ->  frame   2210 time 4210.000       ->  frame   2220 time 4220.000       ->  frame   2230 time 4230.000       ->  frame   2240 time 4240.000       ->  frame   2250 time 4250.000       ->  frame   2260 time 4260.000       ->  frame   2270 time 4270.000       ->  frame   2280 time 4280.000       ->  frame   2290 time 4290.000       ->  frame   2300 time 4300.000       ->  frame   2310 time 4310.000       ->  frame   2320 time 4320.000       ->  frame   2330 time 4330.000       ->  frame   2340 time 4340.000       ->  frame   2350 time 4350.000       ->  frame   2360 time 4360.000       ->  frame   2370 time 4370.000       ->  frame   2380 time 4380.000       ->  frame   2390 time 4390.000       ->  frame   2400 time 4400.000       ->  frame   2410 time 4410.000       ->  frame   2420 time 4420.000       ->  frame   2430 time 4430.000       ->  frame   2440 time 4440.000       ->  frame   2450 time 4450.000       ->  frame   2460 time 4460.000       ->  frame   2470 time 4470.000       ->  frame   2480 time 4480.000       ->  frame   2490 time 4490.000       ->  frame   2500 time 4500.000       ->  frame   2510 time 4510.000       ->  frame   2520 time 4520.000       ->  frame   2530 time 4530.000       ->  frame   2540 time 4540.000       ->  frame   2550 time 4550.000       ->  frame   2560 time 4560.000       ->  frame   2570 time 4570.000       ->  frame   2580 time 4580.000       ->  frame   2590 time 4590.000       ->  frame   2600 time 4600.000       ->  frame   2610 time 4610.000       ->  frame   2620 time 4620.000       ->  frame   2630 time 4630.000       ->  frame   2640 time 4640.000       ->  frame   2650 time 4650.000       ->  frame   2660 time 4660.000       ->  frame   2670 time 4670.000       ->  frame   2680 time 4680.000       ->  frame   2690 time 4690.000       ->  frame   2700 time 4700.000       ->  frame   2710 time 4710.000       ->  frame   2720 time 4720.000       ->  frame   2730 time 4730.000       ->  frame   2740 time 4740.000       ->  frame   2750 time 4750.000       ->  frame   2760 time 4760.000       ->  frame   2770 time 4770.000       ->  frame   2780 time 4780.000       ->  frame   2790 time 4790.000       ->  frame   2800 time 4800.000       ->  frame   2810 time 4810.000       ->  frame   2820 time 4820.000       ->  frame   2830 time 4830.000       ->  frame   2840 time 4840.000       ->  frame   2850 time 4850.000       ->  frame   2860 time 4860.000       ->  frame   2870 time 4870.000       ->  frame   2880 time 4880.000       ->  frame   2890 time 4890.000       ->  frame   2900 time 4900.000       ->  frame   2910 time 4910.000       ->  frame   2920 time 4920.000       ->  frame   2930 time 4930.000       ->  frame   2940 time 4940.000       ->  frame   2950 time 4950.000       ->  frame   2960 time 4960.000       ->  frame   2970 time 4970.000       ->  frame   2980 time 4980.000       ->  frame   2990 time 4990.000      Reading frame    3000 time 5000.000    ->  frame   3000 time 5000.000       ->  frame   3010 time 5010.000       ->  frame   3020 time 5020.000       ->  frame   3030 time 5030.000       ->  frame   3040 time 5040.000       ->  frame   3050 time 5050.000       ->  frame   3060 time 5060.000       ->  frame   3070 time 5070.000       ->  frame   3080 time 5080.000       ->  frame   3090 time 5090.000       ->  frame   3100 time 5100.000       ->  frame   3110 time 5110.000       ->  frame   3120 time 5120.000       ->  frame   3130 time 5130.000       ->  frame   3140 time 5140.000       ->  frame   3150 time 5150.000       ->  frame   3160 time 5160.000       ->  frame   3170 time 5170.000       ->  frame   3180 time 5180.000       ->  frame   3190 time 5190.000       ->  frame   3200 time 5200.000       ->  frame   3210 time 5210.000       ->  frame   3220 time 5220.000       ->  frame   3230 time 5230.000       ->  frame   3240 time 5240.000       ->  frame   3250 time 5250.000       ->  frame   3260 time 5260.000       ->  frame   3270 time 5270.000       ->  frame   3280 time 5280.000       ->  frame   3290 time 5290.000       ->  frame   3300 time 5300.000       ->  frame   3310 time 5310.000       ->  frame   3320 time 5320.000       ->  frame   3330 time 5330.000       ->  frame   3340 time 5340.000       ->  frame   3350 time 5350.000       ->  frame   3360 time 5360.000       ->  frame   3370 time 5370.000       ->  frame   3380 time 5380.000       ->  frame   3390 time 5390.000       ->  frame   3400 time 5400.000       ->  frame   3410 time 5410.000       ->  frame   3420 time 5420.000       ->  frame   3430 time 5430.000       ->  frame   3440 time 5440.000       ->  frame   3450 time 5450.000       ->  frame   3460 time 5460.000       ->  frame   3470 time 5470.000       ->  frame   3480 time 5480.000       ->  frame   3490 time 5490.000       ->  frame   3500 time 5500.000       ->  frame   3510 time 5510.000       ->  frame   3520 time 5520.000       ->  frame   3530 time 5530.000       ->  frame   3540 time 5540.000       ->  frame   3550 time 5550.000       ->  frame   3560 time 5560.000       ->  frame   3570 time 5570.000       ->  frame   3580 time 5580.000       ->  frame   3590 time 5590.000       ->  frame   3600 time 5600.000       ->  frame   3610 time 5610.000       ->  frame   3620 time 5620.000       ->  frame   3630 time 5630.000       ->  frame   3640 time 5640.000       ->  frame   3650 time 5650.000       ->  frame   3660 time 5660.000       ->  frame   3670 time 5670.000       ->  frame   3680 time 5680.000       ->  frame   3690 time 5690.000       ->  frame   3700 time 5700.000       ->  frame   3710 time 5710.000       ->  frame   3720 time 5720.000       ->  frame   3730 time 5730.000       ->  frame   3740 time 5740.000       ->  frame   3750 time 5750.000       ->  frame   3760 time 5760.000       ->  frame   3770 time 5770.000       ->  frame   3780 time 5780.000       ->  frame   3790 time 5790.000       ->  frame   3800 time 5800.000       ->  frame   3810 time 5810.000       ->  frame   3820 time 5820.000       ->  frame   3830 time 5830.000       ->  frame   3840 time 5840.000       ->  frame   3850 time 5850.000       ->  frame   3860 time 5860.000       ->  frame   3870 time 5870.000       ->  frame   3880 time 5880.000       ->  frame   3890 time 5890.000       ->  frame   3900 time 5900.000       ->  frame   3910 time 5910.000       ->  frame   3920 time 5920.000       ->  frame   3930 time 5930.000       ->  frame   3940 time 5940.000       ->  frame   3950 time 5950.000       ->  frame   3960 time 5960.000       ->  frame   3970 time 5970.000       ->  frame   3980 time 5980.000       ->  frame   3990 time 5990.000      Reading frame    4000 time 6000.000    ->  frame   4000 time 6000.000       ->  frame   4010 time 6010.000       ->  frame   4020 time 6020.000       ->  frame   4030 time 6030.000       ->  frame   4040 time 6040.000       ->  frame   4050 time 6050.000       ->  frame   4060 time 6060.000       ->  frame   4070 time 6070.000       ->  frame   4080 time 6080.000       ->  frame   4090 time 6090.000       ->  frame   4100 time 6100.000       ->  frame   4110 time 6110.000       ->  frame   4120 time 6120.000       ->  frame   4130 time 6130.000       ->  frame   4140 time 6140.000       ->  frame   4150 time 6150.000       ->  frame   4160 time 6160.000       ->  frame   4170 time 6170.000       ->  frame   4180 time 6180.000       ->  frame   4190 time 6190.000       ->  frame   4200 time 6200.000       ->  frame   4210 time 6210.000       ->  frame   4220 time 6220.000       ->  frame   4230 time 6230.000       ->  frame   4240 time 6240.000       ->  frame   4250 time 6250.000       ->  frame   4260 time 6260.000       ->  frame   4270 time 6270.000       ->  frame   4280 time 6280.000       ->  frame   4290 time 6290.000       ->  frame   4300 time 6300.000       ->  frame   4310 time 6310.000       ->  frame   4320 time 6320.000       ->  frame   4330 time 6330.000       ->  frame   4340 time 6340.000       ->  frame   4350 time 6350.000       ->  frame   4360 time 6360.000       ->  frame   4370 time 6370.000       ->  frame   4380 time 6380.000       ->  frame   4390 time 6390.000       ->  frame   4400 time 6400.000       ->  frame   4410 time 6410.000       ->  frame   4420 time 6420.000       ->  frame   4430 time 6430.000       ->  frame   4440 time 6440.000       ->  frame   4450 time 6450.000       ->  frame   4460 time 6460.000       ->  frame   4470 time 6470.000       ->  frame   4480 time 6480.000       ->  frame   4490 time 6490.000       ->  frame   4500 time 6500.000       ->  frame   4510 time 6510.000       ->  frame   4520 time 6520.000       ->  frame   4530 time 6530.000       ->  frame   4540 time 6540.000       ->  frame   4550 time 6550.000       ->  frame   4560 time 6560.000       ->  frame   4570 time 6570.000       ->  frame   4580 time 6580.000       ->  frame   4590 time 6590.000       ->  frame   4600 time 6600.000       ->  frame   4610 time 6610.000       ->  frame   4620 time 6620.000       ->  frame   4630 time 6630.000       ->  frame   4640 time 6640.000       ->  frame   4650 time 6650.000       ->  frame   4660 time 6660.000       ->  frame   4670 time 6670.000       ->  frame   4680 time 6680.000       ->  frame   4690 time 6690.000       ->  frame   4700 time 6700.000       ->  frame   4710 time 6710.000       ->  frame   4720 time 6720.000       ->  frame   4730 time 6730.000       ->  frame   4740 time 6740.000       ->  frame   4750 time 6750.000       ->  frame   4760 time 6760.000       ->  frame   4770 time 6770.000       ->  frame   4780 time 6780.000       ->  frame   4790 time 6790.000       ->  frame   4800 time 6800.000       ->  frame   4810 time 6810.000       ->  frame   4820 time 6820.000       ->  frame   4830 time 6830.000       ->  frame   4840 time 6840.000       ->  frame   4850 time 6850.000       ->  frame   4860 time 6860.000       ->  frame   4870 time 6870.000       ->  frame   4880 time 6880.000       ->  frame   4890 time 6890.000       ->  frame   4900 time 6900.000       ->  frame   4910 time 6910.000       ->  frame   4920 time 6920.000       ->  frame   4930 time 6930.000       ->  frame   4940 time 6940.000       ->  frame   4950 time 6950.000       ->  frame   4960 time 6960.000       ->  frame   4970 time 6970.000       ->  frame   4980 time 6980.000       ->  frame   4990 time 6990.000      Reading frame    5000 time 7000.000    ->  frame   5000 time 7000.000       ->  frame   5010 time 7010.000       ->  frame   5020 time 7020.000       ->  frame   5030 time 7030.000       ->  frame   5040 time 7040.000       ->  frame   5050 time 7050.000       ->  frame   5060 time 7060.000       ->  frame   5070 time 7070.000       ->  frame   5080 time 7080.000       ->  frame   5090 time 7090.000       ->  frame   5100 time 7100.000       ->  frame   5110 time 7110.000       ->  frame   5120 time 7120.000       ->  frame   5130 time 7130.000       ->  frame   5140 time 7140.000       ->  frame   5150 time 7150.000       ->  frame   5160 time 7160.000       ->  frame   5170 time 7170.000       ->  frame   5180 time 7180.000       ->  frame   5190 time 7190.000       ->  frame   5200 time 7200.000       ->  frame   5210 time 7210.000       ->  frame   5220 time 7220.000       ->  frame   5230 time 7230.000       ->  frame   5240 time 7240.000       ->  frame   5250 time 7250.000       ->  frame   5260 time 7260.000       ->  frame   5270 time 7270.000       ->  frame   5280 time 7280.000       ->  frame   5290 time 7290.000       ->  frame   5300 time 7300.000       ->  frame   5310 time 7310.000       ->  frame   5320 time 7320.000       ->  frame   5330 time 7330.000       ->  frame   5340 time 7340.000       ->  frame   5350 time 7350.000       ->  frame   5360 time 7360.000       ->  frame   5370 time 7370.000       ->  frame   5380 time 7380.000       ->  frame   5390 time 7390.000       ->  frame   5400 time 7400.000       ->  frame   5410 time 7410.000       ->  frame   5420 time 7420.000       ->  frame   5430 time 7430.000       ->  frame   5440 time 7440.000       ->  frame   5450 time 7450.000       ->  frame   5460 time 7460.000       ->  frame   5470 time 7470.000       ->  frame   5480 time 7480.000       ->  frame   5490 time 7490.000       ->  frame   5500 time 7500.000       ->  frame   5510 time 7510.000       ->  frame   5520 time 7520.000       ->  frame   5530 time 7530.000       ->  frame   5540 time 7540.000       ->  frame   5550 time 7550.000       ->  frame   5560 time 7560.000       ->  frame   5570 time 7570.000       ->  frame   5580 time 7580.000       ->  frame   5590 time 7590.000       ->  frame   5600 time 7600.000       ->  frame   5610 time 7610.000       ->  frame   5620 time 7620.000       ->  frame   5630 time 7630.000       ->  frame   5640 time 7640.000       ->  frame   5650 time 7650.000       ->  frame   5660 time 7660.000       ->  frame   5670 time 7670.000       ->  frame   5680 time 7680.000       ->  frame   5690 time 7690.000       ->  frame   5700 time 7700.000       ->  frame   5710 time 7710.000       ->  frame   5720 time 7720.000       ->  frame   5730 time 7730.000       ->  frame   5740 time 7740.000       ->  frame   5750 time 7750.000       ->  frame   5760 time 7760.000       ->  frame   5770 time 7770.000       ->  frame   5780 time 7780.000       ->  frame   5790 time 7790.000       ->  frame   5800 time 7800.000       ->  frame   5810 time 7810.000       ->  frame   5820 time 7820.000       ->  frame   5830 time 7830.000       ->  frame   5840 time 7840.000       ->  frame   5850 time 7850.000       ->  frame   5860 time 7860.000       ->  frame   5870 time 7870.000       ->  frame   5880 time 7880.000       ->  frame   5890 time 7890.000       ->  frame   5900 time 7900.000       ->  frame   5910 time 7910.000       ->  frame   5920 time 7920.000       ->  frame   5930 time 7930.000       ->  frame   5940 time 7940.000       ->  frame   5950 time 7950.000       ->  frame   5960 time 7960.000       ->  frame   5970 time 7970.000       ->  frame   5980 time 7980.000       ->  frame   5990 time 7990.000      Reading frame    6000 time 8000.000    ->  frame   6000 time 8000.000       ->  frame   6010 time 8010.000       ->  frame   6020 time 8020.000       ->  frame   6030 time 8030.000       ->  frame   6040 time 8040.000       ->  frame   6050 time 8050.000       ->  frame   6060 time 8060.000       ->  frame   6070 time 8070.000       ->  frame   6080 time 8080.000       ->  frame   6090 time 8090.000       ->  frame   6100 time 8100.000       ->  frame   6110 time 8110.000       ->  frame   6120 time 8120.000       ->  frame   6130 time 8130.000       ->  frame   6140 time 8140.000       ->  frame   6150 time 8150.000       ->  frame   6160 time 8160.000       ->  frame   6170 time 8170.000       ->  frame   6180 time 8180.000       ->  frame   6190 time 8190.000       ->  frame   6200 time 8200.000       ->  frame   6210 time 8210.000       ->  frame   6220 time 8220.000       ->  frame   6230 time 8230.000       ->  frame   6240 time 8240.000       ->  frame   6250 time 8250.000       ->  frame   6260 time 8260.000       ->  frame   6270 time 8270.000       ->  frame   6280 time 8280.000       ->  frame   6290 time 8290.000       ->  frame   6300 time 8300.000       ->  frame   6310 time 8310.000       ->  frame   6320 time 8320.000       ->  frame   6330 time 8330.000       ->  frame   6340 time 8340.000       ->  frame   6350 time 8350.000       ->  frame   6360 time 8360.000       ->  frame   6370 time 8370.000       ->  frame   6380 time 8380.000       ->  frame   6390 time 8390.000       ->  frame   6400 time 8400.000       ->  frame   6410 time 8410.000       ->  frame   6420 time 8420.000       ->  frame   6430 time 8430.000       ->  frame   6440 time 8440.000       ->  frame   6450 time 8450.000       ->  frame   6460 time 8460.000       ->  frame   6470 time 8470.000       ->  frame   6480 time 8480.000       ->  frame   6490 time 8490.000       ->  frame   6500 time 8500.000       ->  frame   6510 time 8510.000       ->  frame   6520 time 8520.000       ->  frame   6530 time 8530.000       ->  frame   6540 time 8540.000       ->  frame   6550 time 8550.000       ->  frame   6560 time 8560.000       ->  frame   6570 time 8570.000       ->  frame   6580 time 8580.000       ->  frame   6590 time 8590.000       ->  frame   6600 time 8600.000       ->  frame   6610 time 8610.000       ->  frame   6620 time 8620.000       ->  frame   6630 time 8630.000       ->  frame   6640 time 8640.000       ->  frame   6650 time 8650.000       ->  frame   6660 time 8660.000       ->  frame   6670 time 8670.000       ->  frame   6680 time 8680.000       ->  frame   6690 time 8690.000       ->  frame   6700 time 8700.000       ->  frame   6710 time 8710.000       ->  frame   6720 time 8720.000       ->  frame   6730 time 8730.000       ->  frame   6740 time 8740.000       ->  frame   6750 time 8750.000       ->  frame   6760 time 8760.000       ->  frame   6770 time 8770.000       ->  frame   6780 time 8780.000       ->  frame   6790 time 8790.000       ->  frame   6800 time 8800.000       ->  frame   6810 time 8810.000       ->  frame   6820 time 8820.000       ->  frame   6830 time 8830.000       ->  frame   6840 time 8840.000       ->  frame   6850 time 8850.000       ->  frame   6860 time 8860.000       ->  frame   6870 time 8870.000       ->  frame   6880 time 8880.000       ->  frame   6890 time 8890.000       ->  frame   6900 time 8900.000       ->  frame   6910 time 8910.000       ->  frame   6920 time 8920.000       ->  frame   6930 time 8930.000       ->  frame   6940 time 8940.000       ->  frame   6950 time 8950.000       ->  frame   6960 time 8960.000       ->  frame   6970 time 8970.000       ->  frame   6980 time 8980.000       ->  frame   6990 time 8990.000      Reading frame    7000 time 9000.000    ->  frame   7000 time 9000.000       ->  frame   7010 time 9010.000       ->  frame   7020 time 9020.000       ->  frame   7030 time 9030.000       ->  frame   7040 time 9040.000       ->  frame   7050 time 9050.000       ->  frame   7060 time 9060.000       ->  frame   7070 time 9070.000       ->  frame   7080 time 9080.000       ->  frame   7090 time 9090.000       ->  frame   7100 time 9100.000       ->  frame   7110 time 9110.000       ->  frame   7120 time 9120.000       ->  frame   7130 time 9130.000       ->  frame   7140 time 9140.000       ->  frame   7150 time 9150.000       ->  frame   7160 time 9160.000       ->  frame   7170 time 9170.000       ->  frame   7180 time 9180.000       ->  frame   7190 time 9190.000       ->  frame   7200 time 9200.000       ->  frame   7210 time 9210.000       ->  frame   7220 time 9220.000       ->  frame   7230 time 9230.000       ->  frame   7240 time 9240.000       ->  frame   7250 time 9250.000       ->  frame   7260 time 9260.000       ->  frame   7270 time 9270.000       ->  frame   7280 time 9280.000       ->  frame   7290 time 9290.000       ->  frame   7300 time 9300.000       ->  frame   7310 time 9310.000       ->  frame   7320 time 9320.000       ->  frame   7330 time 9330.000       ->  frame   7340 time 9340.000       ->  frame   7350 time 9350.000       ->  frame   7360 time 9360.000       ->  frame   7370 time 9370.000       ->  frame   7380 time 9380.000       ->  frame   7390 time 9390.000       ->  frame   7400 time 9400.000       ->  frame   7410 time 9410.000       ->  frame   7420 time 9420.000       ->  frame   7430 time 9430.000       ->  frame   7440 time 9440.000       ->  frame   7450 time 9450.000       ->  frame   7460 time 9460.000       ->  frame   7470 time 9470.000       ->  frame   7480 time 9480.000       ->  frame   7490 time 9490.000       ->  frame   7500 time 9500.000       ->  frame   7510 time 9510.000       ->  frame   7520 time 9520.000       ->  frame   7530 time 9530.000       ->  frame   7540 time 9540.000       ->  frame   7550 time 9550.000       ->  frame   7560 time 9560.000       ->  frame   7570 time 9570.000       ->  frame   7580 time 9580.000       ->  frame   7590 time 9590.000       ->  frame   7600 time 9600.000       ->  frame   7610 time 9610.000       ->  frame   7620 time 9620.000       ->  frame   7630 time 9630.000       ->  frame   7640 time 9640.000       ->  frame   7650 time 9650.000       ->  frame   7660 time 9660.000       ->  frame   7670 time 9670.000       ->  frame   7680 time 9680.000       ->  frame   7690 time 9690.000       ->  frame   7700 time 9700.000       ->  frame   7710 time 9710.000       ->  frame   7720 time 9720.000       ->  frame   7730 time 9730.000       ->  frame   7740 time 9740.000       ->  frame   7750 time 9750.000       ->  frame   7760 time 9760.000       ->  frame   7770 time 9770.000       ->  frame   7780 time 9780.000       ->  frame   7790 time 9790.000       ->  frame   7800 time 9800.000       ->  frame   7810 time 9810.000       ->  frame   7820 time 9820.000       ->  frame   7830 time 9830.000       ->  frame   7840 time 9840.000       ->  frame   7850 time 9850.000       ->  frame   7860 time 9860.000       ->  frame   7870 time 9870.000       ->  frame   7880 time 9880.000       ->  frame   7890 time 9890.000       ->  frame   7900 time 9900.000       ->  frame   7910 time 9910.000       ->  frame   7920 time 9920.000       ->  frame   7930 time 9930.000       ->  frame   7940 time 9940.000       ->  frame   7950 time 9950.000       ->  frame   7960 time 9960.000       ->  frame   7970 time 9970.000       ->  frame   7980 time 9980.000       ->  frame   7990 time 9990.000      Reading frame    8000 time 10000.000    ->  frame   8000 time 10000.000       ->  frame   8010 time 10010.000       ->  frame   8020 time 10020.000       ->  frame   8030 time 10030.000       ->  frame   8040 time 10040.000       ->  frame   8050 time 10050.000       ->  frame   8060 time 10060.000       ->  frame   8070 time 10070.000       ->  frame   8080 time 10080.000       ->  frame   8090 time 10090.000       ->  frame   8100 time 10100.000       ->  frame   8110 time 10110.000       ->  frame   8120 time 10120.000       ->  frame   8130 time 10130.000       ->  frame   8140 time 10140.000       ->  frame   8150 time 10150.000       ->  frame   8160 time 10160.000       ->  frame   8170 time 10170.000       ->  frame   8180 time 10180.000       ->  frame   8190 time 10190.000       ->  frame   8200 time 10200.000       ->  frame   8210 time 10210.000       ->  frame   8220 time 10220.000       ->  frame   8230 time 10230.000       ->  frame   8240 time 10240.000       ->  frame   8250 time 10250.000       ->  frame   8260 time 10260.000       ->  frame   8270 time 10270.000       ->  frame   8280 time 10280.000       ->  frame   8290 time 10290.000       ->  frame   8300 time 10300.000       ->  frame   8310 time 10310.000       ->  frame   8320 time 10320.000       ->  frame   8330 time 10330.000       ->  frame   8340 time 10340.000       ->  frame   8350 time 10350.000       ->  frame   8360 time 10360.000       ->  frame   8370 time 10370.000       ->  frame   8380 time 10380.000       ->  frame   8390 time 10390.000       ->  frame   8400 time 10400.000       ->  frame   8410 time 10410.000       ->  frame   8420 time 10420.000       ->  frame   8430 time 10430.000       ->  frame   8440 time 10440.000       ->  frame   8450 time 10450.000       ->  frame   8460 time 10460.000       ->  frame   8470 time 10470.000       ->  frame   8480 time 10480.000       ->  frame   8490 time 10490.000       ->  frame   8500 time 10500.000       ->  frame   8510 time 10510.000       ->  frame   8520 time 10520.000       ->  frame   8530 time 10530.000       ->  frame   8540 time 10540.000       ->  frame   8550 time 10550.000       ->  frame   8560 time 10560.000       ->  frame   8570 time 10570.000       ->  frame   8580 time 10580.000       ->  frame   8590 time 10590.000       ->  frame   8600 time 10600.000       ->  frame   8610 time 10610.000       ->  frame   8620 time 10620.000       ->  frame   8630 time 10630.000       ->  frame   8640 time 10640.000       ->  frame   8650 time 10650.000       ->  frame   8660 time 10660.000       ->  frame   8670 time 10670.000       ->  frame   8680 time 10680.000       ->  frame   8690 time 10690.000       ->  frame   8700 time 10700.000       ->  frame   8710 time 10710.000       ->  frame   8720 time 10720.000       ->  frame   8730 time 10730.000       ->  frame   8740 time 10740.000       ->  frame   8750 time 10750.000       ->  frame   8760 time 10760.000       ->  frame   8770 time 10770.000       ->  frame   8780 time 10780.000       ->  frame   8790 time 10790.000       ->  frame   8800 time 10800.000       ->  frame   8810 time 10810.000       ->  frame   8820 time 10820.000       ->  frame   8830 time 10830.000       ->  frame   8840 time 10840.000       ->  frame   8850 time 10850.000       ->  frame   8860 time 10860.000       ->  frame   8870 time 10870.000       ->  frame   8880 time 10880.000       ->  frame   8890 time 10890.000       ->  frame   8900 time 10900.000       ->  frame   8910 time 10910.000       ->  frame   8920 time 10920.000       ->  frame   8930 time 10930.000       ->  frame   8940 time 10940.000       ->  frame   8950 time 10950.000       ->  frame   8960 time 10960.000       ->  frame   8970 time 10970.000       ->  frame   8980 time 10980.000       ->  frame   8990 time 10990.000      Reading frame    9000 time 11000.000    ->  frame   9000 time 11000.000       ->  frame   9010 time 11010.000       ->  frame   9020 time 11020.000       ->  frame   9030 time 11030.000       ->  frame   9040 time 11040.000       ->  frame   9050 time 11050.000       ->  frame   9060 time 11060.000       ->  frame   9070 time 11070.000       ->  frame   9080 time 11080.000       ->  frame   9090 time 11090.000       ->  frame   9100 time 11100.000       ->  frame   9110 time 11110.000       ->  frame   9120 time 11120.000       ->  frame   9130 time 11130.000       ->  frame   9140 time 11140.000       ->  frame   9150 time 11150.000       ->  frame   9160 time 11160.000       ->  frame   9170 time 11170.000       ->  frame   9180 time 11180.000       ->  frame   9190 time 11190.000       ->  frame   9200 time 11200.000       ->  frame   9210 time 11210.000       ->  frame   9220 time 11220.000       ->  frame   9230 time 11230.000       ->  frame   9240 time 11240.000       ->  frame   9250 time 11250.000       ->  frame   9260 time 11260.000       ->  frame   9270 time 11270.000       ->  frame   9280 time 11280.000       ->  frame   9290 time 11290.000       ->  frame   9300 time 11300.000       ->  frame   9310 time 11310.000       ->  frame   9320 time 11320.000       ->  frame   9330 time 11330.000       ->  frame   9340 time 11340.000       ->  frame   9350 time 11350.000       ->  frame   9360 time 11360.000       ->  frame   9370 time 11370.000       ->  frame   9380 time 11380.000       ->  frame   9390 time 11390.000       ->  frame   9400 time 11400.000       ->  frame   9410 time 11410.000       ->  frame   9420 time 11420.000       ->  frame   9430 time 11430.000       ->  frame   9440 time 11440.000       ->  frame   9450 time 11450.000       ->  frame   9460 time 11460.000       ->  frame   9470 time 11470.000       ->  frame   9480 time 11480.000       ->  frame   9490 time 11490.000       ->  frame   9500 time 11500.000       ->  frame   9510 time 11510.000       ->  frame   9520 time 11520.000       ->  frame   9530 time 11530.000       ->  frame   9540 time 11540.000       ->  frame   9550 time 11550.000       ->  frame   9560 time 11560.000       ->  frame   9570 time 11570.000       ->  frame   9580 time 11580.000       ->  frame   9590 time 11590.000       ->  frame   9600 time 11600.000       ->  frame   9610 time 11610.000       ->  frame   9620 time 11620.000       ->  frame   9630 time 11630.000       ->  frame   9640 time 11640.000       ->  frame   9650 time 11650.000       ->  frame   9660 time 11660.000       ->  frame   9670 time 11670.000       ->  frame   9680 time 11680.000       ->  frame   9690 time 11690.000       ->  frame   9700 time 11700.000       ->  frame   9710 time 11710.000       ->  frame   9720 time 11720.000       ->  frame   9730 time 11730.000       ->  frame   9740 time 11740.000       ->  frame   9750 time 11750.000       ->  frame   9760 time 11760.000       ->  frame   9770 time 11770.000       ->  frame   9780 time 11780.000       ->  frame   9790 time 11790.000       ->  frame   9800 time 11800.000       ->  frame   9810 time 11810.000       ->  frame   9820 time 11820.000       ->  frame   9830 time 11830.000       ->  frame   9840 time 11840.000       ->  frame   9850 time 11850.000       ->  frame   9860 time 11860.000       ->  frame   9870 time 11870.000       ->  frame   9880 time 11880.000       ->  frame   9890 time 11890.000       ->  frame   9900 time 11900.000       ->  frame   9910 time 11910.000       ->  frame   9920 time 11920.000       ->  frame   9930 time 11930.000       ->  frame   9940 time 11940.000       ->  frame   9950 time 11950.000       ->  frame   9960 time 11960.000       ->  frame   9970 time 11970.000       ->  frame   9980 time 11980.000       ->  frame   9990 time 11990.000      Reading frame   10000 time 12000.000    ->  frame  10000 time 12000.000      Last frame      10000 time 12000.000   
+
+
+GROMACS reminds you: "Being Great is Not So Good" (Red Hot Chili Peppers)
+
+                      :-) GROMACS - gmx trjconv, 2016 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul   Magnus Lundborg   Pieter Meulenhoff    Erik Marklund   
+   Teemu Murtola       Szilard Pall       Sander Pronk      Roland Schulz   
+  Alexey Shvetsov     Michael Shirts     Alfons Sijbers     Peter Tieleman  
+  Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2015, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx trjconv, version 2016
+Executable:   /app/gromacs_2016/bin/gmx
+Data prefix:  /app/gromacs_2016
+Working dir:  /home/akchew/scratch/nanoparticle_project/simulations/NP_HYDRO_SI_GNP_DEBUGGING_SPRING/MostlikelynpNVTspr_500-EAM_300.00_K_2_nmDIAM_C11OH_CHARMM36jul2017_Trial_1_likelyindex_1
+Command line:
+  gmx trjconv -pbc mol -center -dump 0 -s sam_prod.tpr -f sam_prod.xtc -n sam_prod-water_only_heavy_atoms.ndx -o sam_prod-water_only_heavy_atoms.gro
+
+Will write gro: Coordinate file in Gromos-87 format
+Reading file sam_prod.tpr, VERSION 2016 (single precision)
+Reading file sam_prod.tpr, VERSION 2016 (single precision)
+Group     0 (water_heavy_atoms) has 11064 elements
+Group     1 (           AUNP) has   226 elements
+Select a group: Group     0 (water_heavy_atoms) has 11064 elements
+Group     1 (           AUNP) has   226 elements
+Select a group: Reading frame       0 time    0.000   
+Precision of sam_prod.xtc is 0.001 (nm)
+Using output precision of 0.001 (nm)
+
+Back Off! I just backed up sam_prod-water_only_heavy_atoms.gro to ./#sam_prod-water_only_heavy_atoms.gro.1#
+
+Dumping frame at t= 0 ps
+ ->  frame      0 time    0.000      Reading frame       1 time    1.000   
+
+GROMACS reminds you: "Oh My God ! It's the Funky Shit" (Beastie Boys)
+
+                    :-) GROMACS - gmx convert-tpr, 2016 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra    Gerrit Groenhof  
+ Christoph Junghans   Anca Hamuraru    Vincent Hindriksen Dimitrios Karkoulis
+    Peter Kasson        Jiri Kraus      Carsten Kutzner      Per Larsson    
+  Justin A. Lemkul   Magnus Lundborg   Pieter Meulenhoff    Erik Marklund   
+   Teemu Murtola       Szilard Pall       Sander Pronk      Roland Schulz   
+  Alexey Shvetsov     Michael Shirts     Alfons Sijbers     Peter Tieleman  
+  Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2015, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      gmx convert-tpr, version 2016
+Executable:   /app/gromacs_2016/bin/gmx
+Data prefix:  /app/gromacs_2016
+Working dir:  /home/akchew/scratch/nanoparticle_project/simulations/NP_HYDRO_SI_GNP_DEBUGGING_SPRING/MostlikelynpNVTspr_500-EAM_300.00_K_2_nmDIAM_C11OH_CHARMM36jul2017_Trial_1_likelyindex_1
+Command line:
+  gmx convert-tpr -s sam_prod.tpr -n sam_prod-water_only_heavy_atoms.ndx -o sam_prod-water_only_heavy_atoms.tpr
+
+Reading toplogy and stuff from sam_prod.tpr
+Reading file sam_prod.tpr, VERSION 2016 (single precision)
+Group     0 (water_heavy_atoms) has 11064 elements
+Group     1 (           AUNP) has   226 elements
+Select a group: Will write subset water_heavy_atoms of original tpx containing 11064 atoms
+Reduced block      cgs from  36406 to  11064 index-,  36406 to  11064 a-entries
+Reduced block     mols from  11065 to  11064 index-,  36406 to  11064 a-entries
+Reduced block    excls from  36406 to  33192 index-, 135160 to  33192 a-entries
+Reduced ilist HARMONIC from   1206 to      0 entries
+Reduced ilist UREY_BRADLEY from   5561 to      0 entries
+Reduced ilist    PDIHS from   9877 to      0 entries
+Reduced ilist     LJ14 from   7719 to      0 entries
+Reduced ilist   POSRES from   1305 to      0 entries
+Reduced ilist   CONSTR from   2905 to      0 entries
+Reduced ilist   SETTLE from  11064 to      0 entries
+Writing statusfile with starting step          0 and length    6000000 steps...
+                                 time      0.000 and length  12000.000 ps
+
+Back Off! I just backed up sam_prod-water_only_heavy_atoms.tpr to ./#sam_prod-water_only_heavy_atoms.tpr.1#
+
+GROMACS reminds you: "You Don't Wanna Know" (Pulp Fiction)
+
+WC parameters:
+{'alpha': 0.24, 'mesh': [0.1, 0.1, 0.1], 'contour': 26}
+
+--- Running compute on 20 cores ---
+
+Since embarrassingly parallel is turned on, we split the trajectory based on total number of frames
+SPLITTED TRAJECTORY SUCCESSFUL ACROSS 5000 frames
+GENERATING POOL FOR 20 PROCESSORS
+====> Working on frame 2000
+====> Working on frame 2200
+====> Working on frame 2400
+====> Working on frame 2700
+====> Working on frame 2600
+====> Working on frame 2900
+====> Working on frame 3600
+====> Working on frame 3100
+====> Working on frame 2800
+slurmstepd: error: *** JOB 29731 ON swarm003 CANCELLED AT 2020-08-07T11:41:49 ***

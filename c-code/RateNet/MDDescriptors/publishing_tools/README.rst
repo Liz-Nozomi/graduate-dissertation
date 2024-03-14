@@ -1,0 +1,1 @@
+This project develops molecular descriptors that can be used for molecular dynamics simulations. The output of these descriptors can subsequently be used for correlating with experimental results. 
