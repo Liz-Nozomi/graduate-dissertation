@@ -10,6 +10,7 @@ from sklearn.metrics import explained_variance_score, mean_absolute_error, mean_
 # 导入所需的PyTorch模块
 import torch.nn.functional as F
 import torchvision.transforms as transforms
+import time
 
 # 自定义数据集类
 class CustomDataset(Dataset):
@@ -99,12 +100,13 @@ class CNN(nn.Module):
 if __name__ == "__main__":
     x_data = []
     y_label = []
-
-    xlsx_path='/Users/liz/Documents/Repos/graduate-dissertation/f-file/datamark.xlsx'
+    start_time = time.time()# 得到运行开始时间
+    #xlsx_path='/Users/liz/Documents/Repos/graduate-dissertation/f-file/datamark.xlsx'
+    xlsx_path=r'C:\Users\lizyu\Desktop\graduate-dissertation\f-file\datamark.xlsx'
     training_component=load_datamark(xlsx_path)
     for lines in training_component:
         if lines[4]==1:
-            pickle_path='/Volumes/exfat/RateNet/pickle/'+lines[0]+'-'+lines[1]+'-'+str(lines[2])+'.pkl'
+            pickle_path=r'D:/RateNet/pickle/' + lines[0] + '-' + lines[1] + '-' + str(lines[2]) + '.pkl'
             print(pickle_path)
     
     
@@ -114,8 +116,8 @@ if __name__ == "__main__":
             print("shape of this pickle is ",np.shape(training_data_for_instance))
     
     
-            for i in list(range(0,np.shape(training_data_for_instance)[0],200)):
-                x_data.append(np.average(training_data_for_instance[i:i+200,:,:,:,:],axis=0))
+            for i in list(range(0,np.shape(training_data_for_instance)[0],100)):
+                x_data.append(np.average(training_data_for_instance[i:i+100,:,:,:,:],axis=0))
                 y_label.append(lines[3])
 
     print(y_label)
@@ -133,10 +135,10 @@ if __name__ == "__main__":
 
     print(np.shape(x_train), np.shape(y_train))
 
-    for i in [0, 1, 2]:
+    for i in [0, 1, 2,3]:
         x_train = np.concatenate((x_train, x[i::5, :, :, :, :]), axis=0)
         y_train = np.concatenate((y_train, y[i::5]))
-    for i in [3, 4]:
+    for i in [4]:
         x_test = np.concatenate((x_test, x[i::5, :, :, :, :]), axis=0)
         y_test = np.concatenate((y_test, y[i::5]))
 
@@ -150,7 +152,7 @@ if __name__ == "__main__":
     y_train = np.concatenate((y_train, y_train, y_train, y_train))
     print(np.shape(y_train))
 
-    device = torch.device("cpu")
+    device = torch.device("cuda")
 
     x_train = torch.tensor(x_train, dtype=torch.float32).to(device)
     y_train = torch.tensor(y_train, dtype=torch.float32).to(device)
@@ -173,14 +175,17 @@ if __name__ == "__main__":
             optimizer.step()
 
     print("训练完毕")
+    end_time = time.time()
+    execution_time = end_time - start_time
 
+    print("导入和训练时间为：", execution_time, "秒")
     # 保存模型
-    torch.save(model.state_dict(), '/Volumes/exfat/model/ratenet.pt')
+    torch.save(model.state_dict(), r'D:\RateNet\ratenet.pt')
     #%%
-    model = CNN(input_data_shape=(2, 20, 20, 20))
+    model = CNN(input_data_shape=(2, 20, 20, 20)).to(device)
 
 # 加载预训练的模型参数
-    model.load_state_dict(torch.load('/Volumes/exfat/model/ratenet.pt',map_location=torch.device('cpu')))
+    model.load_state_dict(torch.load(r'D:\RateNet\ratenet.pt'))
     model.eval()
     with torch.no_grad():
         # 将测试集转换为PyTorch张量
