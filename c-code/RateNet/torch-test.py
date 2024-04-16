@@ -17,7 +17,7 @@ def metrics(y_fit, y_act):
     r2 = r2_score(y_act, y_fit)
     return mae, mse, evs, r2
 
-device = torch.device("cuda")
+device = torch.device("cpu")
 class CNN(nn.Module):
     def __init__(self, input_data_shape, regress=True):
         super(CNN, self).__init__()
@@ -72,21 +72,23 @@ def load_pickle(pickle_path):
 
 
 model = CNN(input_data_shape=(2, 20, 20, 20)).to(device)
-test_pickle_path=r'D:\RateNet\pickle\MIm-MeSCN-300.pkl'
+#test_pickle_path=r'D:\RateNet\pickle\MIm-MeSCN-300.pkl'
+test_pickle_path=r'/Volumes/exfat/RateNet/pickle/MIm-MeSCN-360.pkl'
 testing_data=load_pickle(test_pickle_path)
 
 x_data = []
 y_label = []
 for i in list(range(0,np.shape(testing_data)[0],100)):
     x_data.append(np.average(testing_data[i:i+100,:,:,:,:],axis=0))
-    y_label.append(0.284)
+    y_label.append(38.119)
 x = np.transpose(x_data,(0,4,1,2,3))
 print(np.shape(x))
 y = y_label
 print(np.shape(y))
 
 # 加载预训练的模型参数
-model.load_state_dict(torch.load(r'D:\RateNet\ratenet.pt'))
+#model.load_state_dict(torch.load(r'D:\RateNet\ratenet.pt'))
+model.load_state_dict(torch.load(r'/Volumes/exfat/RateNet/ratenet.pt',map_location=torch.device('cpu')))
 model.eval()
 with torch.no_grad():
         # 将测试集转换为PyTorch张量
