@@ -1,0 +1,20 @@
+REMARK   Materials Studio PDB file
+REMARK   Created:  Sat May 18 02:36:02 Pacific Standard Time 2019
+ATOM      1  CS1 MES C   1       9.494  25.970   3.938  1.00  0.00           C    
+ATOM      2  SC2 MES C   1      10.717  27.159   4.539  1.00  0.00           S    
+ATOM      3  CN3 MES C   1      11.560  26.460   5.980  1.00  0.00           C    
+ATOM      4  NC4 MES C   1      12.070  25.940   6.850  1.00  0.00           N1-  
+ATOM      5  HC5 MES C   1       8.977  26.392   3.007  1.00  0.00           H    
+ATOM      6  HC6 MES C   1       8.717  25.780   4.752  1.00  0.00           H    
+ATOM      7  HC7 MES C   1      10.015  24.990   3.672  1.00  0.00           H    
+ATOM      8  ML8 MES C   1      11.870  26.150   6.500  1.00  0.00           ?    
+TER       9 
+CONECT    1    7    5    2    6
+CONECT    2    1    3
+CONECT    3    2    8    4
+CONECT    4    3    8
+CONECT    5    1
+CONECT    6    1
+CONECT    7    1
+CONECT    8    3    4
+END

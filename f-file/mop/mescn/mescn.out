@@ -1,0 +1,1487 @@
+ *******************************************************************************
+ **                                                                           **
+ **                              MOPAC v22.1.1                                **
+ **                                                                           **
+ *******************************************************************************
+ **          Digital Object Identifier (DOI): 10.5281/zenodo.6511958          **
+ **    Visit the DOI location for information on how to cite this program.    **
+ *******************************************************************************
+
+                              PM6 CALCULATION RESULTS
+
+ *******************************************************************************
+ *  CALCULATION DONE:                                Mon Apr 22 11:30:32 2024  *
+ *  PM6        - The PM6 Hamiltonian to be used
+ *  MMOK       - APPLY MM CORRECTION TO CONH BARRIER
+ *  STATIC     - CALCULATE STATIC FIELD POLARIZABILITIES
+ *  POLAR      - CALCULATE FIRST, SECOND AND THIRD-ORDER POLARIZABILITIES
+ *  PRECISE    - TIGHTER CRITERIA TO BE USED
+ *  XYZ        - CARTESIAN COORDINATE SYSTEM TO BE USED
+ *  T=         - A TIME OF 172800.0 SECONDS REQUESTED
+ *  DUMP=N     - RESTART FILE WRITTEN EVERY 7200.0 SECONDS REQUESTED
+ *  CYCLES=    - DO A MAXIMUM OF 8000 STEPS
+ *  ENPART     - ENERGY TO BE PARTITIONED INTO COMPONENTS
+ *  PRTXYZ     - PRINT CARTESIAN COORDINATES
+ *  DISP       - PRINT DISPERSION AND HYDROGEN BOND ENERGIES
+ *  BONDS      - FINAL BOND-ORDER MATRIX TO BE PRINTED
+ *  LARGE      - EXPANDED OUTPUT TO BE PRINTED
+ *  SUPER      - PRINT SUPERDELOCALIZABILITIES
+ *  ALLVEC     - PRINT ALL EIGENVECTORS
+ *******************************************************************************
+PM6 PRECISE POLAR MMOK XYZ ENPART STATIC SUPER BONDS LARGE PRTXYZ DISP ALLVEC CYCLES = 8000
+ mescn
+ All coordinates are Cartesian
+   ATOM   CHEMICAL          X               Y               Z
+  NUMBER   SYMBOL      (ANGSTROMS)     (ANGSTROMS)     (ANGSTROMS)
+ 
+     1       C          9.49400000  *  25.97000000  *   3.93800000  *
+     2       S         10.71700000  *  27.15900000  *   4.53900000  *
+     3       C         11.56000000  *  26.46000000  *   5.98000000  *
+     4       N         12.07000000  *  25.94000000  *   6.85000000  *
+     5       H          8.97700000  *  26.39200000  *   3.00700000  *
+     6       H          8.71700000  *  25.78000000  *   4.75200000  *
+     7       H         10.01500000  *  24.99000000  *   3.67200000  *
+     8      Mg         11.87000000  *  26.15000000  *   6.50000000  *
+ 
+
+
+          CARTESIAN COORDINATES 
+
+    NO.       ATOM           X           Y           Z
+
+     1         C          9.4940     25.9700      3.9380
+     2         S         10.7170     27.1590      4.5390
+     3         C         11.5600     26.4600      5.9800
+     4         N         12.0700     25.9400      6.8500
+     5         H          8.9770     26.3920      3.0070
+     6         H          8.7170     25.7800      4.7520
+     7         H         10.0150     24.9900      3.6720
+     8        Mg         11.8700     26.1500      6.5000
+
+ General Reference for PM6:
+ "Optimization of Parameters for Semiempirical Methods V: Modification of NDDO Approximations
+ and Application to 70 Elements", J. J. P. Stewart, J. Mol. Mod., 13, 1173-1213 (2007)
+ URL: https://link.springer.com/article/10.1007/s00894-007-0233-4
+
+           Empirical Formula: C2 H3 N S Mg  =     8 atoms
+
+
+
+      MOLECULAR POINT GROUP   :   Cs  
+
+
+      RHF CALCULATION, NO. OF DOUBLY OCCUPIED LEVELS = 12
+
+
+          Geometry optimization using EF
+
+          DIAGONAL MATRIX USED AS START HESSIAN
+
+ CYCLE:     1 TIME:   0.020 TIME LEFT:  2.00D  GRAD.:999999.999 HEAT:  96148.55
+ NUMERICAL PROBLEMS IN BRACKETING LAMBDA   200.000000000234     
+  -1000000.00000000        200.000000000034       -10103272.1528069     
+ -6.659793062034234E+021
+  GOING FOR FIXED STEP SIZE....
+ NUMERICAL PROBLEMS IN BRACKETING LAMBDA   200.000000000234     
+  -1000000.00000000        200.000000000034        11.0610519424184     
+  4.357843507685282E+030
+  GOING FOR FIXED LEVEL SHIFTED NR STEP...
+ CYCLE:     2 TIME:   0.012 TIME LEFT:  2.00D  GRAD.: 94156.750 HEAT:  11741.39
+ CYCLE:     3 TIME:   0.008 TIME LEFT:  2.00D  GRAD.: 86512.876 HEAT:  6583.042
+ CYCLE:     4 TIME:   0.012 TIME LEFT:  2.00D  GRAD.: 15233.687 HEAT:  3497.809
+ CYCLE:     5 TIME:   0.012 TIME LEFT:  2.00D  GRAD.:  7167.766 HEAT:  2258.689
+ CYCLE:     6 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:  3436.942 HEAT:  1187.124
+ CYCLE:     7 TIME:   0.012 TIME LEFT:  2.00D  GRAD.:   338.406 HEAT:  286.8944
+ CYCLE:     8 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:   341.469 HEAT:  265.8223
+ CYCLE:     9 TIME:   0.012 TIME LEFT:  2.00D  GRAD.:   323.988 HEAT:  233.5732
+ CYCLE:    10 TIME:   0.012 TIME LEFT:  2.00D  GRAD.:   442.528 HEAT:  224.4986
+ CYCLE:    11 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:   393.724 HEAT:  201.3616
+ CYCLE:    12 TIME:   0.012 TIME LEFT:  2.00D  GRAD.:   393.868 HEAT:  175.7172
+ CYCLE:    13 TIME:   0.012 TIME LEFT:  2.00D  GRAD.:   462.831 HEAT:  167.9626
+ CYCLE:    14 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:   351.839 HEAT:  139.3679
+ CYCLE:    15 TIME:   0.012 TIME LEFT:  2.00D  GRAD.:   147.818 HEAT:  100.4406
+ CYCLE:    16 TIME:   0.020 TIME LEFT:  2.00D  GRAD.:    65.795 HEAT:  87.64803
+ CYCLE:    17 TIME:   0.012 TIME LEFT:  2.00D  GRAD.:   135.310 HEAT:  85.88275
+ CYCLE:    18 TIME:   0.012 TIME LEFT:  2.00D  GRAD.:    49.460 HEAT:  80.52822
+ CYCLE:    19 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:    78.138 HEAT:  76.66513
+ CYCLE:    20 TIME:   0.012 TIME LEFT:  2.00D  GRAD.:    64.590 HEAT:  73.63557
+ CYCLE:    21 TIME:   0.012 TIME LEFT:  2.00D  GRAD.:    71.386 HEAT:  72.18041
+ CYCLE:    22 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:   100.066 HEAT:  72.10597
+ CYCLE:    23 TIME:   0.012 TIME LEFT:  2.00D  GRAD.:    24.014 HEAT:  69.88204
+ CYCLE:    24 TIME:   0.012 TIME LEFT:  2.00D  GRAD.:    26.690 HEAT:  68.67612
+ CYCLE:    25 TIME:   0.012 TIME LEFT:  2.00D  GRAD.:   124.816 HEAT:  67.51683
+ CYCLE:    26 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:    82.051 HEAT:  65.87434
+ CYCLE:    27 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:    18.097 HEAT:  65.00230
+ CYCLE:    28 TIME:   0.012 TIME LEFT:  2.00D  GRAD.:    22.958 HEAT:  64.79539
+ CYCLE:    29 TIME:   0.012 TIME LEFT:  2.00D  GRAD.:    16.044 HEAT:  64.72172
+ CYCLE:    30 TIME:   0.012 TIME LEFT:  2.00D  GRAD.:    15.740 HEAT:  64.68564
+ CYCLE:    31 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:    19.370 HEAT:  64.60308
+ CYCLE:    32 TIME:   0.012 TIME LEFT:  2.00D  GRAD.:    19.715 HEAT:  64.54434
+ CYCLE:    33 TIME:   0.012 TIME LEFT:  2.00D  GRAD.:    19.376 HEAT:  64.45951
+ CYCLE:    34 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:    23.611 HEAT:  64.38174
+ CYCLE:    35 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:    21.781 HEAT:  64.28329
+ CYCLE:    36 TIME:   0.023 TIME LEFT:  2.00D  GRAD.:    23.717 HEAT:  64.08029
+ CYCLE:    37 TIME:   0.016 TIME LEFT:  2.00D  GRAD.:    24.152 HEAT:  63.96503
+ CYCLE:    38 TIME:   0.012 TIME LEFT:  2.00D  GRAD.:    24.973 HEAT:  63.91319
+ CYCLE:    39 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:    18.582 HEAT:  63.72305
+ CYCLE:    40 TIME:   0.012 TIME LEFT:  2.00D  GRAD.:    23.726 HEAT:  63.60266
+ CYCLE:    41 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:    24.024 HEAT:  63.43617
+ CYCLE:    42 TIME:   0.012 TIME LEFT:  2.00D  GRAD.:    29.509 HEAT:  62.90482
+ CYCLE:    43 TIME:   0.020 TIME LEFT:  2.00D  GRAD.:    21.774 HEAT:  62.73564
+ CYCLE:    44 TIME:   0.012 TIME LEFT:  2.00D  GRAD.:    18.538 HEAT:  62.43520
+ CYCLE:    45 TIME:   0.012 TIME LEFT:  2.00D  GRAD.:    20.719 HEAT:  62.31865
+ CYCLE:    46 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:    19.719 HEAT:  62.21130
+ CYCLE:    47 TIME:   0.012 TIME LEFT:  2.00D  GRAD.:    20.965 HEAT:  61.84965
+ CYCLE:    48 TIME:   0.039 TIME LEFT:  2.00D  GRAD.:    30.643 HEAT:  61.81454
+ CYCLE:    49 TIME:   0.012 TIME LEFT:  2.00D  GRAD.:    20.386 HEAT:  61.69564
+ CYCLE:    50 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:    19.462 HEAT:  61.60454
+ CYCLE:    51 TIME:   0.012 TIME LEFT:  2.00D  GRAD.:    17.306 HEAT:  61.44958
+ CYCLE:    52 TIME:   0.012 TIME LEFT:  2.00D  GRAD.:    17.143 HEAT:  61.33953
+ CYCLE:    53 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:    24.650 HEAT:  61.13271
+ CYCLE:    54 TIME:   0.012 TIME LEFT:  2.00D  GRAD.:    22.230 HEAT:  60.90181
+ CYCLE:    55 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:    18.668 HEAT:  60.59097
+ CYCLE:    56 TIME:   0.012 TIME LEFT:  2.00D  GRAD.:    20.359 HEAT:  60.54578
+ CYCLE:    57 TIME:   0.020 TIME LEFT:  2.00D  GRAD.:    19.030 HEAT:  60.39628
+ CYCLE:    58 TIME:   0.012 TIME LEFT:  2.00D  GRAD.:    16.882 HEAT:  60.35091
+ CYCLE:    59 TIME:   0.012 TIME LEFT:  2.00D  GRAD.:    15.679 HEAT:  60.29712
+ CYCLE:    60 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:    13.979 HEAT:  60.27836
+ CYCLE:    61 TIME:   0.012 TIME LEFT:  2.00D  GRAD.:    15.905 HEAT:  60.26409
+ CYCLE:    62 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:    14.714 HEAT:  60.24273
+ CYCLE:    63 TIME:   0.012 TIME LEFT:  2.00D  GRAD.:    15.040 HEAT:  60.21745
+ CYCLE:    64 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:    14.241 HEAT:  60.19057
+ CYCLE:    65 TIME:   0.012 TIME LEFT:  2.00D  GRAD.:    14.386 HEAT:  60.15328
+ CYCLE:    66 TIME:   0.012 TIME LEFT:  2.00D  GRAD.:    14.584 HEAT:  60.12351
+ CYCLE:    67 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:    16.476 HEAT:  60.08210
+ CYCLE:    68 TIME:   0.031 TIME LEFT:  2.00D  GRAD.:    14.352 HEAT:  60.07072
+ CYCLE:    69 TIME:   0.012 TIME LEFT:  2.00D  GRAD.:    14.968 HEAT:  60.05074
+ CYCLE:    70 TIME:   0.012 TIME LEFT:  2.00D  GRAD.:    14.747 HEAT:  60.04666
+ CYCLE:    71 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:    15.389 HEAT:  60.04863
+ CYCLE:    72 TIME:   0.027 TIME LEFT:  2.00D  GRAD.:    16.434 HEAT:  60.05781
+ CYCLE:    73 TIME:   0.012 TIME LEFT:  2.00D  GRAD.:    14.566 HEAT:  60.03671
+ CYCLE:    74 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:    14.845 HEAT:  60.03456
+ CYCLE:    75 TIME:   0.012 TIME LEFT:  2.00D  GRAD.:    14.507 HEAT:  60.03193
+ CYCLE:    76 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:    14.393 HEAT:  60.03166
+ CYCLE:    77 TIME:   0.012 TIME LEFT:  2.00D  GRAD.:    15.752 HEAT:  60.04037
+ CYCLE:    78 TIME:   0.047 TIME LEFT:  2.00D  GRAD.:    14.301 HEAT:  60.03824
+ CYCLE:    79 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:    14.388 HEAT:  60.03345
+ CYCLE:    80 TIME:   0.012 TIME LEFT:  2.00D  GRAD.:    14.767 HEAT:  60.02946
+ CYCLE:    81 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:    14.225 HEAT:  60.02826
+ CYCLE:    82 TIME:   0.012 TIME LEFT:  2.00D  GRAD.:    14.891 HEAT:  60.02780
+ CYCLE:    83 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:    13.896 HEAT:  60.03453
+ CYCLE:    84 TIME:   0.012 TIME LEFT:  2.00D  GRAD.:    14.239 HEAT:  60.02608
+ CYCLE:    85 TIME:   0.012 TIME LEFT:  2.00D  GRAD.:    14.386 HEAT:  60.02527
+ CYCLE:    86 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:    14.671 HEAT:  60.02502
+ CYCLE:    87 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:    15.188 HEAT:  60.01954
+ CYCLE:    88 TIME:   0.051 TIME LEFT:  2.00D  GRAD.:    13.890 HEAT:  60.00019
+ CYCLE:    89 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:    13.400 HEAT:  59.98322
+ CYCLE:    90 TIME:   0.012 TIME LEFT:  2.00D  GRAD.:    12.444 HEAT:  59.94870
+ CYCLE:    91 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:    10.988 HEAT:  59.88288
+ CYCLE:    92 TIME:   0.012 TIME LEFT:  2.00D  GRAD.:     9.502 HEAT:  59.76530
+ CYCLE:    93 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:     8.864 HEAT:  59.65607
+ CYCLE:    94 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:     8.261 HEAT:  59.54982
+ CYCLE:    95 TIME:   0.012 TIME LEFT:  2.00D  GRAD.:     8.168 HEAT:  59.44709
+ CYCLE:    96 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:    18.967 HEAT:  59.37569
+ CYCLE:    97 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:    15.995 HEAT:  59.36476
+ CYCLE:    98 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:     9.090 HEAT:  59.34229
+ CYCLE:    99 TIME:   0.012 TIME LEFT:  2.00D  GRAD.:     7.326 HEAT:  59.31619
+ CYCLE:   100 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:     6.959 HEAT:  59.30035
+ CYCLE:   101 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:     6.704 HEAT:  59.25478
+ CYCLE:   102 TIME:   0.012 TIME LEFT:  2.00D  GRAD.:     6.257 HEAT:  59.16340
+ CYCLE:   103 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:     5.527 HEAT:  58.98971
+ CYCLE:   104 TIME:   0.012 TIME LEFT:  2.00D  GRAD.:     5.011 HEAT:  58.82830
+ CYCLE:   105 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:     7.302 HEAT:  58.67882
+ CYCLE:   106 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:     4.441 HEAT:  58.66273
+ CYCLE:   107 TIME:   0.012 TIME LEFT:  2.00D  GRAD.:     4.192 HEAT:  58.63616
+ CYCLE:   108 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:     3.962 HEAT:  58.56015
+ CYCLE:   109 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:     3.441 HEAT:  58.41407
+ CYCLE:   110 TIME:   0.012 TIME LEFT:  2.00D  GRAD.:     2.626 HEAT:  58.16570
+ CYCLE:   111 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:     3.864 HEAT:  57.98168
+ CYCLE:   112 TIME:   0.012 TIME LEFT:  2.00D  GRAD.:     1.742 HEAT:  57.95742
+ CYCLE:   113 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:     1.532 HEAT:  57.91806
+ CYCLE:   114 TIME:   0.012 TIME LEFT:  2.00D  GRAD.:     1.310 HEAT:  57.82303
+ CYCLE:   115 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:     1.415 HEAT:  57.75795
+ CYCLE:   116 TIME:   0.012 TIME LEFT:  2.00D  GRAD.:     3.105 HEAT:  57.67671
+ CYCLE:   117 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:     5.884 HEAT:  57.62984
+ CYCLE:   118 TIME:   0.012 TIME LEFT:  2.00D  GRAD.:    10.649 HEAT:  57.56270
+ CYCLE:   119 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:     6.197 HEAT:  57.46898
+ CYCLE:   120 TIME:   0.012 TIME LEFT:  2.00D  GRAD.:     9.967 HEAT:  57.35635
+ CYCLE:   121 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:     4.598 HEAT:  57.27250
+ CYCLE:   122 TIME:   0.012 TIME LEFT:  2.00D  GRAD.:     3.990 HEAT:  57.19608
+ CYCLE:   123 TIME:   0.012 TIME LEFT:  2.00D  GRAD.:     9.754 HEAT:  57.11930
+ CYCLE:   124 TIME:   0.012 TIME LEFT:  2.00D  GRAD.:    11.797 HEAT:  56.94501
+ CYCLE:   125 TIME:   0.012 TIME LEFT:  2.00D  GRAD.:    20.374 HEAT:  56.30905
+ CYCLE:   126 TIME:   0.020 TIME LEFT:  2.00D  GRAD.:    28.518 HEAT:  55.98736
+ CYCLE:   127 TIME:   0.020 TIME LEFT:  2.00D  GRAD.:    23.503 HEAT:  55.67316
+ CYCLE:   128 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:     6.267 HEAT:  55.44081
+ CYCLE:   129 TIME:   0.012 TIME LEFT:  2.00D  GRAD.:    12.146 HEAT:  55.32687
+ CYCLE:   130 TIME:   0.020 TIME LEFT:  2.00D  GRAD.:    12.705 HEAT:  55.32523
+ CYCLE:   131 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:     5.169 HEAT:  55.25337
+ CYCLE:   132 TIME:   0.023 TIME LEFT:  2.00D  GRAD.:    10.742 HEAT:  55.23780
+ CYCLE:   133 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:     2.682 HEAT:  55.21741
+ CYCLE:   134 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:     4.558 HEAT:  55.21142
+ CYCLE:   135 TIME:   0.012 TIME LEFT:  2.00D  GRAD.:     1.951 HEAT:  55.20331
+ CYCLE:   136 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:     1.608 HEAT:  55.19903
+ CYCLE:   137 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:     2.837 HEAT:  55.19318
+ CYCLE:   138 TIME:   0.012 TIME LEFT:  2.00D  GRAD.:     2.340 HEAT:  55.18507
+ CYCLE:   139 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:     5.452 HEAT:  55.17719
+ CYCLE:   140 TIME:   0.012 TIME LEFT:  2.00D  GRAD.:     3.518 HEAT:  55.15999
+ CYCLE:   141 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:     2.664 HEAT:  55.14527
+ CYCLE:   142 TIME:   0.012 TIME LEFT:  2.00D  GRAD.:     4.742 HEAT:  55.13849
+ CYCLE:   143 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:     3.511 HEAT:  55.13197
+ CYCLE:   144 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:     1.859 HEAT:  55.12829
+ CYCLE:   145 TIME:   0.012 TIME LEFT:  2.00D  GRAD.:     0.702 HEAT:  55.12499
+ CYCLE:   146 TIME:   0.023 TIME LEFT:  2.00D  GRAD.:     1.575 HEAT:  55.12228
+ CYCLE:   147 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:     1.463 HEAT:  55.12059
+ CYCLE:   148 TIME:   0.012 TIME LEFT:  2.00D  GRAD.:     0.572 HEAT:  55.11942
+ CYCLE:   149 TIME:   0.012 TIME LEFT:  2.00D  GRAD.:     0.531 HEAT:  55.11917
+ CYCLE:   150 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:     0.349 HEAT:  55.11896
+ CYCLE:   151 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:     0.146 HEAT:  55.11876
+ CYCLE:   152 TIME:   0.012 TIME LEFT:  2.00D  GRAD.:     0.139 HEAT:  55.11869
+ CYCLE:   153 TIME:   0.008 TIME LEFT:  2.00D  GRAD.:     0.137 HEAT:  55.11866
+ CYCLE:   154 TIME:   0.012 TIME LEFT:  2.00D  GRAD.:     0.036 HEAT:  55.11863
+
+     GRADIENT =  0.03559 IS LESS THAN CUTOFF =  0.05000
+
+
+
+ -------------------------------------------------------------------------------
+ PM6 PRECISE POLAR MMOK XYZ ENPART STATIC SUPER BONDS LARGE PRTXYZ DISP ALLVEC CYCLES = 8000
+ mescn
+ All coordinates are Cartesian
+
+
+     GEOMETRY OPTIMISED USING EIGENVECTOR FOLLOWING (EF).     
+     SCF FIELD WAS ACHIEVED                                   
+
+
+                              PM6 CALCULATION
+                                                       MOPAC v22.1.1 MacOS
+                                                       Mon Apr 22 11:30:34 2024
+
+
+
+
+          FINAL HEAT OF FORMATION =         55.11863 KCAL/MOL =     230.61633 KJ/MOL
+
+          TOTAL ENERGY            =     -15251.73368 KCAL/MOL = ELECTRONIC ENERGY + CORE-CORE REPULSION
+          ENERGY OF ATOMS         =      15306.85231 KCAL/MOL
+                              SUM =         55.11863 KCAL/MOL
+          DISPERSION ENERGY       =          0.00000 KCAL/MOL
+                              SUM =         55.11863 KCAL/MOL = FINAL HEAT OF FORMATION
+
+
+
+          TOTAL ENERGY            =       -661.37777 EV
+          ELECTRONIC ENERGY       =      -1984.59259 EV 
+          CORE-CORE REPULSION     =       1323.21482 EV
+          COSMO AREA              =        130.26 SQUARE ANGSTROMS
+          COSMO VOLUME            =        120.47 CUBIC ANGSTROMS
+
+          GRADIENT NORM           =          0.03559          =       0.01258 PER ATOM
+          IONIZATION POTENTIAL    =          7.487290 EV
+          HOMO LUMO ENERGIES (EV) =         -7.487 -1.771
+          NO. OF FILLED LEVELS    =         12
+          MOLECULAR WEIGHT        =         97.4174         POINT GROUP:  Cs  
+
+          MOLECULAR DIMENSIONS (Angstroms)
+
+            Atom       Atom       Distance
+           Mg     8    N     4     4.95665
+            N     4    H     7     2.84326
+           Mg     8    H     6     1.69941
+
+
+          SCF CALCULATIONS        =        177
+ 
+          WALL-CLOCK TIME         =      1.805 SECONDS
+          COMPUTATION TIME        =     11.289 SECONDS
+
+
+
+
+   ATOM   CHEMICAL          X               Y               Z
+  NUMBER   SYMBOL      (ANGSTROMS)     (ANGSTROMS)     (ANGSTROMS)
+ 
+     1       C         10.07997159  *  26.19432722  *   4.02145201  *
+     2       S         11.28609457  *  26.38330919  *   5.39362576  *
+     3       C         10.32039044  *  26.17386449  *   6.79576091  *
+     4       N          9.71405178  *  26.04027973  *   7.76802818  *
+     5       H          9.08393769  *  25.99934523  *   4.44021699  *
+     6       H         10.34678923  *  25.34886133  *   3.38254695  *
+     7       H         10.02083912  *  27.10927706  *   3.42681499  *
+     8      Mg         13.10951646  *  26.74439981  *   4.22636403  *
+
+                             CARTESIAN COORDINATES
+
+   1    C       10.079971588    26.194327216     4.021452013
+   2    S       11.286094567    26.383309186     5.393625760
+   3    C       10.320390444    26.173864491     6.795760914
+   4    N        9.714051778    26.040279735     7.768028178
+   5    H        9.083937687    25.999345233     4.440216991
+   6    H       10.346789234    25.348861330     3.382546945
+   7    H       10.020839122    27.109277059     3.426814985
+   8   Mg       13.109516461    26.744399811     4.226364035
+
+
+           Empirical Formula: C2 H3 N S Mg  =     8 atoms
+
+
+
+      MOLECULAR POINT GROUP   :   Cs  
+
+
+                EIGENVECTORS  
+
+
+   Root No.       1         2         3         4         5         6         7         8
+
+                 1 a'      2 a'      3 a'      4 a'      1 a"      5 a'      6 a'      2 a"  
+
+               -30.969   -29.634   -23.753   -17.604   -14.888   -14.614   -13.527   -13.288
+  
+  S   C    1    0.1511    0.3547    0.6232    0.0627    0.0000   -0.0006    0.0119   -0.0000
+  Px  C    1    0.0321    0.0749   -0.1118   -0.2941   -0.1333   -0.2655    0.4620    0.0317
+  Py  C    1    0.0046    0.0118   -0.0171   -0.0546    0.7249   -0.0638    0.0853   -0.1750
+  Pz  C    1    0.0525    0.0819   -0.1469    0.0315    0.0179    0.5960   -0.0273   -0.0040
+  S   S    2    0.3963    0.6960   -0.3846   -0.2243    0.0001    0.0314   -0.1031    0.0001
+  Px  S    2   -0.0953   -0.0919   -0.0653   -0.3156   -0.0455   -0.2126   -0.3018   -0.0380
+  Py  S    2   -0.0185   -0.0149   -0.0072   -0.0678    0.2467   -0.0349   -0.0503    0.2085
+  Pz  S    2    0.0441   -0.0844   -0.2045    0.4324    0.0054   -0.1938   -0.2048    0.0050
+  x2  S    2    0.0110    0.0158    0.0009    0.0220    0.0073    0.0173    0.0165    0.0048
+  xz  S    2   -0.0113    0.0021    0.0489   -0.0764    0.0038    0.0636    0.0154   -0.0075
+  z2  S    2    0.0157    0.0171   -0.0040    0.0381   -0.0010   -0.0439    0.0238    0.0016
+  yz  S    2   -0.0030   -0.0007    0.0091   -0.0161   -0.0229    0.0130    0.0015    0.0397
+  xy  S    2    0.0044    0.0059   -0.0009    0.0102   -0.0208    0.0050    0.0059   -0.0100
+  S   C    3    0.5462   -0.0853   -0.1404    0.4324   -0.0004   -0.1775    0.1171   -0.0001
+  Px  C    3   -0.1064    0.1666   -0.1317    0.1668   -0.0257   -0.2607   -0.3991   -0.1177
+  Py  C    3   -0.0233    0.0371   -0.0273    0.0376    0.1385   -0.0461   -0.0668    0.6439
+  Pz  C    3    0.1636   -0.2856    0.1365   -0.3034    0.0032   -0.0876   -0.2507    0.0151
+  S   N    4    0.5898   -0.3700    0.1024   -0.3170    0.0003    0.1726   -0.1671    0.0002
+  Px  N    4    0.1680   -0.0815   -0.0181    0.0845   -0.0212   -0.2789   -0.3011   -0.1232
+  Py  N    4    0.0371   -0.0178   -0.0033    0.0191    0.1137   -0.0517   -0.0453    0.6733
+  Pz  N    4   -0.2721    0.1245   -0.0014   -0.1582    0.0028    0.0111   -0.4023    0.0159
+  S   H    5    0.0676    0.1396    0.3101    0.2180   -0.0007    0.3388   -0.3024    0.0006
+  S   H    6    0.0565    0.1425    0.3279   -0.0038   -0.4233   -0.2574    0.0548    0.1096
+  S   H    7    0.0565    0.1425    0.3278   -0.0030    0.4237   -0.2569    0.0537   -0.1101
+  S  Mg    8    0.0604    0.1352   -0.0323   -0.2440   -0.0002   -0.1077   -0.0900    0.0000
+  Px Mg    8   -0.0314   -0.0642    0.0148    0.0766   -0.0038    0.0183    0.0224   -0.0022
+  Py Mg    8   -0.0062   -0.0125    0.0035    0.0149    0.0208    0.0036    0.0053    0.0118
+  Pz Mg    8    0.0177    0.0317   -0.0333   -0.0393    0.0005   -0.0118   -0.0492    0.0003
+
+
+   Root No.       9        10        11        12        13        14        15        16
+
+                 7 a'      8 a'      3 a"      9 a'     10 a'      4 a"     11 a'     12 a'  
+
+               -12.183   -12.120    -9.115    -7.487    -1.771    -1.175    -1.171     0.326
+  
+  S   C    1    0.0883    0.0227   -0.0000    0.0292   -0.0260    0.0002    0.0424    0.2393
+  Px  C    1    0.3242    0.1942    0.0241    0.0994   -0.0413    0.0011    0.0649    0.3531
+  Py  C    1    0.0513    0.0379   -0.1318    0.0142   -0.0061   -0.0040    0.0106    0.0554
+  Pz  C    1    0.3423   -0.0989   -0.0030    0.1782   -0.0613    0.0002    0.0535    0.3956
+  S   S    2   -0.0990   -0.0181   -0.0000   -0.3013    0.1577   -0.0002   -0.0328   -0.1091
+  Px  S    2   -0.3598   -0.3300   -0.1668   -0.0419   -0.0912    0.0182   -0.0011    0.3383
+  Py  S    2   -0.0594   -0.0650    0.9105   -0.0052   -0.0204   -0.0993   -0.0004    0.0502
+  Pz  S    2   -0.2828    0.1935    0.0212   -0.1086    0.1607   -0.0021    0.0318    0.5063
+  x2  S    2    0.0007   -0.0029   -0.0189    0.1213   -0.1081   -0.0118    0.0294    0.0591
+  xz  S    2    0.1033   -0.0124    0.0020   -0.1664    0.1683    0.0053    0.0485    0.3597
+  z2  S    2    0.0581    0.0506   -0.0002    0.1114   -0.0847   -0.0010   -0.0195    0.0728
+  yz  S    2    0.0166   -0.0042   -0.0044   -0.0380    0.0370   -0.0232    0.0091    0.0615
+  xy  S    2   -0.0023   -0.0008    0.0497    0.0501   -0.0452    0.0300    0.0097    0.0135
+  S   C    3    0.0240   -0.0752    0.0000    0.2161   -0.1467    0.0000    0.0033   -0.0321
+  Px  C    3    0.2776    0.2118    0.0130    0.1524   -0.0701    0.0043    0.0011    0.1490
+  Py  C    3    0.0439    0.0444   -0.0709    0.0335   -0.0160   -0.0233    0.0004    0.0241
+  Pz  C    3    0.3002   -0.2459   -0.0017   -0.2413    0.1369   -0.0006   -0.0027    0.1358
+  S   N    4   -0.1496    0.4694    0.0000    0.0763   -0.0200   -0.0000   -0.0003   -0.0059
+  Px  N    4    0.5130   -0.2560    0.0518   -0.0423    0.0084   -0.0072   -0.0043   -0.2313
+  Py  N    4    0.0913   -0.0592   -0.2830   -0.0112    0.0031    0.0391   -0.0011   -0.0390
+  Pz  N    4    0.1156    0.5286   -0.0065    0.1508   -0.0677    0.0009    0.0027   -0.1440
+  S   H    5   -0.0874   -0.1603    0.0003    0.0231   -0.0099   -0.0001   -0.0104    0.0109
+  S   H    6   -0.0736    0.0666    0.1075   -0.0363    0.0214   -0.0073    0.0091    0.0085
+  S   H    7   -0.0737    0.0659   -0.1078   -0.0361    0.0213    0.0074    0.0090    0.0085
+  S  Mg    8   -0.1719   -0.2746    0.0000    0.7815    0.1253    0.0002    0.0328    0.0032
+  Px Mg    8    0.0361    0.0549   -0.0186    0.0919    0.7591   -0.1761    0.5059   -0.1015
+  Py Mg    8    0.0081    0.0111    0.1014    0.0193    0.1498    0.9768    0.0674   -0.0175
+  Pz Mg    8   -0.0620   -0.0465    0.0023   -0.1081   -0.4668    0.0273    0.8505   -0.0476
+
+
+   Root No.      17        18        19        20        21        22        23        24
+
+                13 a'      5 a"     14 a'     15 a'      6 a"     16 a'     17 a'      7 a"  
+
+                 1.138     1.946     2.118     3.416     3.620     3.843     3.996     4.073
+  
+  S   C    1    0.0618    0.0000   -0.0634    0.0087    0.0000   -0.0288   -0.0839    0.0000
+  Px  C    1    0.0718   -0.0000   -0.1305   -0.0134    0.0145   -0.0033   -0.2159    0.0016
+  Py  C    1    0.0114   -0.0001   -0.0211   -0.0026   -0.0788    0.0022   -0.0349   -0.0085
+  Pz  C    1    0.0738    0.0000   -0.1226    0.0089   -0.0019   -0.1180   -0.1971   -0.0001
+  S   S    2   -0.0030   -0.0000    0.0207    0.0844    0.0000    0.0276    0.0110    0.0000
+  Px  S    2    0.5066    0.0240   -0.2481   -0.1521    0.0051   -0.0146   -0.0416   -0.0119
+  Py  S    2    0.1014   -0.1312   -0.0421   -0.0332   -0.0282   -0.0039   -0.0022    0.0648
+  Pz  S    2   -0.3687   -0.0031   -0.1437    0.2297   -0.0006    0.0531   -0.2308    0.0016
+  x2  S    2    0.1409    0.0733   -0.1890    0.6689   -0.2737   -0.2504    0.5153    0.2076
+  xz  S    2   -0.2511   -0.0469   -0.0718   -0.3769   -0.0829    0.2281    0.6960   -0.1531
+  z2  S    2    0.2613    0.0094    0.2291    0.2906    0.0222    0.8568    0.0195    0.0311
+  yz  S    2   -0.0601    0.2310   -0.0177   -0.0976    0.5547    0.0135    0.1142    0.7668
+  xy  S    2    0.0597   -0.1783   -0.0698    0.2628    0.7591   -0.1004    0.1779   -0.4975
+  S   C    3    0.2366   -0.0000   -0.0427   -0.3056   -0.0001   -0.0616    0.1630   -0.0001
+  Px  C    3    0.1992   -0.1249    0.5207   -0.0996   -0.0029   -0.2319    0.1075    0.0453
+  Py  C    3    0.0398    0.6828    0.0865   -0.0228    0.0154   -0.0402    0.0209   -0.2476
+  Pz  C    3   -0.1448    0.0159    0.3769    0.1957    0.0004   -0.0956   -0.0561   -0.0057
+  S   N    4    0.0232    0.0000   -0.0003    0.0091    0.0000    0.0011   -0.0088    0.0000
+  Px  N    4   -0.1169    0.1146   -0.4779    0.0572    0.0019    0.1541   -0.0729   -0.0301
+  Py  N    4   -0.0212   -0.6262   -0.0797    0.0133   -0.0100    0.0265   -0.0142    0.1644
+  Pz  N    4   -0.0063   -0.0146   -0.3328   -0.1191   -0.0003    0.0723    0.0369    0.0038
+  S   H    5    0.0678   -0.0001    0.0006   -0.0421   -0.0003    0.1105   -0.0782   -0.0001
+  S   H    6   -0.0257   -0.0115   -0.0269    0.0193   -0.1138   -0.0652   -0.0197   -0.0137
+  S   H    7   -0.0253    0.0115   -0.0268    0.0190    0.1141   -0.0647   -0.0199    0.0138
+  S  Mg    8   -0.3959   -0.0000    0.0774   -0.0024    0.0000    0.0452    0.0118    0.0000
+  Px Mg    8    0.3146   -0.0072   -0.0349    0.0211    0.0030   -0.0178   -0.0152   -0.0054
+  Py Mg    8    0.0613    0.0396   -0.0078    0.0042   -0.0166   -0.0041   -0.0025    0.0295
+  Pz Mg    8   -0.1612    0.0009    0.0619   -0.0135   -0.0004    0.0371   -0.0111    0.0007
+
+
+   Root No.      25        26        27        28
+
+                18 a'      8 a"     19 a'     20 a'  
+
+                 5.124     5.160     5.966     6.476
+  
+  S   C    1    0.0507    0.0002    0.6091    0.0259
+  Px  C    1    0.4285   -0.1119   -0.2062   -0.0047
+  Py  C    1    0.0856    0.6226   -0.0343   -0.0009
+  Pz  C    1   -0.4419    0.0124   -0.1453    0.0029
+  S   S    2    0.0031    0.0000   -0.0016    0.0387
+  Px  S    2   -0.0427    0.0070    0.0351   -0.0265
+  Py  S    2   -0.0083   -0.0395    0.0056   -0.0059
+  Pz  S    2    0.0281   -0.0008    0.0370    0.0470
+  x2  S    2    0.0907   -0.0428   -0.0440    0.0237
+  xz  S    2   -0.0023   -0.0186   -0.0512   -0.0807
+  z2  S    2   -0.1450    0.0040   -0.0142    0.0430
+  yz  S    2    0.0026    0.1176   -0.0077   -0.0171
+  xy  S    2    0.0336    0.1216   -0.0154    0.0110
+  S   C    3   -0.0083   -0.0000   -0.0162    0.4303
+  Px  C    3    0.0218   -0.0004   -0.0120   -0.3118
+  Py  C    3    0.0033    0.0030   -0.0015   -0.0687
+  Pz  C    3    0.0290    0.0003   -0.0328    0.4984
+  S   N    4   -0.0031   -0.0000    0.0123   -0.3110
+  Px  N    4   -0.0158    0.0003    0.0230   -0.3122
+  Py  N    4   -0.0027   -0.0021    0.0046   -0.0688
+  Pz  N    4   -0.0064   -0.0001   -0.0142    0.5004
+  S   H    5    0.5821    0.0045   -0.4773   -0.0195
+  S   H    6   -0.3486    0.5301   -0.4035   -0.0110
+  S   H    7   -0.3407   -0.5350   -0.4039   -0.0111
+  S  Mg    8    0.0082   -0.0000    0.0169    0.0032
+  Px Mg    8   -0.0026   -0.0009    0.0082    0.0073
+  Py Mg    8   -0.0005    0.0052    0.0016    0.0014
+  Pz Mg    8   -0.0005    0.0001   -0.0049   -0.0042
+
+           SUPERDELOCALIZABILITIES
+
+ Mulliken electronegativity:        4.629267
+ Parr & Pople absolute hardness:    2.858023
+ Schuurmann MO shift alpha:        -4.629267
+ 
+ Ehomo:                            -7.487290
+ Elumo:                            -1.771244
+
+
+  a   n        Dn(r)        De(r)   q(r) - Z(r)
+
+  C   1    -0.433961    -0.433727    -4.502934
+  S   2    -1.651671    -0.803464    -5.958527
+  C   3    -0.998181    -0.047681    -0.190078
+  N   4    -0.648502    -0.316914    -3.083878
+ Mg   8    -0.462301    -0.434146    -3.958908
+
+ Total:    -4.194616    -2.035932
+
+  a   n        piS(r)
+
+  C   1    -0.200697
+  S   2    -0.186727
+  C   3    -0.216946
+  N   4    -0.194849
+ Mg   8    -0.089527
+
+ Total:    -0.888747
+
+  a   n       homo-1         homo         lumo       lumo+1
+
+  C   1     1.795362     4.269893     0.617223     0.001716
+  S   2    86.021440    16.316343    11.001637     1.179958
+  C   3     0.038221     5.627481     4.855194     0.070755
+  N   4     0.766898     7.352874     2.874626     0.146129
+ Mg   8     9.168008     2.470447     0.515225     0.158300
+
+
+              NET ATOMIC CHARGES AND DIPOLE CONTRIBUTIONS
+
+  ATOM NO.   TYPE          CHARGE      No. of ELECS.   s-Pop       p-Pop       d-Pop       
+    1          C          -0.502934        4.5029     1.10054     3.40239
+    2          S           0.041472        5.9585     1.90439     3.85257     0.20157
+    3          C          -0.069550        4.0695     1.22074     2.84881
+    4          N          -0.238082        5.2381     1.80400     3.43408
+    5          H           0.184226        0.8158     0.81577
+    6          H           0.171616        0.8284     0.82838
+    7          H           0.171645        0.8284     0.82835
+    8         Mg           0.241606        1.7584     1.63587     0.12252
+ DIPOLE           X         Y         Z       TOTAL
+ POINT-CHG.     3.384     0.744    -5.346     6.371
+ HYBRID        -0.417    -0.083     0.309     0.525
+ SUM            2.967     0.660    -5.038     5.884
+
+
+          ATOMIC ORBITAL ELECTRON POPULATIONS
+
+     Atom    s        px        py        pz      x^2-y^2     xz        z^2       yz        xy
+    1  C   1.10054   1.12313   1.18516   1.09410
+    2  S   1.90439   1.05822   1.90030   0.89404   0.03318   0.10246   0.04568   0.00876   0.01149
+    3  C   1.22074   0.94272   0.90893   0.99716
+    4  N   1.80400   1.11933   1.13017   1.18458
+    5  H   0.81577
+    6  H   0.82838
+    7  H   0.82835
+    8 Mg   1.63587   0.05030   0.02379   0.04844
+
+          BONDING CONTRIBUTION OF EACH M.O.
+
+  1.3558  1.0299  1.6825  1.4005  1.8081  1.8104  1.8115  1.8751  1.8228  1.0118
+  0.3953  1.0215 -0.5404 -0.0874 -0.0387 -1.5314 -1.5654 -1.8702 -1.7987 -0.7913
+ -0.0657 -0.3077 -0.5971 -0.1934 -1.8925 -1.8945 -1.9035 -1.9472
+
+
+
+
+
+            (VALENCIES)   BOND ORDERS
+
+     1  C     (3.907)     6  H 0.964     7  H 0.964     2  S 0.964     5  H 0.957     8 Mg 0.039     4  N 0.016
+ 
+     2  S     (2.514)     1  C 0.964     3  C 0.836     8 Mg 0.631     4  N 0.074
+ 
+     3  C     (3.875)     4  N 2.904     2  S 0.836     8 Mg 0.130
+ 
+     4  N     (3.006)     3  C 2.904     2  S 0.074     1  C 0.016     8 Mg 0.012
+ 
+     5  H     (0.966)     1  C 0.957
+ 
+     6  H     (0.971)     1  C 0.964
+ 
+     7  H     (0.971)     1  C 0.964
+ 
+     8 Mg     (0.816)     2  S 0.631     3  C 0.130     1  C 0.039     4  N 0.012
+ 
+
+
+
+
+ SELF-Q:    SELF OR INACTIVE CHARGE
+ ACTIV-Q:   CHARGE WHICH IS USED TO FORM BONDS
+ TOTAL-Q:   SELF-Q + ACTIV-Q
+ FREE-VA:   TOTAL-Q - VALENCE
+ STAT.PROM: TOTAL-Q - CORE CHARGE
+ MULL.PROM: -CHARGE (SEE ABOVE)
+
+       SELF-Q    ACTIV-Q   TOTAL-Q   VALENCE   FREE-VA STAT.PROM MULL.PROM
+
+
+   1   0.59630   3.90664   4.50293   3.90664   0.00000   0.50293   0.50293
+
+   2   3.44444   2.51409   5.95853   2.51409   0.00000  -0.04147  -0.04147
+
+   3   0.19456   3.87498   4.06955   3.87498   0.00000   0.06955   0.06955
+
+   4   2.23203   3.00605   5.23808   3.00605   0.00000   0.23808   0.23808
+
+   5  -0.15029   0.96606   0.81577   0.96606   0.00000  -0.18423  -0.18423
+
+   6  -0.14216   0.97055   0.82838   0.97055   0.00000  -0.17162  -0.17162
+
+   7  -0.14218   0.97054   0.82835   0.97054   0.00000  -0.17165  -0.17165
+
+   8   0.94204   0.81635   1.75839   0.81635   0.00000  -0.24161  -0.24161
+
+ CLOSED SHELL
+
+
+
+
+
+          TOTAL ENERGY PARTITIONING
+
+          ALL ENERGIES ARE IN ELECTRON VOLTS
+
+            ONE-CENTER TERMS 
+          E-E:  ELECTRON-ELECTRON REPULSION
+          E-N:  ELECTRON-NUCLEAR ATTRACTION
+
+
+   ATOM      E-E       E-N    (E-E + E-N)
+   C   1    91.5604 -192.1107 -100.5503
+   S   2    86.8106 -250.8373 -164.0266
+   C   3    75.7320 -176.1427 -100.4107
+   N   4   112.7312 -275.5806 -162.8494
+   H   5     2.4039   -9.1750   -6.7711
+   H   6     2.4787   -9.3168   -6.8381
+   H   7     2.4786   -9.3165   -6.8379
+  Mg   8     5.3587  -24.7708  -19.4120
+
+              TWO-CENTER TERMS
+           
+          J:   RESONANCE ENERGY          E-E: ELECTRON-ELECTRON REPULSION
+          K:   EXCHANGE ENERGY           E-N: ELECTRON-NUCLEAR ATTRACTION
+                                         N-N: NUCLEAR-NUCLEAR REPULSION
+          C:   COULOMBIC INTERACTION = E-E + E-N + N-N
+          EE:  TOTAL OF ELECTRONIC AND NUCLEAR ENERGIES
+
+
+     ATOM          J        K       E-E       E-N      N-N      C        EE
+     PAIR
+ 
+  S    2  C    1   -8.6772  -4.1164 165.8667 -319.0883 155.9446  2.7230 -10.0707
+ 
+  C    3  C    1   -0.0185  -0.0055  88.7693 -165.6810  77.2041  0.2924   0.2684
+  C    3  S    2  -10.3137  -3.8824 158.7947 -318.7483 164.2315  4.2779  -9.9183
+ 
+  N    4  C    1    0.0037  -0.0317  85.2947 -158.2227  73.2573  0.3293   0.3012
+  N    4  S    2    0.1519  -0.1635 138.3066 -274.2990 136.0026  0.0102  -0.0014
+  N    4  C    3  -31.9820 -14.8630 177.4652 -356.9418 193.5144 14.0378 -32.8073
+ 
+  H    5  C    1  -11.2464  -5.3235  34.3526  -73.2060  43.0707  4.2173 -12.3526
+  H    5  S    2   -0.0242  -0.0094  25.1865  -56.5198  31.5939  0.2606   0.2270
+  H    5  C    3   -0.0010  -0.0014  16.7985  -37.0152  20.1428 -0.0739  -0.0763
+  H    5  N    4   -0.0002  -0.0002  17.1323  -37.5206  20.2495 -0.1388  -0.1393
+ 
+  H    6  C    1  -11.4026  -5.3813  34.9594  -73.8562  43.2323  4.3354 -12.4484
+  H    6  S    2    0.0197  -0.0086  25.5494  -56.7291  31.3962  0.2166   0.2277
+  H    6  C    3   -0.0031  -0.0016  13.3551  -29.1518  15.7294 -0.0673  -0.0721
+  H    6  N    4   -0.0001  -0.0004  13.4212  -29.1309  15.6078 -0.1019  -0.1024
+  H    6  H    5   -0.0867  -0.0037   4.7884  -11.6501   7.1712  0.3095   0.2191
+
+   ATOM          J        K       E-E       E-N      N-N      C        EE
+   PAIR
+  H    7  C    1  -11.4024  -5.3813  34.9581  -73.8549  43.2320  4.3352 -12.4485
+  H    7  S    2    0.0198  -0.0086  25.5495  -56.7303  31.3975  0.2166   0.2279
+  H    7  C    3   -0.0031  -0.0016  13.3630  -29.1696  15.7392 -0.0674  -0.0721
+  H    7  N    4   -0.0001  -0.0004  13.4295  -29.1495  15.6180 -0.1020  -0.1025
+  H    7  H    5   -0.0866  -0.0037   4.7881  -11.6497   7.1711  0.3095   0.2192
+  H    7  H    6   -0.0427  -0.0009   4.8211  -11.6401   7.1065  0.2876   0.2440
+
+   ATOM          J        K       E-E       E-N      N-N      C        EE
+   PAIR
+ Mg    8  C    1   -0.1982  -0.0782  32.6746  -66.5424  33.3780 -0.4897  -0.7661
+ Mg    8  S    2   -4.2085  -1.8988  52.3311 -113.1914  62.8720  2.0117  -4.0956
+ Mg    8  C    3   -0.1636  -0.2111  24.7084  -52.6459  27.8460 -0.0915  -0.4662
+ Mg    8  N    4    0.0014  -0.0140  24.9350  -52.7273  27.6554 -0.1369  -0.1494
+ Mg    8  H    5   -0.0158  -0.0055   4.6934  -11.1309   6.5920  0.1546   0.1333
+ Mg    8  H    6   -0.0122  -0.0015   5.8938  -13.8429   8.1328  0.1836   0.1699
+ Mg    8  H    7   -0.0121  -0.0015   5.8887  -13.8315   8.1261  0.1834   0.1698
+ 
+
+                    Total contribution from hydrogen bonds:         0.000 disp.:    0.000 Tot:     0.000 kcal/mol
+
+
+
+
+***  SUMMARY OF ENERGY PARTITION  ***
+ ---------------------------------------
+     ONE-CENTER TERMS
+
+ ELECTRON-NUCLEAR  (ONE-ELECTRON)         -947.2503 EV
+ ELECTRON-ELECTRON (TWO-ELECTRON)          379.5542 EV
+
+ TOTAL OF ONE-CENTER TERMS                -567.6961 EV
+ ---------------------------------------
+     TWO-CENTER TERMS
+
+ RESONANCE ENERGY                          -89.7047 EV
+ EXCHANGE ENERGY                           -41.3995 EV
+
+ EXCHANGE + RESONANCE ENERGY:             -131.1042 EV
+
+ ELECTRON-ELECTRON REPULSION              1248.0749 EV
+ ELECTRON-NUCLEAR ATTRACTION             -2533.8672 EV
+ NUCLEAR-NUCLEAR REPULSION                1323.2148 EV
+
+ TOTAL ELECTROSTATIC INTERACTION            37.4225 EV
+
+ GRAND TOTAL OF TWO-CENTER TERMS           -93.6816 EV
+ ---------------------------------------
+ ETOT (EONE + ETWO)                       -661.3778 EV
+
+
+ ******************** TDHF POLARIZABILITIES ********************
+
+
+
+          MOLECULAR WEIGHT =   97.42
+
+
+
+          ROTATIONAL CONSTANTS IN CM(-1)
+
+          A =    0.25053524   B =    0.06487825   C =    0.05204760
+
+
+
+           PRINCIPAL MOMENTS OF INERTIA IN UNITS OF 10**(-40)*GRAM-CM**2
+
+          A =      111.7318   B =      431.4659   C =      537.8298
+
+
+ ROTATION MATRIX FOR ORIENTATION OF MOLECULE:
+
+         0.672970    0.717409    0.180099
+         0.140122    0.115426   -0.983383
+        -0.726276    0.687024   -0.022846
+
+
+          CARTESIAN COORDINATES 
+
+    NO.       ATOM         X         Y         Z
+
+     1         C        0.2195   -1.7694   -0.0000
+     2         S        0.0611    0.0604    0.0000
+     3         C       -1.6365    0.3068    0.0000
+     4         N       -2.7694    0.5243   -0.0000
+     5         H       -0.7823   -2.2187    0.0028
+     6         H        0.7446   -2.1145    0.8941
+     7         H        0.7398   -2.1147   -0.8968
+     8        Mg        2.1865    0.6083   -0.0000
+
+
+ ENERGY OF "REORIENTED" SYSTEM WITHOUT FIELD:       55.1186265669
+
+
+  NFREQ=  3  IWFLB=  0  IBET=  1  IGAM=  1
+  ATOL= 0.10000D-02  BTOL= 0.10000D-02    MAXITU=  500    MAXITA=  150
+
+
+ *****************************************************************
+ CALCULATION OF STATIC FIELD QUANTITIES
+ *****************************************************************
+
+ +++++ ALPHA AT       0.00000 EV.
+
+          Calculation of polarizability failed (This part of MOPAC is fragile)
+ *******************************************************************************
+ **                                                                           **
+ **                              MOPAC v22.1.1                                **
+ **                                                                           **
+ *******************************************************************************
+ **          Digital Object Identifier (DOI): 10.5281/zenodo.6511958          **
+ **    Visit the DOI location for information on how to cite this program.    **
+ *******************************************************************************
+
+                              PM6 CALCULATION RESULTS
+
+ *******************************************************************************
+ *  CALCULATION DONE:                                Mon Apr 22 11:30:34 2024  *
+ *  PM6        - The PM6 Hamiltonian to be used
+ *  OLDGEO     - PREVIOUS GEOMETRY TO BE USED
+ *  FORCE      - FORCE CALCULATION SPECIFIED
+ *  T=         - A TIME OF 172800.0 SECONDS REQUESTED
+ *  DUMP=N     - RESTART FILE WRITTEN EVERY 7200.0 SECONDS REQUESTED
+ *  THERMO     - THERMODYNAMIC QUANTITIES TO BE CALCULATED
+ *******************************************************************************
+PM6 OLDGEO FORCE THERMO
+ mescn
+ All coordinates are Cartesian
+   ATOM   CHEMICAL          X               Y               Z
+  NUMBER   SYMBOL      (ANGSTROMS)     (ANGSTROMS)     (ANGSTROMS)
+ 
+     1       C          0.37407530  *  -0.92968811  *  -0.00001373  *
+     2       S          0.21566425  *   0.90012432  *   0.00001667  *
+     3       C         -1.48191080  *   1.14644421  *   0.00002506  *
+     4       N         -2.61481120  *   1.36400289  *  -0.00002368  *
+     5       H         -0.62768622  *  -1.37905621  *   0.00277641  *
+     6       H          0.89918828  *  -1.27480281  *   0.89405344  *
+     7       H          0.89435638  *  -1.27503050  *  -0.89682436  *
+     8      Mg          2.34112402  *   1.44800620  *  -0.00000981  *
+ 
+
+
+          CARTESIAN COORDINATES 
+
+    NO.       ATOM           X           Y           Z
+
+     1         C          0.3741     -0.9297     -0.0000
+     2         S          0.2157      0.9001      0.0000
+     3         C         -1.4819      1.1464      0.0000
+     4         N         -2.6148      1.3640     -0.0000
+     5         H         -0.6277     -1.3791      0.0028
+     6         H          0.8992     -1.2748      0.8941
+     7         H          0.8944     -1.2750     -0.8968
+     8        Mg          2.3411      1.4480     -0.0000
+
+ General Reference for PM6:
+ "Optimization of Parameters for Semiempirical Methods V: Modification of NDDO Approximations
+ and Application to 70 Elements", J. J. P. Stewart, J. Mol. Mod., 13, 1173-1213 (2007)
+ URL: https://link.springer.com/article/10.1007/s00894-007-0233-4
+
+           Empirical Formula: C2 H3 N S Mg  =     8 atoms
+
+
+
+      MOLECULAR POINT GROUP   :   Cs  
+
+
+      RHF CALCULATION, NO. OF DOUBLY OCCUPIED LEVELS = 12
+
+
+
+          HEAT OF FORMATION =      55.118627 KCALS/MOLE
+
+
+          CARTESIAN COORDINATE DERIVATIVES
+
+   NUMBER  ATOM         X            Y            Z
+
+     1       C     -0.005353    -0.018647     0.000032
+     2       S     -0.000332     0.002760    -0.007917
+     3       C      0.008121     0.014699     0.003967
+     4       N     -0.007498    -0.014242    -0.001933
+     5       H      0.003289     0.009564     0.001113
+     6       H     -0.002140     0.000301    -0.005640
+     7       H      0.002367     0.006580     0.006963
+     8      Mg      0.001546    -0.001016     0.003413
+ 
+
+
+          GRADIENT NORM =   0.03549
+
+          MOLECULAR WEIGHT =   97.42
+
+
+
+          ROTATIONAL CONSTANTS IN CM(-1)
+
+          A =    0.25053524   B =    0.06487825   C =    0.05204760
+
+
+
+           PRINCIPAL MOMENTS OF INERTIA IN UNITS OF 10**(-40)*GRAM-CM**2
+
+          A =      111.7318   B =      431.4659   C =      537.8298
+
+
+          ORIENTATION OF MOLECULE IN FORCE CALCULATION
+
+    NO.       ATOM         X         Y         Z
+
+     1          C      -1.7817   -0.0661    0.0000
+     2          S       0.0549   -0.0661    0.0000
+     3          C       0.4468    1.6039    0.0000
+     4          N       0.7612    2.7139   -0.0000
+     5          H      -2.1430    0.9707    0.0028
+     6          H      -2.1708   -0.5595    0.8941
+     7          H      -2.1707   -0.5546   -0.8968
+     8         Mg       0.4175   -2.2309   -0.0000
+
+
+    FIRST DERIVATIVES WILL BE USED IN THE CALCULATION OF SECOND DERIVATIVES
+
+          ESTIMATED TIME TO COMPLETE CALCULATION =        0.75 SECONDS
+
+    FOR POINT-GROUP Cs   THERE ARE   2 UNIQUE SYMMETRY FUNCTIONS.
+
+ STEP:   1 TIME =     0.03 SECS, INTEGRAL =      0.03 TIME LEFT: 172799.96
+ STEP:   2 TIME =     0.02 SECS, INTEGRAL =      0.05 TIME LEFT: 172799.94
+ STEP:   3 TIME =     0.02 SECS, INTEGRAL =      0.07 TIME LEFT: 172799.92
+ STEP:   4 TIME =     0.02 SECS, INTEGRAL =      0.09 TIME LEFT: 172799.90
+ STEP:   5 TIME =     0.02 SECS, INTEGRAL =      0.11 TIME LEFT: 172799.88
+ STEP:   6 TIME =     0.02 SECS, INTEGRAL =      0.13 TIME LEFT: 172799.86
+ STEP:   7 TIME =     0.02 SECS, INTEGRAL =      0.15 TIME LEFT: 172799.84
+ STEP:   8 TIME =     0.02 SECS, INTEGRAL =      0.17 TIME LEFT: 172799.82
+ STEP:   9 TIME =     0.02 SECS, INTEGRAL =      0.19 TIME LEFT: 172799.79
+ STEP:  10 TIME =     0.04 SECS, INTEGRAL =      0.23 TIME LEFT: 172799.76
+ STEP:  11 TIME =     0.02 SECS, INTEGRAL =      0.25 TIME LEFT: 172799.73
+ STEP:  12 TIME =     0.02 SECS, INTEGRAL =      0.27 TIME LEFT: 172799.71
+ STEP:  13 TIME =     0.02 SECS, INTEGRAL =      0.29 TIME LEFT: 172799.70
+ STEP:  14 TIME =     0.02 SECS, INTEGRAL =      0.31 TIME LEFT: 172799.68
+ STEP:  15 TIME =     0.02 SECS, INTEGRAL =      0.33 TIME LEFT: 172799.66
+ STEP:  16 TIME =     0.02 SECS, INTEGRAL =      0.34 TIME LEFT: 172799.64
+ STEP:  17 TIME =     0.02 SECS, INTEGRAL =      0.36 TIME LEFT: 172799.62
+ STEP:  18 TIME =     0.04 SECS, INTEGRAL =      0.40 TIME LEFT: 172799.59
+ STEP:  19                       INTEGRAL =      0.40 TIME LEFT: 172799.59
+ STEP:  20                       INTEGRAL =      0.40 TIME LEFT: 172799.59
+ STEP:  21                       INTEGRAL =      0.40 TIME LEFT: 172799.59
+ STEP:  22 TIME =     0.02 SECS, INTEGRAL =      0.42 TIME LEFT: 172799.56
+ STEP:  23 TIME =     0.02 SECS, INTEGRAL =      0.44 TIME LEFT: 172799.54
+ STEP:  24 TIME =     0.02 SECS, INTEGRAL =      0.46 TIME LEFT: 172799.53
+
+(To convert to Hartree/Bohr^2, multiply by (10^(-21) x N x a0^2)/(4.184 x 627.51) =  0.0642)
+
+
+           FORCE MATRIX IN MILLIDYNES/ANGSTROM
+
+
+                  C  1       S  2       C  3       N  4       H  5       H  6
+ ------------------------------------------------------------------------------
+     C    1   9.407507
+     S    2   2.064719   6.033202
+     C    3   0.260878   2.802627  22.068032
+     N    4   0.023290   0.849431  19.197613  19.985953
+     H    5   3.506476   0.578233   0.046047   0.012738   4.164587
+     H    6   3.542724   0.535213   0.021195   0.004751   0.434319   4.194281
+     H    7   3.543337   0.534932   0.020999   0.004751   0.434323   0.433236
+    Mg    8   0.157246   0.849379   0.122338   0.022638   0.032017   0.037458
+
+
+                  H  7      Mg  8
+ ------------------------------
+     H    7   4.194281
+    Mg    8   0.037309   0.868661
+
+
+          HEAT OF FORMATION =      55.118627 KCALS/MOLE
+
+          ZERO POINT ENERGY      27.138 KCAL/MOL
+
+
+           NORMAL COORDINATE ANALYSIS (Total motion = 1 Angstrom)
+
+
+   Root No.       1         2         3         4         5         6         7         8
+
+                 1 A"      1 A'      2 A"      2 A'      3 A'      4 A'      3 A"      5 A'  
+
+                  70.6      88.4     118.2     183.4     289.2     409.5     410.0     650.4
+  
+           1    0.0000    0.1219   -0.0000   -0.0082    0.0260   -0.0654    0.0000    0.0464
+           2   -0.0000    0.0103   -0.0000    0.1600    0.0116   -0.0552    0.0000    0.0214
+           3   -0.0098   -0.0000   -0.0470   -0.0000   -0.0000    0.0000    0.0009    0.0000
+           4    0.0000    0.1293    0.0000   -0.0102    0.0376   -0.0501   -0.0000    0.0042
+           5   -0.0000   -0.0026    0.0000   -0.0283   -0.1074    0.0255   -0.0000    0.1378
+           6    0.0225   -0.0000    0.1295    0.0000    0.0000    0.0000   -0.1061   -0.0000
+           7   -0.0000   -0.0215   -0.0000    0.0040    0.0900    0.3405    0.0000   -0.0039
+           8    0.0000    0.0370    0.0000   -0.0323   -0.1553   -0.0299    0.0000   -0.1546
+           9   -0.0028    0.0000    0.0266    0.0000    0.0000   -0.0000    0.4872   -0.0000
+          10   -0.0000   -0.1720   -0.0000   -0.0705   -0.1127   -0.1116   -0.0000   -0.0547
+          11    0.0000    0.0797    0.0000   -0.0117   -0.1014    0.1004   -0.0000   -0.1591
+          12   -0.0296    0.0000   -0.1140    0.0000    0.0000    0.0000   -0.2209   -0.0000
+          13    0.0000    0.1256   -0.0000    0.0946    0.1317   -0.1198    0.0000   -0.1584
+          14    0.0000    0.0126   -0.0000    0.1965    0.0499   -0.0795    0.0000   -0.0556
+          15    0.2954   -0.0000   -0.2565   -0.0000   -0.0000    0.0000    0.0333    0.0000
+          16   -0.0201    0.1178   -0.0815   -0.0582   -0.0204   -0.0278    0.0594    0.1378
+          17   -0.2692    0.0162    0.1503    0.1995    0.0550   -0.0875   -0.0076   -0.0635
+          18   -0.1673    0.0016    0.0008   -0.0004    0.0013   -0.0022    0.0237   -0.0003
+          19    0.0201    0.1178    0.0815   -0.0582   -0.0204   -0.0278   -0.0594    0.1378
+          20    0.2692    0.0162   -0.1503    0.1995    0.0550   -0.0875    0.0076   -0.0635
+          21   -0.1673   -0.0016    0.0008    0.0004   -0.0013    0.0022    0.0237    0.0003
+          22    0.0000   -0.1360    0.0000    0.0571   -0.0458    0.0017   -0.0000    0.0001
+          23   -0.0000   -0.0678    0.0000   -0.0437    0.2645   -0.0389   -0.0000   -0.0167
+          24   -0.0047    0.0000   -0.0845    0.0000    0.0000   -0.0000    0.0227   -0.0000
+
+
+   Root No.       9        10        11        12        13        14        15        16
+
+                 6 A'      4 A"      7 A'      5 A"      8 A'      9 A'     10 A'     11 A'  
+
+                 727.9     908.5     936.8    1232.9    1237.4    1274.5    2303.4    2676.9
+  
+           1    0.2995    0.0000    0.0006   -0.0000    0.0002   -0.0498   -0.0029   -0.0003
+           2   -0.0092   -0.0000   -0.0645   -0.0000   -0.0416   -0.0041    0.0010   -0.0508
+           3   -0.0000    0.0676   -0.0000   -0.0427    0.0000    0.0000   -0.0000    0.0000
+           4   -0.1297    0.0000    0.0013    0.0000    0.0010   -0.0083   -0.0018    0.0001
+           5   -0.0171    0.0000    0.0248    0.0000   -0.0009    0.0002   -0.0114   -0.0006
+           6    0.0000   -0.0139    0.0000   -0.0005   -0.0000   -0.0000    0.0000   -0.0000
+           7    0.0119   -0.0000    0.0016   -0.0000    0.0008   -0.0004    0.1438    0.0003
+           8    0.0168    0.0000   -0.0097    0.0000   -0.0002    0.0004    0.5149    0.0005
+           9   -0.0000    0.0010    0.0000    0.0001   -0.0000    0.0000   -0.0000   -0.0000
+          10   -0.0007   -0.0000   -0.0042   -0.0000    0.0002   -0.0000   -0.1167   -0.0001
+          11    0.0221    0.0000   -0.0110    0.0000    0.0003    0.0005   -0.4144   -0.0004
+          12   -0.0000   -0.0004    0.0000   -0.0001   -0.0000    0.0000    0.0000   -0.0000
+          13    0.1956   -0.0000    0.3879    0.0000   -0.1890    0.2957   -0.0046   -0.1741
+          14   -0.0159   -0.0000    0.0968   -0.0000   -0.0848    0.1113   -0.0122    0.4575
+          15   -0.0000   -0.1222   -0.0001    0.4307    0.0000   -0.0000   -0.0000    0.0000
+          16    0.1596   -0.3786   -0.2062   -0.1283    0.0682    0.2871    0.0016    0.0865
+          17    0.0277    0.0032    0.1276    0.2242    0.3038   -0.0390   -0.0017    0.0824
+          18   -0.0120   -0.1203    0.0019    0.0487    0.2077    0.1161    0.0025   -0.1954
+          19    0.1596    0.3786   -0.2062    0.1283    0.0681    0.2871    0.0016    0.0865
+          20    0.0277   -0.0032    0.1276   -0.2242    0.3038   -0.0390   -0.0017    0.0824
+          21    0.0120   -0.1203   -0.0020    0.0487   -0.2077   -0.1161   -0.0025    0.1954
+          22   -0.0037    0.0000    0.0006    0.0000    0.0003   -0.0002    0.0000   -0.0000
+          23    0.0044    0.0000   -0.0043    0.0000   -0.0001   -0.0001   -0.0004    0.0000
+          24    0.0000   -0.0002    0.0000   -0.0001   -0.0000   -0.0000   -0.0000   -0.0000
+
+
+   Root No.      17        18
+
+                 6 A"     12 A'  
+
+                2692.3    2773.3
+  
+           1   -0.0000    0.0228
+           2   -0.0000    0.0005
+           3   -0.0570    0.0000
+           4    0.0000    0.0015
+           5    0.0000    0.0000
+           6   -0.0006   -0.0000
+           7   -0.0000    0.0003
+           8    0.0000    0.0001
+           9   -0.0001    0.0000
+          10   -0.0000   -0.0001
+          11    0.0000   -0.0002
+          12    0.0000    0.0000
+          13   -0.0000   -0.0976
+          14   -0.0000    0.2947
+          15   -0.0274    0.0000
+          16   -0.1733   -0.1136
+          17   -0.2167   -0.1506
+          18    0.3637    0.2736
+          19    0.1733   -0.1136
+          20    0.2166   -0.1506
+          21    0.3637   -0.2736
+          22    0.0000    0.0001
+          23    0.0000    0.0000
+          24    0.0000   -0.0000
+
+
+           MASS-WEIGHTED COORDINATE ANALYSIS (NORMAL COORDINATES)
+
+
+   Root No.       1         2         3         4         5         6         7         8
+
+                 1 A"      1 A'      2 A"      2 A'      3 A'      4 A'      3 A"      5 A'  
+
+                  70.6      88.4     118.2     183.4     289.2     409.5     410.0     650.4
+  
+           1    0.0000    0.3108   -0.0000   -0.0344    0.0528   -0.1609    0.0000    0.1357
+           2   -0.0000    0.0262   -0.0000    0.6713    0.0236   -0.1359    0.0000    0.0626
+           3   -0.0596   -0.0000   -0.1585   -0.0000   -0.0000    0.0000    0.0016    0.0001
+           4    0.0000    0.5386    0.0000   -0.0699    0.1248   -0.2016   -0.0000    0.0200
+           5   -0.0000   -0.0108    0.0000   -0.1941   -0.3565    0.1027   -0.0000    0.6581
+           6    0.2242   -0.0000    0.7144    0.0000    0.0000    0.0000   -0.3036   -0.0000
+           7   -0.0000   -0.0548   -0.0000    0.0168    0.1827    0.8380    0.0000   -0.0113
+           8    0.0000    0.0944    0.0000   -0.1356   -0.3154   -0.0737    0.0000   -0.4519
+           9   -0.0170    0.0000    0.0898    0.0000    0.0000   -0.0000    0.8531   -0.0000
+          10   -0.0000   -0.4738   -0.0000   -0.3196   -0.2471   -0.2965   -0.0000   -0.1726
+          11    0.0000    0.2196    0.0000   -0.0528   -0.2223    0.2668   -0.0000   -0.5020
+          12   -0.1955    0.0000   -0.4157    0.0000    0.0000    0.0000   -0.4177   -0.0000
+          13    0.0000    0.0928   -0.0000    0.1151    0.0775   -0.0854    0.0000   -0.1341
+          14    0.0000    0.0093   -0.0000    0.2389    0.0293   -0.0567    0.0000   -0.0471
+          15    0.5230   -0.0000   -0.2508   -0.0000   -0.0000    0.0000    0.0169    0.0000
+          16   -0.0355    0.0870   -0.0797   -0.0708   -0.0120   -0.0198    0.0302    0.1166
+          17   -0.4766    0.0119    0.1470    0.2425    0.0323   -0.0624   -0.0039   -0.0538
+          18   -0.2962    0.0012    0.0008   -0.0005    0.0008   -0.0016    0.0120   -0.0002
+          19    0.0355    0.0870    0.0797   -0.0707   -0.0120   -0.0198   -0.0302    0.1166
+          20    0.4766    0.0119   -0.1470    0.2425    0.0323   -0.0624    0.0039   -0.0538
+          21   -0.2962   -0.0012    0.0008    0.0004   -0.0008    0.0016    0.0120    0.0003
+          22    0.0000   -0.4932    0.0000    0.3406   -0.1322    0.0061   -0.0000    0.0004
+          23   -0.0000   -0.2459    0.0000   -0.2609    0.7642   -0.1363   -0.0000   -0.0696
+          24   -0.0411    0.0000   -0.4059    0.0000    0.0000   -0.0000    0.0566   -0.0000
+
+
+   Root No.       9        10        11        12        13        14        15        16
+
+                 6 A'      4 A"      7 A'      5 A"      8 A'      9 A'     10 A'     11 A'  
+
+                 727.9     908.5     936.8    1232.9    1237.4    1274.5    2303.4    2676.9
+  
+           1    0.7886    0.0000    0.0032   -0.0000    0.0014   -0.3008   -0.0041   -0.0018
+           2   -0.0243   -0.0001   -0.3762   -0.0000   -0.2450   -0.0248    0.0015   -0.2863
+           3   -0.0000    0.3733   -0.0003   -0.2509    0.0001    0.0000   -0.0000    0.0001
+           4   -0.5582    0.0000    0.0128    0.0000    0.0094   -0.0823   -0.0041    0.0008
+           5   -0.0735    0.0000    0.2364    0.0000   -0.0083    0.0015   -0.0263   -0.0051
+           6    0.0000   -0.1257    0.0000   -0.0050   -0.0000   -0.0000    0.0000   -0.0000
+           7    0.0314   -0.0001    0.0092   -0.0000    0.0047   -0.0026    0.2029    0.0019
+           8    0.0443    0.0000   -0.0563    0.0000   -0.0010    0.0027    0.7264    0.0029
+           9   -0.0000    0.0055    0.0000    0.0005   -0.0000    0.0000   -0.0000   -0.0000
+          10   -0.0021   -0.0001   -0.0266   -0.0000    0.0012   -0.0003   -0.1779   -0.0006
+          11    0.0628    0.0000   -0.0696    0.0000    0.0021    0.0035   -0.6314   -0.0024
+          12   -0.0000   -0.0027    0.0001   -0.0006   -0.0000    0.0001    0.0000   -0.0000
+          13    0.1492   -0.0000    0.6555    0.0000   -0.3223    0.5173   -0.0019   -0.2841
+          14   -0.0121   -0.0000    0.1636   -0.0000   -0.1447    0.1948   -0.0050    0.7468
+          15   -0.0000   -0.1954   -0.0001    0.7328    0.0000   -0.0000   -0.0000    0.0000
+          16    0.1217   -0.6052   -0.3485   -0.2182    0.1163    0.5024    0.0006    0.1412
+          17    0.0211    0.0051    0.2156    0.3815    0.5181   -0.0682   -0.0007    0.1346
+          18   -0.0092   -0.1923    0.0032    0.0829    0.3543    0.2031    0.0010   -0.3189
+          19    0.1217    0.6052   -0.3484    0.2183    0.1162    0.5023    0.0006    0.1412
+          20    0.0211   -0.0051    0.2156   -0.3815    0.5181   -0.0682   -0.0007    0.1346
+          21    0.0092   -0.1923   -0.0033    0.0829   -0.3542   -0.2032   -0.0010    0.3190
+          22   -0.0138    0.0001    0.0053    0.0000    0.0022   -0.0018    0.0001   -0.0002
+          23    0.0165    0.0000   -0.0357    0.0000   -0.0007   -0.0008   -0.0008    0.0001
+          24    0.0000   -0.0018    0.0001   -0.0007   -0.0000   -0.0001   -0.0000   -0.0001
+
+
+   Root No.      17        18
+
+                 6 A"     12 A'  
+
+                2692.3    2773.3
+  
+           1   -0.0000    0.1385
+           2   -0.0000    0.0032
+           3   -0.2910    0.0000
+           4    0.0000    0.0154
+           5    0.0000    0.0002
+           6   -0.0052   -0.0000
+           7   -0.0000    0.0016
+           8    0.0000    0.0008
+           9   -0.0004    0.0001
+          10   -0.0000   -0.0005
+          11    0.0000   -0.0012
+          12    0.0000    0.0002
+          13   -0.0000   -0.1716
+          14   -0.0000    0.5181
+          15   -0.0405    0.0000
+          16   -0.2561   -0.1997
+          17   -0.3201   -0.2647
+          18    0.5374    0.4810
+          19    0.2561   -0.1997
+          20    0.3201   -0.2647
+          21    0.5374   -0.4810
+          22    0.0000    0.0005
+          23    0.0000    0.0002
+          24    0.0001   -0.0002
+
+
+          DESCRIPTION OF VIBRATIONS
+
+
+ VIBRATION          1    1A"         ATOM PAIR     ENERGY CONTRIBUTION    RADIAL
+ FREQUENCY            70.55         C 1 -- H 7         +33.3% (733.3%)      0.4%
+ TRANSITION DIPOLE   0.0147         C 1 -- H 6         +33.3% (733.3%)      0.4%
+ TRAVEL (Ang.)       0.0000         C 1 -- H 5         +31.7% (715.1%)      0.0%
+ REDUCED MASS        0.3787         C 1 -- S 2          +0.7% (105.0%)      0.0%
+ EFFECTIVE MASS     13.7093
+ FORCE CONSTANT      0.0011
+
+ VIBRATION          2    1A'         ATOM PAIR     ENERGY CONTRIBUTION    RADIAL
+ FREQUENCY            88.42         S 2 -- C 3         +17.1% (305.3%)      0.3%
+ TRANSITION DIPOLE   0.7474         C 1 -- Mg8         +15.3% (289.0%)     20.3%
+ TRAVEL (Ang.)       0.3536         C 1 -- S 2         +14.3% (279.1%)     97.4%
+ REDUCED MASS        6.0998         C 1 -- H 5         +13.5% (271.6%)      6.5%
+ EFFECTIVE MASS    117.4475         S 2 -- Mg8         +13.0% (266.1%)      0.3%
+ FORCE CONSTANT      0.0281         C 1 -- H 7         +12.6% (261.9%)     15.1%
+                            C 1 -- H 6         +12.6% (261.9%)     15.1%
+
+ VIBRATION          3    2A"         ATOM PAIR     ENERGY CONTRIBUTION    RADIAL
+ FREQUENCY           118.17         C 1 -- H 5         +21.8% (198.0%)      0.0%
+ TRANSITION DIPOLE   0.1137         C 1 -- S 2         +18.1% (180.4%)      0.0%
+ TRAVEL (Ang.)       0.2458         C 1 -- H 7         +16.4% (171.9%)     16.4%
+ REDUCED MASS        9.4444         C 1 -- H 6         +16.4% (171.9%)     16.0%
+ EFFECTIVE MASS     47.5038
+ FORCE CONSTANT      0.0777
+
+ VIBRATION          4    2A'         ATOM PAIR     ENERGY CONTRIBUTION    RADIAL
+ FREQUENCY           183.41         C 1 -- S 2         +23.1% (343.0%)      0.2%
+ TRANSITION DIPOLE   0.3549         C 1 -- Mg8         +22.1% (335.4%)     84.1%
+ TRAVEL (Ang.)       0.3239         C 1 -- H 7         +18.7% (308.5%)     22.5%
+ REDUCED MASS        3.5047         C 1 -- H 6         +18.7% (308.5%)     23.0%
+ EFFECTIVE MASS     80.7158         C 1 -- H 5         +13.1% (258.4%)    100.0%
+ FORCE CONSTANT      0.0695
+
+ VIBRATION          5    3A'         ATOM PAIR     ENERGY CONTRIBUTION    RADIAL
+ FREQUENCY           289.17         S 2 -- C 3         +45.3% (153.0%)     56.2%
+ TRANSITION DIPOLE   0.4826         S 2 -- Mg8         +22.8% (108.5%)     99.6%
+ TRAVEL (Ang.)       0.1540         C 3 -- N 4         +11.7% ( 77.7%)      0.4%
+ REDUCED MASS        9.8268         C 1 -- Mg8          +9.2% ( 68.9%)     72.8%
+ EFFECTIVE MASS     25.6085
+ FORCE CONSTANT      0.4841
+
+ VIBRATION          6    4A'         ATOM PAIR     ENERGY CONTRIBUTION    RADIAL
+ FREQUENCY           409.48         S 2 -- C 3         +38.0% (103.8%)      0.4%
+ TRANSITION DIPOLE   0.6052         C 3 -- N 4         +27.8% ( 88.7%)      0.0%
+ TRAVEL (Ang.)       0.1593         C 1 -- Mg8          +7.2% ( 45.2%)     51.0%
+ REDUCED MASS        6.4856         C 1 -- S 2          +6.8% ( 44.0%)      2.8%
+ EFFECTIVE MASS     14.7003
+ FORCE CONSTANT      0.6407
+
+ VIBRATION          7    3A"         ATOM PAIR     ENERGY CONTRIBUTION    RADIAL
+ FREQUENCY           409.98         C 3 -- N 4         +52.5% ( 90.5%)      0.0%
+ TRANSITION DIPOLE   0.7216         S 2 -- C 3         +43.9% ( 82.7%)      0.0%
+ TRAVEL (Ang.)       0.1526         S 2 -- Mg8          +1.4% ( 14.6%)      0.0%
+ REDUCED MASS        7.0598         C 1 -- S 2          +1.3% ( 14.1%)      0.0%
+ EFFECTIVE MASS     14.0025
+ FORCE CONSTANT      0.6991
+
+ VIBRATION          8    5A'         ATOM PAIR     ENERGY CONTRIBUTION    RADIAL
+ FREQUENCY           650.41         S 2 -- C 3         +64.7% (141.7%)     96.0%
+ TRANSITION DIPOLE   2.3603         C 1 -- S 2          +9.2% ( 53.4%)      3.6%
+ TRAVEL (Ang.)       0.1164         C 3 -- N 4          +8.8% ( 52.2%)     29.8%
+ REDUCED MASS        7.6462         S 2 -- Mg8          +8.8% ( 52.2%)     96.3%
+ EFFECTIVE MASS     20.9082
+ FORCE CONSTANT      1.9058
+
+ VIBRATION          9    6A'         ATOM PAIR     ENERGY CONTRIBUTION    RADIAL
+ FREQUENCY           727.85         C 1 -- S 2         +27.8% (106.9%)     99.9%
+ TRANSITION DIPOLE   1.3945         C 1 -- Mg8         +18.2% ( 86.5%)     55.9%
+ TRAVEL (Ang.)       0.1084         C 1 -- H 6         +15.9% ( 80.8%)      9.8%
+ REDUCED MASS        7.8777         C 1 -- H 7         +15.9% ( 80.8%)      9.8%
+ EFFECTIVE MASS     17.5150         C 1 -- H 5         +15.8% ( 80.5%)     12.0%
+ FORCE CONSTANT      2.4589
+
+ VIBRATION         10    4A"         ATOM PAIR     ENERGY CONTRIBUTION    RADIAL
+ FREQUENCY           908.48         C 1 -- H 7         +36.1% ( 81.1%)      9.2%
+ TRANSITION DIPOLE   0.2643         C 1 -- H 6         +36.1% ( 81.1%)      9.1%
+ TRAVEL (Ang.)       0.3607         C 1 -- H 5         +12.3% ( 47.3%)      0.0%
+ REDUCED MASS        0.5706         C 1 -- S 2          +7.9% ( 37.8%)      0.0%
+ EFFECTIVE MASS      2.7406
+ FORCE CONSTANT      0.2775
+
+ VIBRATION         11    7A'         ATOM PAIR     ENERGY CONTRIBUTION    RADIAL
+ FREQUENCY           936.83         C 1 -- H 5         +39.5% ( 83.5%)     12.2%
+ TRANSITION DIPOLE   0.2744         C 1 -- H 6         +20.4% ( 60.1%)      4.1%
+ TRAVEL (Ang.)       0.3438         C 1 -- H 7         +20.4% ( 60.0%)      4.0%
+ REDUCED MASS        0.6088         C 1 -- S 2          +9.1% ( 40.0%)      0.0%
+ EFFECTIVE MASS      3.7337
+ FORCE CONSTANT      0.3148
+
+ VIBRATION         12    5A"         ATOM PAIR     ENERGY CONTRIBUTION    RADIAL
+ FREQUENCY          1232.86         C 1 -- H 5         +51.3% ( 63.3%)      0.0%
+ TRANSITION DIPOLE   0.5805         C 1 -- H 6         +20.0% ( 39.5%)     10.5%
+ TRAVEL (Ang.)       0.3614         C 1 -- H 7         +20.0% ( 39.5%)     10.8%
+ REDUCED MASS        0.4189         C 1 -- Mg8          +4.4% ( 18.5%)      0.0%
+ EFFECTIVE MASS      1.5267
+ FORCE CONSTANT      0.3751
+
+ VIBRATION         13    8A'         ATOM PAIR     ENERGY CONTRIBUTION    RADIAL
+ FREQUENCY          1237.36         C 1 -- H 7         +39.3% ( 55.3%)      1.2%
+ TRANSITION DIPOLE   0.4546         C 1 -- H 6         +39.3% ( 55.3%)      1.3%
+ TRAVEL (Ang.)       0.3721         C 1 -- H 5         +13.1% ( 32.0%)     35.2%
+ REDUCED MASS        0.3937         C 1 -- Mg8          +4.2% ( 18.0%)     48.9%
+ EFFECTIVE MASS      1.5017
+ FORCE CONSTANT      0.3551
+
+ VIBRATION         14    9A'         ATOM PAIR     ENERGY CONTRIBUTION    RADIAL
+ FREQUENCY          1274.45         C 1 -- H 5         +32.2% ( 53.5%)      0.5%
+ TRANSITION DIPOLE   0.7076         C 1 -- H 7         +30.0% ( 51.6%)      1.4%
+ TRAVEL (Ang.)       0.3758         C 1 -- H 6         +30.0% ( 51.6%)      1.5%
+ REDUCED MASS        0.3746         C 1 -- Mg8          +4.0% ( 19.0%)     42.8%
+ EFFECTIVE MASS      1.6986
+ FORCE CONSTANT      0.3585
+
+ VIBRATION         15   10A'         ATOM PAIR     ENERGY CONTRIBUTION    RADIAL
+ FREQUENCY          2303.38         C 3 -- N 4         +74.8% ( 99.9%)    100.0%
+ TRANSITION DIPOLE   1.5782         S 2 -- C 3         +25.2% ( 57.9%)     99.9%
+ TRAVEL (Ang.)       0.0672
+ REDUCED MASS        6.4812
+ EFFECTIVE MASS     12.8622
+ FORCE CONSTANT     20.2600
+
+ VIBRATION         16   11A'         ATOM PAIR     ENERGY CONTRIBUTION    RADIAL
+ FREQUENCY          2676.91         C 1 -- H 5         +67.4% ( 85.0%)     99.5%
+ TRANSITION DIPOLE   0.6192         C 1 -- H 7         +15.4% ( 40.7%)     83.8%
+ TRAVEL (Ang.)       0.2178         C 1 -- H 6         +15.4% ( 40.7%)     84.2%
+ REDUCED MASS        0.5309         C 1 -- Mg8          +0.9% (  9.7%)     48.6%
+ EFFECTIVE MASS      1.4706
+ FORCE CONSTANT      2.2415
+
+ VIBRATION         17    6A"         ATOM PAIR     ENERGY CONTRIBUTION    RADIAL
+ FREQUENCY          2692.29         C 1 -- H 7         +48.7% ( 72.2%)     97.8%
+ TRANSITION DIPOLE   0.6695         C 1 -- H 6         +48.7% ( 72.2%)     97.7%
+ TRAVEL (Ang.)       0.2223         C 1 -- Mg8          +0.9% (  9.8%)      0.0%
+ REDUCED MASS        0.5068         C 1 -- S 2          +0.9% (  9.8%)      0.0%
+ EFFECTIVE MASS      1.4847
+ FORCE CONSTANT      2.1643
+
+ VIBRATION         18   12A'         ATOM PAIR     ENERGY CONTRIBUTION    RADIAL
+ FREQUENCY          2773.30         C 1 -- H 6         +34.8% ( 56.7%)     96.6%
+ TRANSITION DIPOLE   0.7844         C 1 -- H 7         +34.8% ( 56.7%)     96.5%
+ TRAVEL (Ang.)       0.2720         C 1 -- H 5         +30.0% ( 52.7%)     95.8%
+ REDUCED MASS        0.3287         C 1 -- Mg8          +0.2% (  4.0%)     48.6%
+ EFFECTIVE MASS      1.1137
+ FORCE CONSTANT      1.4897
+
+      SYMMETRY NUMBER FOR POINT-GROUP Cs  =  1
+
+
+          SYSTEM IS A GROUND STATE
+
+
+ All coordinates are Cartesian
+ mescn
+
+
+          MOLECULE IS NOT LINEAR
+
+          THERE ARE 18 GENUINE VIBRATIONS IN THIS SYSTEM
+          THIS THERMODYNAMICS CALCULATION IS LIMITED TO
+          MOLECULES WHICH HAVE NO INTERNAL ROTATIONS
+
+
+
+
+                    CALCULATED THERMODYNAMIC PROPERTIES
+                                          *
+   TEMP. (K)   PARTITION FUNCTION   H.O.F.    ENTHALPY  HEAT CAPACITY ENTROPY
+                                   KCAL/MOL   CAL/MOLE    CAL/K/MOL  CAL/K/MOL
+
+
+ 298.00  VIB.     0.7760D+02                  2663.5117    15.4861    17.5854
+         ROT.     0.1816D+06                   888.2803     2.9808    27.0455
+         INT.     0.1410D+08                  3551.7920    18.4669    44.6309
+         TRA.     0.9296D+27                  1480.4672     4.9680    39.6378
+         TOT.                       55.119    5032.2592    23.4349    84.2687
+
+ 200.00  VIB.     0.1648D+02                  1317.4820    11.8774    12.1560
+         ROT.     0.9987D+05                   596.1613     2.9808    25.8568
+         INT.     0.1646D+07                  1913.6433    14.8582    38.0128
+         TRA.     0.5111D+27                   993.6021     4.9680    37.6566
+         TOT.                       52.994    2907.2454    19.8262    75.6695
+
+ 210.00  VIB.     0.1944D+02                  1438.2523    12.2754    12.7452
+         ROT.     0.1075D+06                   625.9693     2.9808    26.0022
+         INT.     0.2089D+07                  2064.2216    15.2562    38.7474
+         TRA.     0.5499D+27                  1043.2822     4.9680    37.8990
+         TOT.                       53.194    3107.5039    20.2242    76.6465
+
+ 220.00  VIB.     0.2288D+02                  1562.9664    12.6662    13.3253
+         ROT.     0.1152D+06                   655.7774     2.9808    26.1409
+         INT.     0.2637D+07                  2218.7438    15.6470    39.4662
+         TRA.     0.5896D+27                  1092.9623     4.9680    38.1301
+         TOT.                       53.398    3311.7062    20.6150    77.5963
+
+ 230.00  VIB.     0.2690D+02                  1691.5540    13.0501    13.8968
+         ROT.     0.1232D+06                   685.5855     2.9808    26.2734
+         INT.     0.3313D+07                  2377.1394    16.0310    40.1702
+         TRA.     0.6303D+27                  1142.6424     4.9680    38.3510
+         TOT.                       53.606    3519.7819    20.9990    78.5212
+
+ 240.00  VIB.     0.3157D+02                  1823.9472    13.4274    14.4602
+         ROT.     0.1313D+06                   715.3935     2.9808    26.4003
+         INT.     0.4145D+07                  2539.3407    16.4082    40.8605
+         TRA.     0.6718D+27                  1192.3226     4.9680    38.5624
+         TOT.                       53.818    3731.6633    21.3762    79.4229
+
+ 250.00  VIB.     0.3700D+02                  1960.0802    13.7981    15.0159
+         ROT.     0.1396D+06                   745.2016     2.9808    26.5220
+         INT.     0.5164D+07                  2705.2818    16.7789    41.5378
+         TRA.     0.7143D+27                  1242.0027     4.9680    38.7652
+         TOT.                       54.034    3947.2845    21.7469    80.3031
+
+ 260.00  VIB.     0.4329D+02                  2099.8878    14.1623    15.5642
+         ROT.     0.1480D+06                   775.0097     2.9808    26.6389
+         INT.     0.6409D+07                  2874.8974    17.1431    42.2030
+         TRA.     0.7576D+27                  1291.6828     4.9680    38.9601
+         TOT.                       54.253    4166.5802    22.1111    81.1631
+
+ 270.00  VIB.     0.5058D+02                  2243.3045    14.5200    16.1054
+         ROT.     0.1567D+06                   804.8177     2.9808    26.7514
+         INT.     0.7923D+07                  3048.1223    17.5008    42.8568
+         TRA.     0.8017D+27                  1341.3629     4.9680    39.1476
+         TOT.                       54.476    4389.4851    22.4688    82.0043
+
+ 280.00  VIB.     0.5901D+02                  2390.2649    14.8710    16.6398
+         ROT.     0.1654D+06                   834.6258     2.9808    26.8598
+         INT.     0.9762D+07                  3224.8907    17.8518    43.4996
+         TRA.     0.8466D+27                  1391.0430     4.9680    39.3282
+         TOT.                       54.702    4615.9337    22.8198    82.8278
+
+ 290.00  VIB.     0.6874D+02                  2540.7027    15.2154    17.1677
+         ROT.     0.1744D+06                   864.4339     2.9808    26.9644
+         INT.     0.1199D+08                  3405.1366    18.1962    44.1321
+         TRA.     0.8924D+27                  1440.7231     4.9680    39.5026
+         TOT.                       54.932    4845.8597    23.1642    83.6346
+
+ 300.00  VIB.     0.7998D+02                  2694.5510    15.5531    17.6892
+         ROT.     0.1835D+06                   894.2419     2.9808    27.0654
+         INT.     0.1467D+08                  3588.7929    18.5339    44.7546
+         TRA.     0.9389D+27                  1490.4032     4.9680    39.6710
+         TOT.                       55.166    5079.1961    23.5019    84.4257
+
+ 310.00  VIB.     0.9292D+02                  2851.7422    15.8840    18.2046
+         ROT.     0.1927D+06                   924.0500     2.9808    27.1632
+         INT.     0.1791D+08                  3775.7922    18.8648    45.3678
+         TRA.     0.9863D+27                  1540.0833     4.9680    39.8339
+         TOT.                       55.402    5315.8755    23.8328    85.2017
+
+ 320.00  VIB.     0.1078D+03                  3012.2084    16.2081    18.7141
+         ROT.     0.2021D+06                   953.8580     2.9808    27.2578
+         INT.     0.2179D+08                  3966.0665    19.1889    45.9719
+         TRA.     0.1034D+28                  1589.7634     4.9680    39.9916
+         TOT.                       55.642    5555.8299    24.1569    85.9635
+
+ 330.00  VIB.     0.1249D+03                  3175.8815    16.5254    19.2177
+         ROT.     0.2117D+06                   983.6661     2.9808    27.3495
+         INT.     0.2645D+08                  4159.5476    19.5062    46.5672
+         TRA.     0.1083D+28                  1639.4435     4.9680    40.1445
+         TOT.                       55.885    5798.9911    24.4742    86.7117
+
+ 340.00  VIB.     0.1446D+03                  3342.6931    16.8358    19.7156
+         ROT.     0.2214D+06                  1013.4742     2.9808    27.4385
+         INT.     0.3201D+08                  4356.1673    19.8166    47.1541
+         TRA.     0.1133D+28                  1689.1236     4.9680    40.2928
+         TOT.                       56.132    6045.2909    24.7846    87.4470
+
+ 350.00  VIB.     0.1671D+03                  3512.5753    17.1395    20.2081
+         ROT.     0.2312D+06                  1043.2822     2.9808    27.5249
+         INT.     0.3864D+08                  4555.8576    20.1203    47.7330
+         TRA.     0.1183D+28                  1738.8037     4.9680    40.4368
+         TOT.                       56.381    6294.6613    25.0883    88.1698
+
+ 360.00  VIB.     0.1930D+03                  3685.4607    17.4365    20.6951
+         ROT.     0.2412D+06                  1073.0903     2.9808    27.6089
+         INT.     0.4654D+08                  4758.5510    20.4173    48.3040
+         TRA.     0.1234D+28                  1788.4838     4.9680    40.5768
+         TOT.                       56.633    6547.0348    25.3853    88.8807
+
+ 370.00  VIB.     0.2225D+03                  3861.2824    17.7268    21.1768
+         ROT.     0.2513D+06                  1102.8984     2.9808    27.6906
+         INT.     0.5592D+08                  4964.1808    20.7076    48.8673
+         TRA.     0.1286D+28                  1838.1639     4.9680    40.7129
+         TOT.                       56.889    6802.3447    25.6756    89.5803
+
+ 380.00  VIB.     0.2563D+03                  4039.9748    18.0106    21.6533
+         ROT.     0.2616D+06                  1132.7064     2.9808    27.7700
+         INT.     0.6704D+08                  5172.6812    20.9914    49.4234
+         TRA.     0.1339D+28                  1887.8440     4.9680    40.8454
+         TOT.                       57.147    7060.5252    25.9594    90.2688
+
+ 390.00  VIB.     0.2949D+03                  4221.4731    18.2880    22.1248
+         ROT.     0.2720D+06                  1162.5145     2.9808    27.8475
+         INT.     0.8020D+08                  5383.9876    21.2688    49.9722
+         TRA.     0.1392D+28                  1937.5242     4.9680    40.9744
+         TOT.                       57.408    7321.5117    26.2368    90.9467
+
+ 400.00  VIB.     0.3389D+03                  4405.7141    18.5592    22.5912
+         ROT.     0.2825D+06                  1192.3226     2.9808    27.9229
+         INT.     0.9574D+08                  5598.0366    21.5400    50.5141
+         TRA.     0.1446D+28                  1987.2043     4.9680    41.1002
+         TOT.                       57.672    7585.2409    26.5080    91.6144
+
+   *: NOTE: HEATS OF FORMATION ARE RELATIVE TO THE
+            ELEMENTS IN THEIR STANDARD STATE AT 298K
+              (=  Standard Enthalpy of Formation).
+
+            Hvib:  Zero-point energy is not included.
+                   frequencies of less than zero cm-1 are not included.
+            Hrot = (3/2)RT
+            Htra = (3/2)RT + pV = (5/2)RT
+
+            Heat capacity is Cp, not Cv
+
+          For more information, see: HTTP://OpenMOPAC.net/Manual/thermochemistry.html
+
+
+           FORCE CONSTANT IN CARTESIAN COORDINATES (Millidynes/A)
+
+    ATOM   CHEMICAL       X               Y               Z
+   NUMBER   SYMBOL  FORCE CONSTANT  FORCE CONSTANT  FORCE CONSTANT
+
+      1       C        4.509577        5.839097        5.836976
+      2       S        3.570555        4.775016        0.682922
+      3       C        2.404006       20.522516        0.868271
+      4       N        1.702101       18.526134        0.261789
+      5       H        1.067442        3.670750        0.511770
+      6       H        1.099173        1.245513        2.911374
+      7       H        1.099244        1.245520        2.911297
+      8      Mg        0.109040        0.831057        0.041880
+
+ ******************************************************************************
+ *                                                                            *
+ *     Error and normal termination messages reported in this calculation     *
+ *                                                                            *
+ * Calculation of polarizability failed (This part of MOPAC is fragile)       *
+ * JOB ENDED NORMALLY                                                         *
+ *                                                                            *
+ ******************************************************************************
+
+
+
+ TOTAL JOB TIME:             4.12 SECONDS
+
+ == MOPAC DONE ==

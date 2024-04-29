@@ -1,0 +1,45 @@
+TITLE      bmi-opt-charge
+REMARK   1 File created by GaussView 5.0.9
+HETATM    1  N           0       0.727  -0.290   0.443                       N
+HETATM    2  C           0       1.646  -0.961  -0.339                       C
+HETATM    3  C           0       2.624  -0.045  -0.635                       C
+HETATM    4  N           0       2.335   1.169  -0.059                       N
+HETATM    5  C           0       1.198   0.987   0.575                       C
+HETATM    6  C           0      -0.514  -0.829   0.995                       C
+HETATM    7  H           0       1.526  -1.999  -0.600                       H
+HETATM    8  H           0       3.517  -0.193  -1.222                       H
+HETATM    9  H           0       0.669   1.733   1.150                       H
+HETATM   10  H           0      -0.278  -1.739   1.554                       H
+HETATM   11  C           0      -1.578  -1.134  -0.070                       C
+HETATM   12  H           0      -0.884  -0.100   1.718                       H
+HETATM   13  H           0      -1.179  -1.886  -0.758                       H
+HETATM   14  C           0      -2.065   0.081  -0.873                       C
+HETATM   15  H           0      -2.428  -1.603   0.440                       H
+HETATM   16  H           0      -2.695  -0.283  -1.692                       H
+HETATM   17  H           0      -1.207   0.570  -1.347                       H
+HETATM   18  C           0      -2.857   1.105  -0.053                       C
+HETATM   19  H           0      -3.732   0.643   0.418                       H
+HETATM   20  H           0      -3.214   1.920  -0.687                       H
+HETATM   21  H           0      -2.254   1.555   0.740                       H
+END
+CONECT    1    2    5    6
+CONECT    2    1    3    7
+CONECT    3    2    4    8
+CONECT    4    3    5
+CONECT    5    1    4    9
+CONECT    6    1   10   11   12
+CONECT    7    2
+CONECT    8    3
+CONECT    9    5
+CONECT   10    6
+CONECT   11    6   13   14   15
+CONECT   12    6
+CONECT   13   11
+CONECT   14   11   16   17   18
+CONECT   15   11
+CONECT   16   14
+CONECT   17   14
+CONECT   18   14   19   20   21
+CONECT   19   18
+CONECT   20   18
+CONECT   21   18

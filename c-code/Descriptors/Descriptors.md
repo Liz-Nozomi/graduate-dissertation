@@ -24,13 +24,17 @@ gmx sasa可完成计算。
 
 ![image-20240411145720771](/Users/liz/Library/Application Support/typora-user-images/image-20240411145720771.png)
 
-不是，哥们，gromacs和mdanalysis都算不出啊
+// 不是，哥们，gromacs和mdanalysis都算不出啊
 
-关于氢键的Donor和Acceptor，均最好通过量化的方法完成计算。
+MDA程序写出来了，手动选择供体和受体
 
-计算完成后，可以用hbond-dynamics.py进行计算动力学，也可以用类似程序计算氢键寿命。
+// 关于氢键的Donor和Acceptor，均最好通过量化的方法完成计算。
 
+计算完成后，可以用hbond-dynamics.py进行计算动力学，也可以用HBDMDA2.py计算寿命。
 
+Imidazole and 1‑Methylimidazole Hydrogen Bonding and Nonhydrogen Bonding Liquid Dynamics: Ultrafast IR Experiments中描述了烷基咪唑的氢键供体和受体。
+
+不是，寄了啊？这篇文献说1-甲级咪唑根本没供体，只有受体性质，硫氰酸甲酯的N和S也是很强的受体，所以D-H-A结构根本没有D
 
 
 
@@ -70,7 +74,7 @@ gmx sasa可完成计算。
 
 用Gaussian计算。
 
-4.5-4.6 CPK面积啥的 我不到啊
+4.5-4.6 CPK面积 原文用
 
 4.7 极化度
 
@@ -86,6 +90,8 @@ gmx sasa可完成计算。
 
 硫氰酸丁酯：14.42 Å3
 
-4.8 氢键受体位置
+4.8 零点能
 
-我不到啊，怎么pubchem和MarvinSketch给的不一样啊草
+Gaussian结果
+
+5 电荷离域度（charge delocalization）
