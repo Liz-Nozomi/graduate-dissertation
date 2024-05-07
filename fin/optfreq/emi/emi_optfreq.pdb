@@ -1,0 +1,33 @@
+TITLE      emi-opt-freq
+REMARK   1 File created by GaussView 6.0.16
+HETATM    1  N           0      -0.125  -0.080  -0.296                       N
+HETATM    2  C           0       0.605   1.089  -0.199                       C
+HETATM    3  C           0       1.876   0.704   0.150                       C
+HETATM    4  N           0       1.953  -0.665   0.275                       N
+HETATM    5  C           0       0.739  -1.097   0.005                       C
+HETATM    6  C           0      -1.550  -0.200  -0.585                       C
+HETATM    7  H           0       0.163   2.055  -0.391                       H
+HETATM    8  H           0       2.740   1.334   0.311                       H
+HETATM    9  H           0       0.421  -2.131   0.001                       H
+HETATM   10  H           0      -1.781   0.434  -1.448                       H
+HETATM   11  C           0      -2.439   0.167   0.605                       C
+HETATM   12  H           0      -1.731  -1.234  -0.893                       H
+HETATM   13  H           0      -2.275   1.204   0.913                       H
+HETATM   14  H           0      -2.227  -0.479   1.462                       H
+HETATM   15  H           0      -3.494   0.053   0.337                       H
+END
+CONECT    1    2    5    6
+CONECT    2    1    3    7
+CONECT    3    2    4    8
+CONECT    4    3    5
+CONECT    5    1    4    9
+CONECT    6    1   10   11   12
+CONECT    7    2
+CONECT    8    3
+CONECT    9    5
+CONECT   10    6
+CONECT   11    6   13   14   15
+CONECT   12    6
+CONECT   13   11
+CONECT   14   11
+CONECT   15   11

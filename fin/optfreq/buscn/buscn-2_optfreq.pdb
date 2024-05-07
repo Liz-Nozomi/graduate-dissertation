@@ -1,0 +1,35 @@
+TITLE      buscn-opt-freq
+REMARK   1 File created by GaussView 6.0.16
+HETATM    1  C           0       2.727  -0.489   0.000                       C
+HETATM    2  N           0       3.591  -1.272   0.000                       N
+HETATM    3  S           0       1.500   0.688   0.000                       S
+HETATM    4  C           0       0.000  -0.412   0.000                       C
+HETATM    5  C           0      -1.256   0.459   0.000                       C
+HETATM    6  C           0      -2.537  -0.389   0.000                       C
+HETATM    7  C           0      -3.808   0.464   0.000                       C
+HETATM    8  H           0       0.049  -1.044   0.890                       H
+HETATM    9  H           0       0.049  -1.044  -0.890                       H
+HETATM   10  H           0      -1.251   1.114  -0.881                       H
+HETATM   11  H           0      -1.251   1.114   0.881                       H
+HETATM   12  H           0      -2.535  -1.048   0.878                       H
+HETATM   13  H           0      -2.535  -1.048  -0.878                       H
+HETATM   14  H           0      -4.705  -0.164   0.000                       H
+HETATM   15  H           0      -3.853   1.109   0.884                       H
+HETATM   16  H           0      -3.853   1.109  -0.884                       H
+END
+CONECT    1    2    3
+CONECT    2    1
+CONECT    3    1    4
+CONECT    4    3    5    8    9
+CONECT    5    4    6   10   11
+CONECT    6    5    7   12   13
+CONECT    7    6   14   15   16
+CONECT    8    4
+CONECT    9    4
+CONECT   10    5
+CONECT   11    5
+CONECT   12    6
+CONECT   13    6
+CONECT   14    7
+CONECT   15    7
+CONECT   16    7
